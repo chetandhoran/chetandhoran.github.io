@@ -10564,4 +10564,8 @@ h6,
   .navbar-open {
     background-color: black !important;
   }
+
+  .btn-outline-light {
+    font-size: 10px;
+  }
 }
