@@ -10572,6 +10572,10 @@ h6,
 
   .btnCV {
     padding-left: 60px;
-    padding-top: 30px !important;
+    /* padding-top: 30px !important; */
+  }
+
+  .topStart {
+    margin-top: -25px;
   }
 }
