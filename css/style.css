@@ -10567,5 +10567,10 @@ h6,
 
   .btn-outline-light {
     font-size: 10px;
+    margin-right: 1rem !important;
+  }
+
+  .btnCV {
+    padding-left: 60px;
   }
 }
