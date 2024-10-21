@@ -10574,4 +10574,8 @@ h6,
     padding-left: 60px;
     padding-top: 30px !important;
   }
+
+  #home {
+    padding-top: 2rem !important;
+  }
 }
