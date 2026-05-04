@@ -115,3 +115,37 @@
     items: 1,
   });
 })(jQuery);
+
+function showAlert(type, message) {
+  const alertBox = document.getElementById("customAlert");
+  const icon = document.getElementById("alertIcon");
+  const title = document.getElementById("alertTitle");
+  const msg = document.getElementById("alertMessage");
+
+  msg.innerText = message;
+
+  // RESET
+  icon.className = "alert-icon";
+  alertBox.classList.remove("success", "error");
+
+  // APPLY TYPE
+  if (type === "success") {
+    icon.classList.add("success");
+    icon.innerHTML = `<i class="fas fa-check"></i>`;
+    title.innerText = "Success";
+    alertBox.classList.add("success");
+
+  } else {
+    icon.classList.add("error");
+    icon.innerHTML = `<i class="fas fa-times"></i>`;
+    title.innerText = "Error";
+    alertBox.classList.add("error");
+  }
+
+  alertBox.classList.add("show");
+}
+function closeAlert() {
+  document.getElementById("customAlert").classList.remove("show");
+}
+
+
