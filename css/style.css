@@ -11741,8 +11741,17 @@ h6,
 
   transform: rotateY(180deg);
   padding: 20px;
-}
 
+  p {
+    color: gold;
+    font-size: 32px;
+    font-family: 'Harry P', cursive;
+    color: #facc15;
+    text-shadow:
+      0 0 6px rgba(250, 204, 21, 0.6),
+      0 0 18px rgba(250, 204, 21, 0.4);
+  }
+}
 
 .profile-wrap:hover .orbit-svg {
   animation: rotateOrbit 15s linear infinite;
@@ -11828,6 +11837,7 @@ h6,
   position: fixed;
   bottom: 20px;
   right: 20px;
+
   z-index: 99999;
 
   width: 280px;
@@ -11941,8 +11951,785 @@ h6,
     backface-visibility: hidden;
   }
 
-  .contact-toast {
-    right: 55px;
+
+
+}
+
+
+
+
+
+
+
+.global-smoke {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  /* 
+  background: linear-gradient(120deg,
+      #ff00cc,
+      #7b68ee,
+      #00f0ff,
+      #39ff14,
+      #ffff00,
+      #ff8c00,
+      #ff3b3b,
+      #00f0ff,
+      #ff00cc); */
+
+
+  background: linear-gradient(120deg,
+      rgba(255, 200, 240, 0.6),
+      rgba(180, 190, 255, 0.6),
+      rgba(180, 255, 255, 0.5),
+      rgba(200, 255, 200, 0.5),
+      rgba(255, 255, 210, 0.5),
+      rgba(255, 210, 180, 0.5),
+      rgba(255, 180, 180, 0.5),
+      rgba(180, 240, 255, 0.5),
+      rgba(255, 200, 240, 0.6));
+
+
+
+
+
+  background-size: 600% 600%;
+
+  filter: blur(150px) saturate(220%) url(#smokeFilter);
+
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.global-smoke.active {
+  opacity: 0.75;
+  animation: smokeFlow 40s ease-in-out infinite;
+}
+
+.global-smoke {
+  will-change: background-position, filter;
+}
+
+@keyframes smokeFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 50% 60%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  75% {
+    background-position: 50% 40%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.patronus-3d {
+  position: fixed;
+  top: 50%;
+  left: -35%;
+  width: 700px;
+  height: 700px;
+
+  pointer-events: none;
+  z-index: 3;
+
+  opacity: 0;
+
+  /* background:
+    radial-gradient(circle at 40% 50%, rgba(170, 250, 255, 0.95), transparent 60%),
+    radial-gradient(circle at 60% 50%, rgba(0, 240, 255, 0.7), transparent 70%),
+    radial-gradient(circle at 50% 60%, rgba(255, 255, 255, 0.8), transparent 80%);
+
+  filter: blur(70px) brightness(1.6); */
+
+  background:
+    radial-gradient(circle at 40% 50%, rgba(180, 240, 255, 0.35), transparent 65%),
+    radial-gradient(circle at 60% 50%, rgba(200, 220, 255, 0.25), transparent 70%),
+    radial-gradient(circle at 50% 60%, rgba(255, 255, 255, 0.3), transparent 75%);
+
+  filter: blur(90px) brightness(1.1) saturate(110%);
+
+}
+
+/* 🚀 CAST EFFECT */
+.patronus-3d.active {
+  animation: patronusBlast 4.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes patronusBlast {
+
+  0% {
+    left: 10%;
+    /* starts near profile */
+    transform: translateY(-50%) scale(0.4);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  40% {
+    left: 40%;
+    transform: translateY(-55%) scale(1.2);
+  }
+
+  70% {
+    left: 75%;
+    transform: translateY(-50%) scale(1.5);
+  }
+
+  100% {
+    left: 120%;
+    transform: translateY(-50%) scale(1.8);
+    opacity: 0;
+  }
+}
+
+
+/* =========================
+   NORMAL MODE
+========================= */
+body {
+  transition: all 0.6s ease;
+}
+
+/* =========================
+   ✨ MAGIC MODE (GLOBAL)
+========================= */
+body.magic-active {
+  font-family: 'Harry P', cursive;
+  color: #facc15;
+  text-shadow:
+    0 0 6px rgba(250, 204, 21, 0.6),
+    0 0 18px rgba(250, 204, 21, 0.4);
+}
+
+/* Optional: make headings extra magical */
+body.magic-active h1,
+body.magic-active h2,
+body.magic-active h3 {
+  text-shadow:
+    0 0 10px rgba(250, 204, 21, 0.9),
+    0 0 25px rgba(255, 215, 0, 0.6);
+}
+
+/* =========================
+   🟡 GOLDEN SNITCH (REALISTIC)
+========================= */
+.snitch {
+  position: fixed;
+  width: 70px;
+  height: 70px;
+
+  /* 🔥 CRITICAL FIX */
+  transform-origin: center center;
+  left: 0;
+  top: 0;
+
+  pointer-events: auto;
+  will-change: transform;
+
+  /* ensures it NEVER visually clips outside */
+  overflow: visible;
+
+  opacity: 0;
+
+  transition: opacity 1s ease;
+
+
+}
+
+
+/* =========================================
+   🟡 CINEMATIC HARRY POTTER GOLDEN SNITCH
+========================================= */
+
+.snitch.visible {
+  opacity: 1;
+}
+
+.snitch {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+
+  z-index: 9999;
+
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  overflow: visible;
+}
+
+/* =========================================
+   🟡 GOLDEN BODY
+========================================= */
+
+.snitch-body {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+
+  background:
+    radial-gradient(circle at 30% 30%,
+      #fff7c2 0%,
+      #ffe27a 18%,
+      #ffd700 38%,
+      #c99700 68%,
+      #7a5200 100%);
+
+  box-shadow:
+    0 0 10px rgba(255, 215, 0, 0.95),
+    0 0 22px rgba(255, 215, 0, 0.7),
+    inset -2px -2px 4px rgba(80, 40, 0, 0.6),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.8);
+
+  animation:
+    snitchPulse 1.2s infinite ease-in-out;
+}
+
+/* metallic ring detail */
+.snitch-body::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 50%;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.9);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(120, 70, 0, 0.5);
+  border-right: 1px solid rgba(120, 70, 0, 0.7);
+
+  opacity: 0.9;
+}
+
+/* highlight reflection */
+.snitch-body::after {
+  content: "";
+  position: absolute;
+
+  width: 4px;
+  height: 4px;
+
+  top: 3px;
+  left: 3px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  filter: blur(0.4px);
+}
+
+/* =========================================
+   🪽 REAL MOVIE-LIKE WINGS
+========================================= */
+
+.snitch-wings {
+  position: absolute;
+  top: 30px;
+
+  width: 40px;
+  height: 8px;
+
+  transform-style: preserve-3d;
+
+
+  animation:
+    wingFlapReal 0.045s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* LEFT */
+.snitch-wings.left {
+  left: -10px;
+  transform-origin: right center;
+}
+
+/* RIGHT */
+.snitch-wings.right {
+  right: -10px;
+  transform-origin: left center;
+}
+
+/* feather base */
+.snitch-wings::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 30% 30%,
+      #fff7c2 0%,
+      #ffe27a 18%,
+      #ffd700 38%,
+      #c99700 68%,
+      #7a5200 100%);
+
+
+  clip-path: polygon(0% 50%,
+      8% 38%,
+      18% 25%,
+      32% 14%,
+      48% 8%,
+      66% 12%,
+      82% 24%,
+      100% 50%,
+      82% 76%,
+      66% 88%,
+      48% 92%,
+      32% 86%,
+      18% 75%,
+      8% 62%);
+
+  border-radius: 50%;
+
+  box-shadow:
+    inset 0 -2px 3px rgba(0, 0, 0, 0.18),
+    0 0 4px rgba(255, 255, 255, 0.7);
+
+  opacity: 0.96;
+}
+
+/* feather lines */
+.snitch-wings::after {
+  content: "";
+  position: absolute;
+  inset: 1px;
+
+  background:
+    repeating-linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.9) 0px,
+      rgba(255, 255, 255, 0.9) 1px,
+      rgba(180, 180, 180, 0.45) 2px,
+      transparent 3px);
+
+  clip-path: polygon(0% 50%,
+      8% 38%,
+      18% 25%,
+      32% 14%,
+      48% 8%,
+      66% 12%,
+      82% 24%,
+      100% 50%,
+      82% 76%,
+      66% 88%,
+      48% 92%,
+      32% 86%,
+      18% 75%,
+      8% 62%);
+
+  opacity: 0.55;
+}
+
+/* =========================================
+   🪽 FILM STYLE FLUTTER
+========================================= */
+
+@keyframes wingFlapReal {
+
+  0% {
+    transform:
+      rotateZ(8deg) rotateY(0deg) scaleY(1);
+  }
+
+  50% {
+    transform:
+      rotateZ(-22deg) rotateY(18deg) scaleY(1.45);
+  }
+
+  100% {
+    transform:
+      rotateZ(14deg) rotateY(-10deg) scaleY(0.88);
+  }
+}
+
+/* =========================================
+   ✨ MAGIC BODY GLOW
+========================================= */
+
+@keyframes snitchPulse {
+
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+
+  50% {
+    filter: brightness(1.25);
+  }
+}
+
+
+/* =========================================
+   ✨ MAGIC MODE POSITION
+========================================= */
+
+body.magic-active .snitch {
+
+  position: fixed;
+
+  top: 0px !important;
+  right: 20px !important;
+
+  left: auto !important;
+
+  z-index: 99999;
+
+  transition:
+    top 0.8s ease,
+    right 0.8s ease,
+    transform 0.8s ease;
+
+  /* floating effect */
+  animation:
+    snitchIdleFloat 2.5s infinite ease-in-out;
+}
+
+/* gentle hover */
+@keyframes snitchIdleFloat {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hidden by default */
+.hogwardLogo {
+  display: none;
+  position: absolute;
+  inset: 0;
+  width: 40%;
+  height: 40%;
+  object-fit: contain;
+
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+  margin-top: 65px !important;
+  margin-left: 190px;
+}
+
+
+
+/* =========================
+   🦉 HARRY POTTER OWL TOAST MODE
+========================= */
+
+body.magic-active .contact-toast {
+  position: fixed;
+  right: -400px;
+  bottom: 120px;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: none;
+
+  background: transparent;
+
+  .toast-text p {
+    font-size: 12px;
+    line-height: 1.4;
+    color: gold;
+    margin: 0;
+  }
+
+
+}
+
+body.magic-active .hogwardLogo {
+  display: block;
+}
+
+/* when triggered */
+.contact-toast.owl-in {
+  animation: owlFlyIn 2.2s ease-out forwards;
+}
+
+/* flying motion */
+@keyframes owlFlyIn {
+  0% {
+    right: -400px;
+    bottom: 200px;
+    opacity: 0;
+    transform: scale(0.4) rotate(-15deg);
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  70% {
+    right: 40px;
+    bottom: 140px;
+    transform: scale(1) rotate(8deg);
+  }
+
+  100% {
+    right: 20px;
+    bottom: 100px;
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+body.magic-active .back {
+  background: none;
+
+  p {
+    display: none;
+
+
+  }
+
+}
+
+
+
+
+.hogwardLogo2 {
+  display: none;
+  position: absolute;
+  inset: 0;
+  width: 80%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.;
+  pointer-events: none;
+  z-index: 0;
+  border: none !important;
+  background: none !important;
+  margin-left: 25px;
+}
+
+body.magic-active .hogwardLogo2 {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   ✨ MAGICAL SECTION TITLES
+========================= */
+
+.magical-heading h1 {
+  transition:
+    opacity .4s ease,
+    transform .4s ease,
+    letter-spacing .4s ease,
+    text-shadow .4s ease;
+}
+
+/* magic mode glow */
+body.magic-active .magical-heading .section-front {
+
+  color: #7dd3fc !important;
+
+  text-shadow:
+    0 0 8px rgba(125, 211, 252, .9),
+    0 0 18px rgba(56, 189, 248, .7),
+    0 0 45px rgba(255, 255, 255, .45);
+
+  letter-spacing: 2px;
+
+  animation: magicPulse 2s ease-in-out infinite;
+}
+
+/* background title */
+body.magic-active .magical-heading .section-back {
+
+  color: rgba(125, 211, 252, .08);
+
+  text-shadow:
+    0 0 20px rgba(56, 189, 248, .2);
+
+  letter-spacing: 4px;
+}
+
+/* smooth pulse */
+@keyframes magicPulse {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.03);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+
+/* =========================================
+   🏰 CENTER WATERMARK
+========================================= */
+
+#qualification,
+#skill,
+#portfolio,
+#contact {
+  position: relative;
+  overflow: hidden;
+}
+
+/* CENTER LOGO */
+.hogwarts-watermark {
+  display: none;
+  position: absolute;
+
+  top: 50%;
+  left: 10%;
+
+  transform: translate(-50%, -50%);
+
+  width: 200px;
+  height: 200px;
+
+  z-index: 0;
+
+  pointer-events: none;
+  user-select: none;
+
+  opacity: 0.099;
+
+  mix-blend-mode: screen;
+
+  animation:
+    watermarkFloat 10s ease-in-out infinite;
+}
+
+/* image */
+.hogwarts-watermark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  filter:
+    grayscale(100%) brightness(1.4) contrast(1.1) blur(.3px);
+
+  opacity: .85;
+}
+
+/* ✨ MAGIC MODE */
+
+body.magic-active .hogwarts-watermark {
+  display: block;
+}
+
+
+body.magic-active .hogwarts-watermark img {
+
+  filter:
+    brightness(1.8) contrast(1.2) saturate(1.2) drop-shadow(0 0 35px rgba(255, 255, 255, .12));
+
+  opacity: 1;
+
+  animation:
+    watermarkGlow 5s ease-in-out infinite;
+}
+
+/* cinematic float */
+@keyframes watermarkFloat {
+
+  0% {
+    transform:
+      translate(-50%, -50%) rotate(-2deg) scale(1);
+  }
+
+  50% {
+    transform:
+      translate(-50%, -52%) rotate(2deg) scale(1.03);
+  }
+
+  100% {
+    transform:
+      translate(-50%, -50%) rotate(-2deg) scale(1);
+  }
+}
+
+/* magical breathing glow */
+@keyframes watermarkGlow {
+
+  0% {
+    opacity: .45;
+  }
+
+  50% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: .45;
+  }
+}
+
+/* section content above watermark */
+#qualification .container,
+#skill .container,
+#portfolio .container,
+#contact .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* mobile */
+@media(max-width:768px) {
+
+  .hogwarts-watermark {
+    width: 180px;
+    height: 180px;
+
+    opacity: .025;
   }
 
 }
