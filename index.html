@@ -960,7 +960,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // show after 15 sec (only once)
   setTimeout(() => {
     toast.classList.add("show");
-  }, 15000);
+  }, 8000);
 
   window.closeToast = function () {
     toast.classList.remove("show");
@@ -1049,7 +1049,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
     toast.classList.add("show");
     toast.classList.add("owl-in");
-  }, 2000);
+  }, 5000);
 }
 
   // 🔓 unlock audio once
@@ -1076,7 +1076,10 @@ document.addEventListener("DOMContentLoaded", function () {
   snitch.addEventListener("click", () => {
 
     unlockAudio();
-
+ // 🏠 GO TO HOME SECTION
+  document.getElementById("home").scrollIntoView({
+    behavior: "smooth"
+  });
     // =========================
     // ❌ TURN OFF MAGIC
     // =========================
