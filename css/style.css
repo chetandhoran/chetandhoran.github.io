@@ -4702,6 +4702,15 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+
+
+  body.magic-active .snitch {
+    position: fixed;
+    top: 0px;
+    right: auto;
+    left: 20px !important;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -11951,7 +11960,22 @@ h6,
     backface-visibility: hidden;
   }
 
+  body.magic-active .snitch {
+    position: fixed;
+    top: 0px;
+    right: auto;
+    left: 20px !important;
+  }
 
+
+  .navbar-light .navbar-nav .nav-link {
+    padding: 5px 10px;
+  }
+
+
+  .fixed-top {
+    background-color: black;
+  }
 
 }
 
@@ -12384,10 +12408,10 @@ body.magic-active .snitch {
 
   position: fixed;
 
-  top: 0px !important;
-  right: 20px !important;
+  top: 0px;
+  right: 20px;
 
-  left: auto !important;
+  left: auto;
 
   z-index: 99999;
 
