@@ -12757,3 +12757,270 @@ body.magic-active .hogwarts-watermark img {
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   📱 MOBILE MAGIC WATERMARK POSITION FIX
+========================================= */
+
+@media (max-width: 500px) {
+
+  body.magic-active .hogwarts-watermark {
+    top: 0px;
+    left: 79%;
+    transform: translateX(-50%) !important;
+    opacity: 0.08;
+    z-index: 0;
+  }
+
+  /* 
+  body.magic-active .hufflepuff {
+    top: 103px;
+    left: 79%;
+  }
+
+  body.magic-active .slytherin {
+    top: 0px;
+    left: 79%;
+  } */
+
+
+
+  /* keep titles above watermark */
+  body.magic-active .magical-heading {
+    position: relative;
+    z-index: 2;
+  }
+
+  body.magic-active .section-back,
+  body.magic-active .section-front {
+    position: relative;
+    z-index: 2;
+  }
+
+}
+
+
+body.magic-active .footer {
+  display: none;
+}
+
+
+
+
+/* ####################################################################################################################################################### */
+
+
+.hp-footer {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+  background-color: var(--navFootBg);
+  display: none;
+}
+
+body.magic-active .hp-footer {
+  display: block;
+}
+
+/* CANVAS FULL COVER */
+#hpCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ARENA = RESPONSIVE CONTROL SPACE */
+.arena {
+  position: absolute;
+  inset: 0;
+}
+
+/* WANDS SCALE RESPONSIVELY */
+.wand {
+  position: absolute;
+  top: 50%;
+  width: clamp(80px, 12vw, 140px);
+  transform: translateY(-50%);
+}
+
+.left-wand {
+  left: 4vw;
+}
+
+.right-wand {
+  right: 4vw;
+}
+
+.dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 20;
+
+  /* CORE LUMINOUS ENERGY */
+  background: radial-gradient(circle, #ffffff 0%, #7affff 40%, transparent 70%);
+  box-shadow:
+    0 0 10px #7affff,
+    0 0 20px #7affff,
+    0 0 40px #ffffff;
+
+  animation: pulseDot 1.2s infinite ease-in-out;
+}
+
+/* LEFT / RIGHT SAME ENERGY CORE */
+.left-dot,
+.right-dot {
+  filter: drop-shadow(0 0 3px #7affff);
+}
+
+/* 🔥 LUMINOUS PULSE ANIMATION */
+@keyframes pulseDot {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+    filter: brightness(1);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.6);
+    opacity: 1;
+    filter: brightness(2);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+    filter: brightness(1);
+  }
+}
+
+/* SPELL TEXT */
+.spell {
+  position: absolute;
+  top: 50%;
+  font-size: clamp(10px, 1.2vw, 24px);
+  color: white;
+  opacity: 0;
+  text-shadow: 0 0 10px currentColor;
+}
+
+.left {
+  left: 20vw;
+}
+
+.right {
+  right: 20vw;
+}
+
+.shockwave {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background: radial-gradient(circle, white 0%, transparent 70%);
+  box-shadow: 0 0 40px white, 0 0 80px cyan;
+  z-index: 50;
+}
+
+
+
+.wm {
+  position: absolute;
+  top: 50%;
+  width: clamp(60px, 8vw, 120px);
+  transform: translateY(-50%);
+  opacity: 0.2;
+  /* watermark effect */
+  pointer-events: none;
+  z-index: 1;
+  filter: blur(0.3px) drop-shadow(0 0 10px rgba(122, 255, 255, 0.2));
+}
+
+/* LEFT WATERMARK */
+.left-wm {
+  left: 0vw;
+}
+
+/* RIGHT WATERMARK */
+.right-wm {
+  right: 0vw;
+}
+
+
+
+
+/* =========================
+   ✨ LIGHTWEIGHT CINEMATIC MAGIC TRAIL
+========================= */
+
+#magic-trail-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 999999;
+
+  contain: strict;
+  display: none;
+}
+
+body.magic-active #magic-trail-container {
+  display: block;
+}
+
+.magic-spark {
+  position: absolute;
+
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+  pointer-events: none;
+
+  will-change: transform, opacity;
+
+  mix-blend-mode: screen;
+
+  transform: translate3d(0, 0, 0);
+
+  opacity: .9;
+}
+
+/* =========================================
+   HOME VIDEO BACKGROUND
+========================================= */
+
+.home-video-bg {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 0;
+  display: none;
+}
+
+/* VIDEO */
+body.magic-active .home-video-bg {
+  display: block;
+}

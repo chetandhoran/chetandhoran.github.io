@@ -25,6 +25,38 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+  <script>
+
+  // disable browser scroll restoration
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+
+  // always start at top
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+
+  window.onload = function () {
+
+    // remove hash
+    if (window.location.hash) {
+      history.replaceState(
+        null,
+        null,
+        window.location.pathname
+      );
+    }
+
+    // force top
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
+
+  };
+
+</script>
   
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg navbar-light py-3 py-lg-0 px-lg-5">
@@ -49,6 +81,18 @@
 
     <!-- Header Start -->
     <div class="container-fluid d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh">
+
+
+
+
+    <!-- VIDEO BACKGROUND -->
+    <video class="home-video-bg" autoplay muted loop playsinline>
+      <source src="videos/backvid2.mp4" type="video/mp4">
+    </video>
+
+
+
+
         <div class="container">
             <div class="row align-items-center  topStart">
                 <!-- <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
@@ -715,6 +759,24 @@
             </p>
         </div>
     </div>
+
+<div class="hp-footer" id="hpFooter">
+  <canvas id="hpCanvas"></canvas>
+
+  <div class="arena">
+<img src="img/watermark-left.png" class="wm left-wm">
+<img src="img/watermark-right.png" class="wm right-wm">
+
+    <img src="img/wand-left.png" class="wand left-wand" id="leftWand">
+    <img src="img/wand-right.png" class="wand right-wand" id="rightWand">
+
+    <div class="dot left-dot" id="leftDot"></div>
+    <div class="dot right-dot" id="rightDot"></div>
+
+    <div class="spell left" id="leftSpell"></div>
+    <div class="spell right" id="rightSpell"></div>
+  </div>
+</div>
     <!-- Footer End -->
 
     <!-- Scroll to Bottom -->
@@ -1222,7 +1284,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
+<!-- 
 
 
  <script>
@@ -1310,9 +1372,115 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 </script>
+ -->
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
 
+  const snitch = document.getElementById("snitch");
 
+  // =========================================
+  // 🟡 SHOW AFTER 5 SECONDS
+  // =========================================
+  setTimeout(() => {
+    snitch.classList.add("visible");
+  }, 5000);
+
+  // =========================================
+  // 🟡 FAST + SMOOTH FLIGHT AREA
+  // =========================================
+
+  const size = 60;
+
+  const minX = window.innerWidth * 0.78;
+  const maxX = window.innerWidth - size;
+
+  const minY = 80;
+  const maxY = window.innerHeight - 120;
+
+  let x = window.innerWidth * 0.85;
+  let y = window.innerHeight * 0.5;
+
+  /* MUCH FASTER START SPEED */
+  let vx = (Math.random() - 0.5) * 8;
+  let vy = (Math.random() - 0.5) * 8;
+
+  /* smooth motion values */
+  let targetVX = vx;
+  let targetVY = vy;
+
+  function fly() {
+
+    // =========================================
+    // ✨ CINEMATIC RANDOM DIRECTION CHANGES
+    // =========================================
+
+    targetVX += (Math.random() - 0.5) * 1.2;
+    targetVY += (Math.random() - 0.5) * 1.2;
+
+    /* clamp speed */
+    targetVX = Math.max(-7, Math.min(7, targetVX));
+    targetVY = Math.max(-7, Math.min(7, targetVY));
+
+    // =========================================
+    // ✨ SMOOTH INTERPOLATION
+    // =========================================
+
+    vx += (targetVX - vx) * 0.08;
+    vy += (targetVY - vy) * 0.08;
+
+    x += vx;
+    y += vy;
+
+    // =========================================
+    // ✨ BOUND COLLISION
+    // =========================================
+
+    if (x < minX) {
+      x = minX;
+      targetVX *= -1;
+    }
+
+    if (x > maxX) {
+      x = maxX;
+      targetVX *= -1;
+    }
+
+    if (y < minY) {
+      y = minY;
+      targetVY *= -1;
+    }
+
+    if (y > maxY) {
+      y = maxY;
+      targetVY *= -1;
+    }
+
+    // =========================================
+    // ✨ NATURAL BANKING ROTATION
+    // =========================================
+
+    const angle = vx * 7;
+
+    // =========================================
+    // ✨ FLOATING MICRO MOTION
+    // =========================================
+
+    const flutter = Math.sin(Date.now() * 0.02) * 4;
+
+    snitch.style.transform = `
+      translate(${x}px, ${y + flutter}px)
+      rotate(${angle}deg)
+      scale(1)
+    `;
+
+    requestAnimationFrame(fly);
+  }
+
+  fly();
+
+});
+</script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
@@ -1446,6 +1614,397 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 </script>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const scrollBtn = document.querySelector(".scroll-to-bottom");
+
+  if (scrollBtn) {
+
+    scrollBtn.addEventListener("click", () => {
+
+      document.querySelector("#qualification")
+        .scrollIntoView({
+          behavior: "smooth"
+        });
+
+    });
+
+  }
+
+});
+</script>
+<script>
+const canvas = document.getElementById("hpCanvas");
+const ctx = canvas.getContext("2d");
+
+const footer = document.getElementById("hpFooter");
+
+const leftWand = document.getElementById("leftWand");
+const rightWand = document.getElementById("rightWand");
+
+const leftDot = document.getElementById("leftDot");
+const rightDot = document.getElementById("rightDot");
+
+const leftSpell = document.getElementById("leftSpell");
+const rightSpell = document.getElementById("rightSpell");
+
+canvas.width = innerWidth;
+canvas.height = 140;
+
+/* SPELL SYSTEM */
+const spells = [
+  { name: "Expelliarmus", color: "#ff3b3b", type: "attack" },
+  { name: "Avada Kedavra", color: "#39ff5a", type: "attack" },
+  { name: "Stupefy", color: "#ff2d55", type: "stun" },
+  { name: "Protego", color: "#7ad7ff", type: "shield" },
+  { name: "Lumos", color: "#ffe066", type: "light" }
+];
+
+let active = true;
+let cooldown = false;
+
+/* RESIZE SAFE */
+function resize() {
+  canvas.width = innerWidth;
+  canvas.height = 140;
+}
+window.addEventListener("resize", resize);
+resize();
+
+/* TIP POSITION (RESPONSIVE SAFE) */
+function getTips() {
+  const f = footer.getBoundingClientRect();
+  const L = leftWand.getBoundingClientRect();
+  const R = rightWand.getBoundingClientRect();
+
+  return {
+    left: {
+      x: L.right - f.left,
+      y: L.top - f.top + L.height / 2
+    },
+    right: {
+      x: R.left - f.left,
+      y: R.top - f.top + R.height / 2
+    }
+  };
+}
+
+/* BEAM */
+function beam(x1,y1,x2,y2,color){
+  ctx.beginPath();
+  ctx.moveTo(x1,y1);
+
+  for(let i=0;i<20;i++){
+    const t=i/20;
+    ctx.lineTo(
+      x1+(x2-x1)*t+(Math.random()-0.5)*6,
+      y1+(y2-y1)*t+(Math.random()-0.5)*6
+    );
+  }
+
+  ctx.strokeStyle=color;
+  ctx.shadowBlur=25;
+  ctx.shadowColor=color;
+  ctx.lineWidth=2;
+  ctx.stroke();
+}
+
+/* MAIN CAST */
+function cast(){
+  if(!active || cooldown) return;
+  cooldown=true;
+
+  const L=spells[Math.floor(Math.random()*spells.length)];
+  const R=spells[Math.floor(Math.random()*spells.length)];
+
+  const tips=getTips();
+
+  /* DOTS */
+  leftDot.style.left=tips.left.x+"px";
+  leftDot.style.top=tips.left.y+"px";
+  rightDot.style.left=tips.right.x+"px";
+  rightDot.style.top=tips.right.y+"px";
+
+  leftDot.style.opacity=1;
+  rightDot.style.opacity=1;
+
+  /* SPELL TEXT */
+  setTimeout(()=>{
+    leftSpell.textContent=L.name;
+    rightSpell.textContent=R.name;
+
+    leftSpell.style.color=L.color;
+    rightSpell.style.color=R.color;
+
+    leftSpell.style.opacity=1;
+    rightSpell.style.opacity=1;
+  },150);
+
+  let p=0;
+
+  function animate(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    p+=0.03;
+
+    const mid=canvas.width/2;
+    const y=tips.left.y;
+
+    const lx=tips.left.x+(mid-tips.left.x)*p;
+    const rx=tips.right.x+(mid-tips.right.x)*p;
+
+    beam(tips.left.x,y,lx,y,L.color);
+    beam(tips.right.x,y,rx,y,R.color);
+
+    if(p>=1){
+      impact(tips);
+      return;
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+
+  setTimeout(()=>{
+    leftDot.style.opacity=0;
+    rightDot.style.opacity=0;
+    leftSpell.style.opacity=0;
+    rightSpell.style.opacity=0;
+    cooldown=false;
+  },1200);
+}
+
+function impact(t) {
+  const x = (t.left.x + t.right.x) / 2;
+  const y = t.left.y;
+
+  /* MAIN FLASH CORE */
+  const flash = document.createElement("div");
+  flash.className = "shockwave";
+  flash.style.left = x + "px";
+  flash.style.top = y + "px";
+
+  footer.appendChild(flash);
+
+  flash.animate([
+    { transform: "translate(-50%,-50%) scale(1)", opacity: 1 },
+    { transform: "translate(-50%,-50%) scale(40)", opacity: 0 }
+  ], {
+    duration: 600,
+    easing: "ease-out"
+  });
+
+  setTimeout(() => flash.remove(), 600);
+
+  /* 🌊 SECONDARY ENERGY RIPPLE (cinematic depth) */
+  for (let i = 0; i < 3; i++) {
+    setTimeout(() => {
+      const ripple = document.createElement("div");
+      ripple.className = "shockwave";
+      ripple.style.left = x + "px";
+      ripple.style.top = y + "px";
+      ripple.style.opacity = "0.5";
+
+      footer.appendChild(ripple);
+
+      ripple.animate([
+        { transform: "translate(-50%,-50%) scale(1)", opacity: 0.5 },
+        { transform: "translate(-50%,-50%) scale(60)", opacity: 0 }
+      ], {
+        duration: 900,
+        easing: "ease-out"
+      });
+
+      setTimeout(() => ripple.remove(), 900);
+    }, i * 120);
+  }
+}
+
+/* AUTO + CLICK CONTROL */
+footer.addEventListener("click",cast);
+
+setInterval(()=>{
+  if(active) cast();
+},2000);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="magic-trail-container"></div>
+
+<script>
+/* =========================================
+   ✨ ULTRA SMOOTH LIGHTWEIGHT MAGIC TRAIL
+========================================= */
+
+const container = document.getElementById("magic-trail-container");
+
+const colors = [
+  "#7affff",
+  "#ffe066",
+  "#9d7bff",
+  "#ffffff"
+];
+
+let mouseX = innerWidth / 2;
+let mouseY = innerHeight / 2;
+
+let lastX = mouseX;
+let lastY = mouseY;
+
+window.addEventListener("mousemove", (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+}, { passive: true });
+
+/* =========================================
+   CREATE SMALL SPARK
+========================================= */
+
+function createSpark(x, y, speed) {
+
+  const spark = document.createElement("div");
+
+  spark.className = "magic-spark";
+
+  /* SMALLER PARTICLES */
+  const size = Math.random() * 2 + 1.5;
+
+  spark.style.width = size + "px";
+  spark.style.height = size + "px";
+
+  const color =
+    colors[Math.floor(Math.random() * colors.length)];
+
+  spark.style.background = color;
+
+  spark.style.boxShadow = `
+    0 0 4px ${color},
+    0 0 8px ${color}
+  `;
+
+  spark.style.left = x + "px";
+  spark.style.top = y + "px";
+
+  container.appendChild(spark);
+
+  const angle = Math.random() * Math.PI * 2;
+
+  const distance = Math.random() * 20 + speed * 0.15;
+
+  const dx = Math.cos(angle) * distance;
+  const dy = Math.sin(angle) * distance;
+
+  spark.animate([
+    {
+      transform: "translate3d(0,0,0) scale(1)",
+      opacity: 1
+    },
+    {
+      transform: `
+        translate3d(${dx}px, ${dy}px,0)
+        scale(0)
+      `,
+      opacity: 0
+    }
+  ], {
+    duration: 500 + Math.random() * 200,
+    easing: "cubic-bezier(.22,1,.36,1)",
+    fill: "forwards"
+  });
+
+  setTimeout(() => spark.remove(), 700);
+}
+
+/* =========================================
+   PERFECTLY OPTIMIZED LOOP
+========================================= */
+
+function animate() {
+
+  const dx = mouseX - lastX;
+  const dy = mouseY - lastY;
+
+  const speed = Math.sqrt(dx * dx + dy * dy);
+
+  if (speed > 1) {
+
+    /* LOWER COUNT = NO FPS DROP */
+    const count = Math.min(3, Math.floor(speed * 0.08));
+
+    for (let i = 0; i < count; i++) {
+
+      createSpark(
+        mouseX + (Math.random() - 0.5) * 6,
+        mouseY + (Math.random() - 0.5) * 6,
+        speed
+      );
+    }
+
+    lastX += dx * 0.35;
+    lastY += dy * 0.35;
+  }
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
