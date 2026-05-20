@@ -1,9 +1,4 @@
-/* Bootstrap v4.5.3 (https://getbootstrap.com/)*/
 :root {
-  /* new colors */
-
-  /* --titleBlue: #5b7c9c;
-  --titleshade1: #b0c0d0; */
   --titleBlue: #06b6d4;
   --titleshade1: #37C4DC;
   --cardbg: #1f1f1f;
@@ -12,8 +7,6 @@
   --blackBg: #000000;
   --navFootBg: #222423;
   --scrollHover: #86a3bf;
-
-  /* **************** */
 
   --blue: #007bff;
   --indigo: #6610f2;
@@ -11239,17 +11232,14 @@ h6,
 @keyframes pulse {
   0% {
     transform: scale(1);
-    /* Original size */
   }
 
   50% {
     transform: scale(1.2);
-    /* Bigger */
   }
 
   100% {
     transform: scale(1);
-    /* Back to original size */
   }
 }
 
@@ -11258,7 +11248,6 @@ h6,
 }
 
 .title2 {
-  /* -webkit-text-stroke: 2px var(--whiteBG); */
   color: var(--titleBlue);
   font-style: italic;
 }
@@ -11316,38 +11305,27 @@ h6,
   color: var(--whiteBG);
 }
 
-/* Style the scrollbar track */
+/* Style the scrollbar */
 ::-webkit-scrollbar-track {
   background-color: var(--blackBg);
 }
 
-/* Style the scrollbar itself */
 ::-webkit-scrollbar {
   width: 8px;
-  /* Width of the scrollbar */
 }
 
-/* Style the scrollbar thumb (the draggable part) */
 ::-webkit-scrollbar-thumb {
   background-color: transparent;
-  /* Color of the thumb */
   border-radius: 6px;
-  /* Rounded corners */
-  /* border: 1px solid var(--navFootBg); Adds some padding */
 }
 
-/* Style the scrollbar thumb when it's being hovered */
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--titleBlue);
 }
 
 #home .card {
-  /* position: absolute;
-  right: 185px;
-  bottom: 58px; */
   border-radius: 20px;
   background-color: var(--cardbg);
-  /* display: none; */
 }
 
 .card-header {
@@ -11386,10 +11364,8 @@ h6,
 #home .dropdown-menu {
   background: none;
   border: none;
-  /* transform: translate3d(0px, -192px, 0px); */
   top: 0px;
   left: 0px;
-  /* will-change: transform; */
 }
 
 /* Styles for screens smaller than 786px */
@@ -11406,11 +11382,6 @@ h6,
   .btn-outline-light {
     font-size: 10px;
     margin-right: 1rem !important;
-  }
-
-  .btnCV {
-    /* padding-left: 60px; */
-    /* padding-top: 30px !important; */
   }
 
   .topStart {
@@ -11437,7 +11408,6 @@ h6,
   max-width: 400px;
 }
 
-/* Animated line */
 .contact-line {
   width: auto;
   height: 2px;
@@ -11459,7 +11429,6 @@ h6,
   backdrop-filter: blur(10px);
 }
 
-/* GRID */
 .form-grid {
   display: flex;
   gap: 20px;
@@ -11510,7 +11479,6 @@ h6,
 
 /* BUTTON */
 .btn-signature {
-  /* width: 100%; */
   margin-top: 10px;
   padding: 14px;
   border: none;
@@ -11537,12 +11505,6 @@ h6,
 .btn-signature:hover .btn-arrow {
   transform: translateX(6px);
 }
-
-
-
-
-
-
 
 /* ===== Premium Alert Overlay ===== */
 .custom-alert {
@@ -11640,12 +11602,6 @@ h6,
 }
 
 
-
-
-
-
-
-
 /* ===== WRAPPER ===== */
 .profile-wrap {
   position: relative;
@@ -11684,8 +11640,6 @@ h6,
   font-size: 14px;
   letter-spacing: 2px;
   text-anchor: middle;
-
-  /* ✨ glow effect */
   filter: drop-shadow(0 0 6px rgba(6, 182, 212, 0.6));
 }
 
@@ -11767,19 +11721,6 @@ h6,
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .btn-signature {
   position: relative;
   overflow: hidden;
@@ -11789,7 +11730,6 @@ h6,
   gap: 8px;
 }
 
-/* Loader */
 .btn-loader {
   width: 16px;
   height: 16px;
@@ -11806,7 +11746,6 @@ h6,
   }
 }
 
-/* Loading state */
 .btn-signature.loading {
   pointer-events: none;
   opacity: 0.85;
@@ -11822,69 +11761,43 @@ h6,
   display: none;
 }
 
-/* smooth text transition */
 .btn-text {
   transition: 0.2s ease;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .contact-toast {
   position: fixed;
   bottom: 20px;
   right: 20px;
-
   z-index: 99999;
-
   width: 280px;
   background: rgba(17, 24, 39, 0.88);
   backdrop-filter: blur(12px);
-
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 14px;
-
   padding: 14px 14px 12px;
   color: #e5e7eb;
-
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
-
   transform: translateY(20px);
   opacity: 0;
   visibility: hidden;
-
   transition: all 0.35s ease;
 }
 
-/* show */
 .contact-toast.show {
   transform: translateY(0);
   opacity: 1;
   visibility: visible;
 }
 
-/* close button top-right */
 .toast-close {
   position: absolute;
   top: 8px;
   right: 10px;
-
   font-size: 14px;
   color: #9ca3af;
   cursor: pointer;
-
   transition: 0.2s;
 }
 
@@ -11892,7 +11805,6 @@ h6,
   color: white;
 }
 
-/* content */
 .toast-content {
   display: flex;
   flex-direction: column;
@@ -11912,7 +11824,6 @@ h6,
   margin: 0;
 }
 
-/* button */
 .toast-actions button {
   background: linear-gradient(135deg, #3b82f6, #06b6d4);
   border: none;
@@ -11928,10 +11839,6 @@ h6,
 .toast-actions button:hover {
   transform: translateY(-1px);
 }
-
-
-
-
 
 @media (max-width: 500px) {
 
@@ -11979,30 +11886,11 @@ h6,
 
 }
 
-
-
-
-
-
-
 .global-smoke {
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 1;
-  /* 
-  background: linear-gradient(120deg,
-      #ff00cc,
-      #7b68ee,
-      #00f0ff,
-      #39ff14,
-      #ffff00,
-      #ff8c00,
-      #ff3b3b,
-      #00f0ff,
-      #ff00cc); */
-
-
   background: linear-gradient(120deg,
       rgba(255, 200, 240, 0.6),
       rgba(180, 190, 255, 0.6),
@@ -12013,15 +11901,8 @@ h6,
       rgba(255, 180, 180, 0.5),
       rgba(180, 240, 255, 0.5),
       rgba(255, 200, 240, 0.6));
-
-
-
-
-
   background-size: 600% 600%;
-
   filter: blur(150px) saturate(220%) url(#smokeFilter);
-
   opacity: 0;
   transition: opacity 1s ease;
 }
@@ -12063,29 +11944,18 @@ h6,
   left: -35%;
   width: 700px;
   height: 700px;
-
   pointer-events: none;
   z-index: 3;
-
   opacity: 0;
-
-  /* background:
-    radial-gradient(circle at 40% 50%, rgba(170, 250, 255, 0.95), transparent 60%),
-    radial-gradient(circle at 60% 50%, rgba(0, 240, 255, 0.7), transparent 70%),
-    radial-gradient(circle at 50% 60%, rgba(255, 255, 255, 0.8), transparent 80%);
-
-  filter: blur(70px) brightness(1.6); */
-
   background:
     radial-gradient(circle at 40% 50%, rgba(180, 240, 255, 0.35), transparent 65%),
     radial-gradient(circle at 60% 50%, rgba(200, 220, 255, 0.25), transparent 70%),
     radial-gradient(circle at 50% 60%, rgba(255, 255, 255, 0.3), transparent 75%);
-
   filter: blur(90px) brightness(1.1) saturate(110%);
 
 }
 
-/* 🚀 CAST EFFECT */
+/* CAST EFFECT */
 .patronus-3d.active {
   animation: patronusBlast 4.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
@@ -12094,7 +11964,6 @@ h6,
 
   0% {
     left: 10%;
-    /* starts near profile */
     transform: translateY(-50%) scale(0.4);
     opacity: 0;
   }
@@ -12121,16 +11990,12 @@ h6,
 }
 
 
-/* =========================
-   NORMAL MODE
-========================= */
+/*NORMAL MODE */
 body {
   transition: all 0.6s ease;
 }
 
-/* =========================
-   ✨ MAGIC MODE (GLOBAL)
-========================= */
+/*  MAGIC MODE (GLOBAL) */
 body.magic-active {
   font-family: 'Harry P', cursive;
   color: #facc15;
@@ -12139,7 +12004,6 @@ body.magic-active {
     0 0 18px rgba(250, 204, 21, 0.4);
 }
 
-/* Optional: make headings extra magical */
 body.magic-active h1,
 body.magic-active h2,
 body.magic-active h3 {
@@ -12148,36 +12012,22 @@ body.magic-active h3 {
     0 0 25px rgba(255, 215, 0, 0.6);
 }
 
-/* =========================
-   🟡 GOLDEN SNITCH (REALISTIC)
-========================= */
+/*  GOLDEN SNITCH (REALISTIC) */
 .snitch {
   position: fixed;
   width: 70px;
   height: 70px;
-
-  /* 🔥 CRITICAL FIX */
   transform-origin: center center;
   left: 0;
   top: 0;
-
   pointer-events: auto;
   will-change: transform;
-
-  /* ensures it NEVER visually clips outside */
   overflow: visible;
-
   opacity: 0;
-
   transition: opacity 1s ease;
-
-
 }
 
-
-/* =========================================
-   🟡 CINEMATIC HARRY POTTER GOLDEN SNITCH
-========================================= */
+/*  CINEMATIC HARRY POTTER GOLDEN SNITCH  */
 
 .snitch.visible {
   opacity: 1;
@@ -12189,27 +12039,21 @@ body.magic-active h3 {
   left: 0;
   width: 70px;
   height: 70px;
-
   z-index: 9999;
-
   opacity: 0;
   transition: opacity 1.2s ease;
   overflow: visible;
 }
 
-/* =========================================
-   🟡 GOLDEN BODY
-========================================= */
+/* GOLDEN BODY */
 
 .snitch-body {
   position: absolute;
   top: 28px;
   left: 28px;
-
   width: 14px;
   height: 14px;
   border-radius: 50%;
-
   background:
     radial-gradient(circle at 30% 30%,
       #fff7c2 0%,
@@ -12217,13 +12061,11 @@ body.magic-active h3 {
       #ffd700 38%,
       #c99700 68%,
       #7a5200 100%);
-
   box-shadow:
     0 0 10px rgba(255, 215, 0, 0.95),
     0 0 22px rgba(255, 215, 0, 0.7),
     inset -2px -2px 4px rgba(80, 40, 0, 0.6),
     inset 2px 2px 4px rgba(255, 255, 255, 0.8);
-
   animation:
     snitchPulse 1.2s infinite ease-in-out;
 }
@@ -12234,12 +12076,10 @@ body.magic-active h3 {
   position: absolute;
   inset: 2px;
   border-radius: 50%;
-
   border-top: 1px solid rgba(255, 255, 255, 0.9);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(120, 70, 0, 0.5);
   border-right: 1px solid rgba(120, 70, 0, 0.7);
-
   opacity: 0.9;
 }
 
@@ -12247,34 +12087,23 @@ body.magic-active h3 {
 .snitch-body::after {
   content: "";
   position: absolute;
-
   width: 4px;
   height: 4px;
-
   top: 3px;
   left: 3px;
-
   border-radius: 50%;
-
   background: rgba(255, 255, 255, 0.95);
-
   filter: blur(0.4px);
 }
 
-/* =========================================
-   🪽 REAL MOVIE-LIKE WINGS
-========================================= */
+/*  REAL MOVIE-LIKE WINGS */
 
 .snitch-wings {
   position: absolute;
   top: 30px;
-
   width: 40px;
   height: 8px;
-
   transform-style: preserve-3d;
-
-
   animation:
     wingFlapReal 0.045s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -12296,7 +12125,6 @@ body.magic-active h3 {
   content: "";
   position: absolute;
   inset: 0;
-
   background:
     radial-gradient(circle at 30% 30%,
       #fff7c2 0%,
@@ -12304,8 +12132,6 @@ body.magic-active h3 {
       #ffd700 38%,
       #c99700 68%,
       #7a5200 100%);
-
-
   clip-path: polygon(0% 50%,
       8% 38%,
       18% 25%,
@@ -12320,13 +12146,10 @@ body.magic-active h3 {
       32% 86%,
       18% 75%,
       8% 62%);
-
   border-radius: 50%;
-
   box-shadow:
     inset 0 -2px 3px rgba(0, 0, 0, 0.18),
     0 0 4px rgba(255, 255, 255, 0.7);
-
   opacity: 0.96;
 }
 
@@ -12335,14 +12158,12 @@ body.magic-active h3 {
   content: "";
   position: absolute;
   inset: 1px;
-
   background:
     repeating-linear-gradient(to bottom,
       rgba(255, 255, 255, 0.9) 0px,
       rgba(255, 255, 255, 0.9) 1px,
       rgba(180, 180, 180, 0.45) 2px,
       transparent 3px);
-
   clip-path: polygon(0% 50%,
       8% 38%,
       18% 25%,
@@ -12357,13 +12178,10 @@ body.magic-active h3 {
       32% 86%,
       18% 75%,
       8% 62%);
-
   opacity: 0.55;
 }
 
-/* =========================================
-   🪽 FILM STYLE FLUTTER
-========================================= */
+/* FILM STYLE FLUTTER */
 
 @keyframes wingFlapReal {
 
@@ -12383,9 +12201,7 @@ body.magic-active h3 {
   }
 }
 
-/* =========================================
-   ✨ MAGIC BODY GLOW
-========================================= */
+/*  MAGIC BODY GLOW */
 
 @keyframes snitchPulse {
 
@@ -12400,32 +12216,22 @@ body.magic-active h3 {
 }
 
 
-/* =========================================
-   ✨ MAGIC MODE POSITION
-========================================= */
+/* MAGIC MODE POSITION */
 
 body.magic-active .snitch {
-
   position: fixed;
-
   top: 0px;
   right: 20px;
-
   left: auto;
-
   z-index: 99999;
-
   transition:
     top 0.8s ease,
     right 0.8s ease,
     transform 0.8s ease;
-
-  /* floating effect */
   animation:
     snitchIdleFloat 2.5s infinite ease-in-out;
 }
 
-/* gentle hover */
 @keyframes snitchIdleFloat {
 
   0%,
@@ -12437,20 +12243,6 @@ body.magic-active .snitch {
     transform: translateY(-6px);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* hidden by default */
 .hogwardLogo {
@@ -12469,10 +12261,7 @@ body.magic-active .snitch {
 }
 
 
-
-/* =========================
-   🦉 HARRY POTTER OWL TOAST MODE
-========================= */
+/*  HARRY POTTER OWL TOAST MODE */
 
 body.magic-active .contact-toast {
   position: fixed;
@@ -12481,7 +12270,6 @@ body.magic-active .contact-toast {
   opacity: 0;
   transform: scale(0.6);
   transition: none;
-
   background: transparent;
 
   .toast-text p {
@@ -12490,8 +12278,6 @@ body.magic-active .contact-toast {
     color: gold;
     margin: 0;
   }
-
-
 }
 
 body.magic-active .hogwardLogo {
@@ -12535,14 +12321,8 @@ body.magic-active .back {
 
   p {
     display: none;
-
-
   }
-
 }
-
-
-
 
 .hogwardLogo2 {
   display: none;
@@ -12563,21 +12343,7 @@ body.magic-active .hogwardLogo2 {
   display: block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* =========================
-   ✨ MAGICAL SECTION TITLES
-========================= */
+/* MAGICAL SECTION TITLES */
 
 .magical-heading h1 {
   transition:
@@ -12589,33 +12355,25 @@ body.magic-active .hogwardLogo2 {
 
 /* magic mode glow */
 body.magic-active .magical-heading .section-front {
-
   color: #7dd3fc !important;
-
   text-shadow:
     0 0 8px rgba(125, 211, 252, .9),
     0 0 18px rgba(56, 189, 248, .7),
     0 0 45px rgba(255, 255, 255, .45);
-
   letter-spacing: 2px;
-
   animation: magicPulse 2s ease-in-out infinite;
 }
 
 /* background title */
 body.magic-active .magical-heading .section-back {
-
   color: rgba(125, 211, 252, .08);
-
   text-shadow:
     0 0 20px rgba(56, 189, 248, .2);
-
   letter-spacing: 4px;
 }
 
 /* smooth pulse */
 @keyframes magicPulse {
-
   0% {
     transform: scale(1);
   }
@@ -12629,14 +12387,7 @@ body.magic-active .magical-heading .section-back {
   }
 }
 
-
-
-
-
-
-/* =========================================
-   🏰 CENTER WATERMARK
-========================================= */
+/* CENTER WATERMARK */
 
 #qualification,
 #skill,
@@ -12650,24 +12401,16 @@ body.magic-active .magical-heading .section-back {
 .hogwarts-watermark {
   display: none;
   position: absolute;
-
   top: 50%;
   left: 10%;
-
   transform: translate(-50%, -50%);
-
   width: 200px;
   height: 200px;
-
   z-index: 0;
-
   pointer-events: none;
   user-select: none;
-
   opacity: 0.099;
-
   mix-blend-mode: screen;
-
   animation:
     watermarkFloat 10s ease-in-out infinite;
 }
@@ -12677,34 +12420,27 @@ body.magic-active .magical-heading .section-back {
   width: 100%;
   height: 100%;
   object-fit: contain;
-
   filter:
     grayscale(100%) brightness(1.4) contrast(1.1) blur(.3px);
-
   opacity: .85;
 }
 
-/* ✨ MAGIC MODE */
+/* MAGIC MODE */
 
 body.magic-active .hogwarts-watermark {
   display: block;
 }
 
-
 body.magic-active .hogwarts-watermark img {
-
   filter:
     brightness(1.8) contrast(1.2) saturate(1.2) drop-shadow(0 0 35px rgba(255, 255, 255, .12));
-
   opacity: 1;
-
   animation:
     watermarkGlow 5s ease-in-out infinite;
 }
 
 /* cinematic float */
 @keyframes watermarkFloat {
-
   0% {
     transform:
       translate(-50%, -50%) rotate(-2deg) scale(1);
@@ -12723,7 +12459,6 @@ body.magic-active .hogwarts-watermark img {
 
 /* magical breathing glow */
 @keyframes watermarkGlow {
-
   0% {
     opacity: .45;
   }
@@ -12748,31 +12483,17 @@ body.magic-active .hogwarts-watermark img {
 
 /* mobile */
 @media(max-width:768px) {
-
   .hogwarts-watermark {
     width: 180px;
     height: 180px;
-
     opacity: .025;
   }
 
 }
 
-
-
-
-
-
-
-
-
-
-/* =========================================
-   📱 MOBILE MAGIC WATERMARK POSITION FIX
-========================================= */
+/*  MOBILE MAGIC WATERMARK POSITION FIX */
 
 @media (max-width: 500px) {
-
   body.magic-active .hogwarts-watermark {
     top: 0px;
     left: 79%;
@@ -12781,20 +12502,6 @@ body.magic-active .hogwarts-watermark img {
     z-index: 0;
   }
 
-  /* 
-  body.magic-active .hufflepuff {
-    top: 103px;
-    left: 79%;
-  }
-
-  body.magic-active .slytherin {
-    top: 0px;
-    left: 79%;
-  } */
-
-
-
-  /* keep titles above watermark */
   body.magic-active .magical-heading {
     position: relative;
     z-index: 2;
@@ -12812,11 +12519,6 @@ body.magic-active .hogwarts-watermark img {
 body.magic-active .footer {
   display: none;
 }
-
-
-
-
-/* ####################################################################################################################################################### */
 
 
 .hp-footer {
@@ -12888,7 +12590,7 @@ body.magic-active .hp-footer {
   filter: drop-shadow(0 0 3px #7affff);
 }
 
-/* 🔥 LUMINOUS PULSE ANIMATION */
+/* LUMINOUS PULSE ANIMATION */
 @keyframes pulseDot {
   0% {
     transform: translate(-50%, -50%) scale(1);
@@ -12939,15 +12641,12 @@ body.magic-active .hp-footer {
   z-index: 50;
 }
 
-
-
 .wm {
   position: absolute;
   top: 50%;
   width: clamp(60px, 8vw, 120px);
   transform: translateY(-50%);
   opacity: 0.2;
-  /* watermark effect */
   pointer-events: none;
   z-index: 1;
   filter: blur(0.3px) drop-shadow(0 0 10px rgba(122, 255, 255, 0.2));
@@ -12963,12 +12662,7 @@ body.magic-active .hp-footer {
   right: 0vw;
 }
 
-
-
-
-/* =========================
-   ✨ LIGHTWEIGHT CINEMATIC MAGIC TRAIL
-========================= */
+/*  LIGHTWEIGHT CINEMATIC MAGIC TRAIL */
 
 #magic-trail-container {
   position: fixed;
@@ -12976,7 +12670,6 @@ body.magic-active .hp-footer {
   pointer-events: none;
   overflow: hidden;
   z-index: 999999;
-
   contain: strict;
   display: none;
 }
@@ -12987,35 +12680,24 @@ body.magic-active #magic-trail-container {
 
 .magic-spark {
   position: absolute;
-
   width: 4px;
   height: 4px;
-
   border-radius: 50%;
   pointer-events: none;
-
   will-change: transform, opacity;
-
   mix-blend-mode: screen;
-
   transform: translate3d(0, 0, 0);
-
   opacity: .9;
 }
 
-/* =========================================
-   HOME VIDEO BACKGROUND
-========================================= */
+/* HOME VIDEO BACKGROUND */
 
 .home-video-bg {
   position: absolute;
   inset: 0;
-
   width: 100%;
   height: 100%;
-
   object-fit: cover;
-
   z-index: 0;
   display: none;
 }
@@ -13025,16 +12707,7 @@ body.magic-active .home-video-bg {
   display: block;
 }
 
-
-/* ################################################################################################################################################################ */
-
-
-
-/* ===================================================
-   ⚡ COMPACT CINEMATIC GRID
-=================================================== */
-
-
+/* COMPACT CINEMATIC GRID*/
 
 body.magic-active .skillcontainer1 {
   display: none;
@@ -13048,104 +12721,62 @@ body.magic-active .skillcontainer2 {
   display: block;
 }
 
-
-
-
 .artifact-grid {
-
   display: grid;
-
   grid-template-columns: repeat(5, 1fr);
-
   gap: 28px;
-
   margin-top: 80px;
 }
 
-
-
 .artifact-card {
-
   position: relative;
-
   height: 300px;
   width: 100%;
-
   border-radius: 24px;
-
   background:
     transparent;
-
   border: 1px solid rgba(255, 255, 255, .05);
-
   overflow: hidden;
-
   transition: .5s ease;
-
   backdrop-filter: blur(10px);
-
   box-shadow:
     0 10px 40px rgba(0, 0, 0, .6);
-
   transform-style: preserve-3d;
 }
 
-
-
 .artifact-card:hover {
-
   transform:
     translateY(-12px) scale(1.03) rotateX(4deg) rotateY(-4deg);
-
   box-shadow:
     0 25px 60px rgba(0, 0, 0, .9),
     0 0 35px rgba(255, 215, 120, .12);
 }
 
-
-
 .artifact-img {
-
   position: absolute;
-
   width: 90px;
-
   left: 50%;
   top: 45px;
-
   transform: translateX(-50%);
-
   z-index: 3;
-
   filter:
     drop-shadow(0 0 18px rgba(255, 215, 120, .3));
-
   animation: artifactFloat 5s ease-in-out infinite;
 }
 
-
 .artifact-rune {
-
   position: absolute;
-
   width: 140px;
   height: 140px;
-
   left: 50%;
   top: 28px;
-
   transform: translateX(-50%);
-
   border-radius: 50%;
-
   border: 1px solid rgba(255, 215, 120, .1);
-
   box-shadow:
     0 0 25px rgba(255, 215, 120, .08);
-
   animation: runeRotate 18s linear infinite;
 }
-
 
 .artifact-rune::before {
   content: "✦ ✧ ✶ ✷ ✵";
@@ -13168,126 +12799,83 @@ body.magic-active .skillcontainer2 {
   }
 }
 
-
-
-
 .artifact-glow {
-
   position: absolute;
-
   width: 120px;
   height: 120px;
-
   left: 50%;
   top: 48px;
-
   transform: translateX(-50%);
-
   background:
     radial-gradient(circle,
       rgba(255, 215, 120, .22),
       transparent 70%);
-
   filter: blur(20px);
 }
 
-
-
 .artifact-content {
-
   position: absolute;
-
   bottom: 22px;
   left: 18px;
   right: 18px;
-
   text-align: center;
 }
 
 .artifact-content h3 {
-
   color: #f8e7b2;
-
   font-size: .95rem;
-
   letter-spacing: 2px;
-
   margin-bottom: 8px;
 }
 
 .artifact-content p {
-
   color: #8f98b5;
-
   font-size: .72rem;
-
   min-height: 30px;
-
   margin-bottom: 14px;
-
   letter-spacing: 1px;
 }
 
-
-
 .magic-meter {
-
   height: 7px;
-
   border-radius: 30px;
-
   overflow: hidden;
-
   background: rgba(255, 255, 255, .06);
 }
 
 .magic-fill {
-
   height: 100%;
-
   border-radius: 30px;
-
   background:
     linear-gradient(90deg,
       #ffe29f,
       #ffa751);
-
   box-shadow:
     0 0 15px #ffa751;
-
   animation: magicPulse 2s infinite;
 }
 
-
 .artifact-content span {
-
   display: block;
-
   margin-top: 12px;
-
   color: #ffd27d;
-
   font-size: .8rem;
-
   letter-spacing: 2px;
 }
 
 @media(max-width:1200px) {
-
   .artifact-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media(max-width:992px) {
-
   .artifact-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media(max-width:768px) {
-
   .artifact-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -13298,693 +12886,102 @@ body.magic-active .skillcontainer2 {
 }
 
 @media(max-width:480px) {
-
   .artifact-grid {
     grid-template-columns: 1fr;
   }
 }
 
 
-
-
-
-/* ####################################################################################################################################################### */
-
-
-
-
-
-/* ===================================================
-   ⚡ MAGIC MODE VISIBILITY
-=================================================== */
-/* 
-body.magic-active .skillcontainer1 {
-  display: none;
-}
-
-.skillcontainer2 {
-  display: none;
-}
-
-body.magic-active .skillcontainer2 {
-  display: block;
-}
-
-
-.artifact-grid {
-
-  display: grid;
-
-  grid-template-columns: repeat(5, 1fr);
-
-  gap: 28px;
-
-  margin-top: 80px;
-}
-
-
-.artifact-card {
-
-  position: relative;
-
-  height: 300px;
-  width: 100%;
-
-  border-radius: 24px;
-
-  overflow: hidden;
-
-  background:
-    linear-gradient(
-      180deg,
-      rgba(18,18,28,.92),
-      rgba(8,8,15,.96)
-    );
-
-  border: 1px solid rgba(255,255,255,.06);
-
-  transition:
-    transform .6s ease,
-    box-shadow .6s ease,
-    border-color .6s ease;
-
-  backdrop-filter: blur(10px);
-
-  box-shadow:
-    0 10px 40px rgba(0,0,0,.6);
-
-  transform-style: preserve-3d;
-
-  isolation: isolate;
-}
-
-
-
-.artifact-card::before {
-
-  content: "";
-
-  position: absolute;
-  inset: 0;
-
-  border-radius: inherit;
-
-  opacity: 0;
-
-  z-index: 0;
-
-  transition:
-    opacity .8s ease,
-    transform 1.2s ease;
-
-  background:
-    linear-gradient(
-      rgba(4,8,18,.42),
-      rgba(4,8,18,.68)
-    ),
-    url("/img/chocolatefrogcard.webp")
-    center center / cover no-repeat;
-
-  transform: scale(1.08);
-
-  filter:
-    brightness(.9)
-    contrast(1.08)
-    saturate(1.08);
-}
-
-
-.artifact-card::after {
-
-  content: "";
-
-  position: absolute;
-
-  inset: -40%;
-
-  opacity: 0;
-
-  z-index: 1;
-
-  background:
-    linear-gradient(
-      120deg,
-      transparent 20%,
-      rgba(255,225,150,.18) 50%,
-      transparent 80%
-    );
-
-  transform:
-    rotate(12deg)
-    translateX(-120%);
-
-  transition: opacity .5s ease;
-
-  pointer-events: none;
-}
-
-
-
-.artifact-card:hover {
-
-  transform:
-    translateY(-12px)
-    scale(1.03)
-    rotateX(4deg)
-    rotateY(-4deg);
-
-  border-color:
-    rgba(255,215,120,.16);
-
-  box-shadow:
-    0 25px 60px rgba(0,0,0,.92),
-    0 0 40px rgba(255,215,120,.08),
-    inset 0 0 30px rgba(255,215,120,.03);
-}
-
-.artifact-card:hover::before {
-
-  opacity: 1;
-
-  transform: scale(1);
-}
-
-.artifact-card:hover::after {
-
-  opacity: 1;
-
-  animation: shimmerSweep 3s linear infinite;
-}
-
-
-
-.artifact-img {
-
-  position: absolute;
-
-  width: 90px;
-
-  left: 50%;
-  top: 45px;
-
-  transform: translateX(-50%);
-
-  z-index: 5;
-
-  filter:
-    drop-shadow(0 0 18px rgba(255,215,120,.25));
-
-  animation:
-    artifactFloat 5s ease-in-out infinite;
-
-  transition:
-    transform 1s ease,
-    filter .8s ease,
-    opacity .6s ease;
-}
-
-
-
-.artifact-card:hover .artifact-img {
-
-  opacity: .98;
-
-  filter:
-    brightness(1.08)
-    drop-shadow(0 0 24px rgba(255,215,120,.32));
-
-  animation:
-    wizardPortrait 5s ease-in-out infinite;
-}
-
-
-.artifact-rune {
-
-  position: absolute;
-
-  width: 140px;
-  height: 140px;
-
-  left: 50%;
-  top: 28px;
-
-  transform: translateX(-50%);
-
-  border-radius: 50%;
-
-  border: 1px solid rgba(255,215,120,.1);
-
-  box-shadow:
-    0 0 25px rgba(255,215,120,.08);
-
-  z-index: 2;
-
-  animation:
-    runeRotate 18s linear infinite;
-
-  transition: opacity .5s ease;
-}
-
-.artifact-rune::before {
-
-  content: "✦ ✧ ✶ ✷ ✵";
-
-  position: absolute;
-
-  inset: 0;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  color: rgba(255,215,120,.25);
-
-  font-size: 1.5rem;
-}
-
-
-
-.artifact-glow {
-
-  position: absolute;
-
-  width: 120px;
-  height: 120px;
-
-  left: 50%;
-  top: 48px;
-
-  transform: translateX(-50%);
-
-  z-index: 1;
-
-  background:
-    radial-gradient(
-      circle,
-      rgba(255,215,120,.22),
-      transparent 70%
-    );
-
-  filter: blur(20px);
-
-  transition: opacity .5s ease;
-}
-
-
-
-.artifact-content {
-
-  position: absolute;
-
-  bottom: 22px;
-  left: 18px;
-  right: 18px;
-
-  text-align: center;
-
-  z-index: 5;
-
-  transition:
-    opacity .5s ease,
-    transform .5s ease;
-}
-
-.artifact-content h3 {
-
-  color: #f8e7b2;
-
-  font-size: .95rem;
-
-  letter-spacing: 2px;
-
-  margin-bottom: 8px;
-}
-
-.artifact-content p {
-
-  color: #8f98b5;
-
-  font-size: .72rem;
-
-  min-height: 30px;
-
-  margin-bottom: 14px;
-
-  letter-spacing: 1px;
-}
-
-
-
-.magic-meter {
-
-  height: 7px;
-
-  border-radius: 30px;
-
-  overflow: hidden;
-
-  background: rgba(255,255,255,.06);
-}
-
-.magic-fill {
-
-  height: 100%;
-
-  border-radius: 30px;
-
-  background:
-    linear-gradient(
-      90deg,
-      #ffe29f,
-      #ffa751
-    );
-
-  box-shadow:
-    0 0 15px #ffa751;
-
-  animation:
-    magicPulse 2s infinite;
-}
-
-
-
-.artifact-content span {
-
-  display: block;
-
-  margin-top: 12px;
-
-  color: #ffd27d;
-
-  font-size: .8rem;
-
-  letter-spacing: 2px;
-}
-
-
-
-.artifact-card:hover .artifact-content,
-.artifact-card:hover .artifact-rune,
-.artifact-card:hover .artifact-glow {
-
-  opacity: .08;
-}
-
-
-
-@keyframes artifactFloat {
-
-  0%,100% {
-    transform:
-      translateX(-50%)
-      translateY(0px);
-  }
-
-  50% {
-    transform:
-      translateX(-50%)
-      translateY(-8px);
-  }
-}
-
-
-
-@keyframes runeRotate {
-
-  from {
-    transform:
-      translateX(-50%)
-      rotate(0deg);
-  }
-
-  to {
-    transform:
-      translateX(-50%)
-      rotate(360deg);
-  }
-}
-
-
-@keyframes magicPulse {
-
-  0%,100% {
-    filter: brightness(1);
-  }
-
-  50% {
-    filter: brightness(1.3);
-  }
-}
-
-
-@keyframes wizardPortrait {
-
-  0% {
-    transform:
-      translateX(-50%)
-      translateY(0px)
-      rotate(-1deg)
-      scale(1.06);
-  }
-
-  20% {
-    transform:
-      translateX(-49%)
-      translateY(-2px)
-      rotate(.5deg)
-      scale(1.065);
-  }
-
-  40% {
-    transform:
-      translateX(-50%)
-      translateY(1px)
-      rotate(-.6deg)
-      scale(1.07);
-  }
-
-  60% {
-    transform:
-      translateX(-51%)
-      translateY(-1px)
-      rotate(.4deg)
-      scale(1.065);
-  }
-
-  80% {
-    transform:
-      translateX(-49.5%)
-      translateY(0px)
-      rotate(-.2deg)
-      scale(1.06);
-  }
-
-  100% {
-    transform:
-      translateX(-50%)
-      translateY(0px)
-      rotate(-1deg)
-      scale(1.06);
-  }
-}
-
-
-
-@keyframes shimmerSweep {
-
-  0% {
-    transform:
-      rotate(12deg)
-      translateX(-120%);
-  }
-
-  100% {
-    transform:
-      rotate(12deg)
-      translateX(120%);
-  }
-}
-
-
-
-@media(max-width:1200px) {
-
-  .artifact-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media(max-width:992px) {
-
-  .artifact-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media(max-width:768px) {
-
-  .artifact-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .artifact-card {
-    height: 270px;
-  }
-}
-
-@media(max-width:480px) {
-
-  .artifact-grid {
-    grid-template-columns: 1fr;
-  }
-} */
-
-
-
-/* ===================================================
-   ⚡ CARD IMAGE SWITCH SYSTEM
-=================================================== */
+/*  CARD IMAGE SWITCH SYSTEM */
 
 .hidecardimg {
-
   position: relative;
-
   width: 100%;
   height: 100%;
-
   transition: .6s ease;
-
   z-index: 2;
 }
 
 .showcardimg {
-
   position: absolute;
-
   inset: 0;
-
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   opacity: 0;
-
   transform:
     scale(.8) rotateY(-20deg);
-
   transition:
     opacity .7s ease,
     transform .9s ease;
-
   z-index: 5;
-
   pointer-events: none;
-
   overflow: hidden;
 }
 
-/* ===================================================
-   ⚡ HOVER TRANSITION
-=================================================== */
+/*  HOVER TRANSITION */
 
 .artifact-card:hover .hidecardimg {
-
   opacity: 0;
-
   transform:
     scale(.7) rotateY(25deg);
-
   filter:
     blur(8px);
 }
 
 .artifact-card:hover .showcardimg {
-
   opacity: 1;
-
   transform:
     scale(1) rotateY(0deg);
 }
 
-/* ===================================================
-   ⚡ CINEMATIC PORTRAIT
-=================================================== */
+/*  CINEMATIC PORTRAIT */
 
 .proCARDImg {
-
-  height: 220px;
-
+  height: 150px;
   object-fit: contain;
-
   z-index: 3;
-
   position: relative;
-
   filter:
     drop-shadow(0 0 25px rgba(255, 215, 120, .35));
-
   animation:
     portraitFloat 5s ease-in-out infinite,
     portraitBreath 6s ease-in-out infinite,
     portraitRotate 12s linear infinite;
 }
 
-/* ===================================================
-   ⚡ MAGICAL GLOW
-=================================================== */
-
+/*  MAGICAL GLOW*/
 .portrait-glow {
-
   position: absolute;
-
   width: 220px;
   height: 220px;
-
   border-radius: 50%;
-
   background:
     radial-gradient(circle,
       rgba(255, 215, 120, .25),
       rgba(255, 180, 80, .08),
       transparent 70%);
-
   filter: blur(30px);
-
   animation:
     glowPulse 4s ease-in-out infinite;
 }
 
-/* ===================================================
-   ⚡ GOLDEN EDGE SWEEP
-=================================================== */
-
+/*  GOLDEN EDGE SWEEP */
 .magic-edge {
-
   position: absolute;
-
   inset: 0;
-
   border-radius: 24px;
-
   overflow: hidden;
-
   pointer-events: none;
 }
 
 .magic-edge::before {
-
   content: "";
-
   position: absolute;
-
   top: -100%;
   left: -60%;
-
   width: 60%;
   height: 300%;
-
   background:
     linear-gradient(90deg,
       transparent,
@@ -13992,16 +12989,12 @@ body.magic-active .skillcontainer2 {
       rgba(255, 255, 255, .35),
       rgba(255, 215, 120, .18),
       transparent);
-
   transform: rotate(25deg);
-
   animation:
     edgeSweep 5s linear infinite;
 }
 
-/* ===================================================
-   ⚡ FLOAT
-=================================================== */
+/* FLOAT */
 
 @keyframes portraitFloat {
 
@@ -14019,9 +13012,7 @@ body.magic-active .skillcontainer2 {
   }
 }
 
-/* ===================================================
-   ⚡ BREATHING
-=================================================== */
+/*  BREATHING */
 
 @keyframes portraitBreath {
 
@@ -14037,12 +13028,9 @@ body.magic-active .skillcontainer2 {
   }
 }
 
-/* ===================================================
-   ⚡ SLOW 3D ROTATION
-=================================================== */
+/*  SLOW 3D ROTATION */
 
 @keyframes portraitRotate {
-
   0% {
 
     transform:
@@ -14062,10 +13050,7 @@ body.magic-active .skillcontainer2 {
   }
 }
 
-/* ===================================================
-   ⚡ GLOW PULSE
-=================================================== */
-
+/*  GLOW PULSE */
 @keyframes glowPulse {
 
   0%,
@@ -14082,12 +13067,8 @@ body.magic-active .skillcontainer2 {
   }
 }
 
-/* ===================================================
-   ⚡ EDGE LIGHT PASS
-=================================================== */
-
+/* EDGE LIGHT PASS */
 @keyframes edgeSweep {
-
   0% {
 
     left: -120%;
@@ -14098,3 +13079,581 @@ body.magic-active .skillcontainer2 {
     left: 220%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   MAGICAL HOVER CARD FIX
+========================================= */
+
+.artifact-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.showcardimg {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity .6s ease,
+    visibility .6s ease;
+
+  background:
+    radial-gradient(circle at center,
+      rgba(0, 255, 255, .12),
+      rgba(0, 0, 0, .92));
+
+  backdrop-filter: blur(8px);
+}
+
+.artifact-card:hover .showcardimg {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+.proCARDImg {
+  position: relative;
+  z-index: 25;
+
+  width: 90%;
+  height: 90%;
+
+  object-fit: contain;
+
+  opacity: 0;
+
+  transform:
+    scale(.6) rotate(-10deg);
+
+  transition:
+    opacity .7s ease,
+    transform .7s cubic-bezier(.22, 1, .36, 1),
+    filter .7s ease;
+
+  pointer-events: none;
+
+  filter:
+    drop-shadow(0 0 10px rgba(255, 255, 255, .8)) drop-shadow(0 0 40px rgba(0, 255, 255, .8)) brightness(1.1);
+}
+
+
+
+.artifact-card:hover .proCARDImg {
+  opacity: 1;
+
+  transform:
+    scale(1) rotate(0deg);
+}
+
+
+
+.portrait-glow {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle,
+      rgba(255, 255, 255, .15),
+      rgba(0, 255, 255, .12),
+      transparent 70%);
+
+  animation: portraitPulse 3s infinite ease-in-out;
+}
+
+@keyframes portraitPulse {
+  0% {
+    transform: scale(.9);
+    opacity: .4;
+  }
+
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(.9);
+    opacity: .4;
+  }
+}
+
+
+
+.magic-hover-particle {
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: 50;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ############################################################################################################################################## */
+
+/* =========================================================
+   ULTRA CINEMATIC MAGICAL CHARACTER SYSTEM
+   FINAL PERFECT VERSION
+========================================================= */
+
+/* 
+
+.artifact-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transform-style: preserve-3d;
+}
+
+.showcardimg {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  overflow: hidden;
+
+  transition:
+    opacity .45s ease,
+    visibility .45s ease;
+
+  background:
+    radial-gradient(circle at center,
+      rgba(255, 255, 255, .08),
+      rgba(0, 255, 255, .08),
+      rgba(0, 0, 0, .94));
+
+  backdrop-filter: blur(10px);
+}
+
+.artifact-card:hover .showcardimg {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.showcardimg::before {
+  content: "";
+
+  position: absolute;
+  inset: -40%;
+
+  background:
+    conic-gradient(from 0deg,
+      transparent,
+      rgba(255, 255, 255, .08),
+      transparent,
+      rgba(0, 255, 255, .12),
+      transparent,
+      rgba(138, 43, 226, .14),
+      transparent);
+
+  animation:
+    magicRotate 10s linear infinite;
+
+  opacity: .8;
+}
+
+@keyframes magicRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.proCARDImg {
+  position: relative;
+  z-index: 50;
+
+  width: 90%;
+  height: 90%;
+
+  object-fit: contain;
+
+  opacity: 0;
+
+  transform:
+    scale(.55) rotate(-10deg);
+
+  transition:
+    opacity .6s ease,
+    transform .8s cubic-bezier(.22, 1, .36, 1),
+    filter .6s ease;
+
+  pointer-events: none;
+
+  backface-visibility: hidden;
+
+  will-change:
+    transform,
+    opacity,
+    filter;
+}
+
+.artifact-card:hover .proCARDImg {
+  opacity: 1;
+
+  transform:
+    scale(1) rotate(0deg);
+}
+
+
+
+.magic-hover-particle {
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: 60;
+}
+
+
+.character-cinema {
+  position: fixed;
+  inset: 0;
+
+  z-index: 99999999;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  backdrop-filter: blur(4px);
+
+  animation:
+    overlayFade .8s ease;
+}
+
+@keyframes overlayFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.cinema-flash {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle,
+      rgba(255, 255, 255, .28),
+      transparent 60%);
+
+  mix-blend-mode: screen;
+
+  opacity: 0;
+
+  animation:
+    cinemaFlash 1s ease;
+}
+
+@keyframes cinemaFlash {
+  0% {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+.cinema-smoke {
+  position: absolute;
+
+  top: -10%;
+  width: 50vw;
+  height: 120vh;
+
+  opacity: 0;
+
+  filter:
+    blur(60px);
+
+  mix-blend-mode: screen;
+}
+
+.cinema-smoke.left {
+  left: -20%;
+}
+
+.cinema-smoke.right {
+  right: -20%;
+}
+
+.cinema-smoke::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle,
+      rgba(255, 255, 255, .08),
+      rgba(0, 0, 0, .95));
+
+  animation:
+    smokeFloat 6s ease-in-out infinite;
+}
+
+@keyframes smokeFloat {
+  0% {
+    transform:
+      scale(1) translateY(0px);
+  }
+
+  50% {
+    transform:
+      scale(1.2) translateY(-40px);
+  }
+
+  100% {
+    transform:
+      scale(1) translateY(0px);
+  }
+}
+
+
+.cinema-card {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 430px;
+  height: 600px;
+
+  border-radius: 30px;
+
+  overflow: hidden;
+
+  opacity: 0;
+
+  transform:
+    translate(-50%, -50%) scale(.2) rotate(-14deg);
+
+  backdrop-filter: blur(12px);
+
+  background:
+    radial-gradient(circle at top,
+      rgba(255, 255, 255, .12),
+      rgba(0, 0, 0, .94));
+
+  border:
+    1px solid rgba(255, 255, 255, .12);
+
+  animation:
+    cinemaCardEnter 1.1s cubic-bezier(.22, 1, .36, 1) forwards;
+}
+
+@keyframes cinemaCardEnter {
+
+  0% {
+    opacity: 0;
+
+    transform:
+      translate(-50%, -50%) scale(.2) rotate(-14deg);
+  }
+
+  100% {
+    opacity: 1;
+
+    transform:
+      translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+}
+
+
+.cinema-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  animation:
+    characterFloat 4s ease-in-out infinite;
+}
+
+@keyframes characterFloat {
+
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+.cinema-name {
+  position: absolute;
+
+  left: 50%;
+  bottom: 24px;
+
+  transform: translateX(-50%);
+
+  width: 100%;
+
+  text-align: center;
+
+  padding-inline: 20px;
+
+  font-size: 28px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  font-weight: 700;
+
+  text-shadow:
+    0 0 20px currentColor,
+    0 0 40px currentColor;
+}
+
+
+.ash-particle {
+  position: fixed;
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: 999999999;
+}
+
+
+
+.theme-dumbledore .cinema-card {
+  box-shadow:
+    0 0 80px rgba(0, 220, 255, .6),
+    0 0 180px rgba(255, 255, 255, .2);
+}
+
+.theme-harry .cinema-card {
+  box-shadow:
+    0 0 90px rgba(124, 252, 0, .6),
+    0 0 180px rgba(255, 215, 0, .25);
+}
+
+.theme-ron .cinema-card {
+  box-shadow:
+    0 0 90px rgba(255, 120, 0, .7),
+    0 0 180px rgba(255, 80, 0, .25);
+}
+
+.theme-hermione .cinema-card {
+  box-shadow:
+    0 0 90px rgba(192, 132, 255, .7),
+    0 0 180px rgba(255, 255, 255, .2);
+}
+
+.theme-voldemort .cinema-card {
+  box-shadow:
+    0 0 120px rgba(0, 255, 120, .8),
+    0 0 260px rgba(0, 0, 0, .98);
+}
+
+.theme-snape .cinema-card {
+  box-shadow:
+    0 0 100px rgba(138, 43, 226, .7),
+    0 0 240px rgba(0, 0, 0, .95);
+}
+
+.theme-hagrid .cinema-card {
+  box-shadow:
+    0 0 90px rgba(255, 140, 0, .6),
+    0 0 200px rgba(120, 60, 20, .4);
+}
+
+.theme-mcgonagall .cinema-card {
+  box-shadow:
+    0 0 90px rgba(0, 220, 255, .6),
+    0 0 180px rgba(255, 255, 255, .25);
+}
+
+.theme-sirius .cinema-card {
+  box-shadow:
+    0 0 90px rgba(120, 180, 255, .7),
+    0 0 220px rgba(0, 0, 0, .9);
+}
+
+.theme-ginny .cinema-card {
+  box-shadow:
+    0 0 90px rgba(255, 70, 70, .7),
+    0 0 200px rgba(255, 120, 0, .3);
+} */

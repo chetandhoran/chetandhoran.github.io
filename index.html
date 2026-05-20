@@ -2,2854 +2,2509 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Portfolio - Chetan Dhoran</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Free HTML Templates" name="keywords" />
-    <meta content="Free HTML Templates" name="description" />
+  <meta charset="utf-8" />
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+  <title>Portfolio - Chetan Dhoran</title>
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-        rel="stylesheet" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="Free HTML Templates" name="keywords" />
+  <meta content="Free HTML Templates" name="description" />
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.cdnfonts.com/css/harry-p" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
+  <link href="img/favicon.ico" rel="icon" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/harry-p" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
 
   <script>
-
-  // disable browser scroll restoration
-  if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
-  }
-
-  // always start at top
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  };
-
-  window.onload = function () {
-
-    // remove hash
-    if (window.location.hash) {
-      history.replaceState(
-        null,
-        null,
-        window.location.pathname
-      );
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
     }
-
-    // force top
-    setTimeout(() => {
+    window.onbeforeunload = function () {
       window.scrollTo(0, 0);
-    }, 0);
+    };
+    window.onload = function () {
+      if (window.location.hash) {
+        history.replaceState(
+          null,
+          null,
+          window.location.pathname
+        );
+      }
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+      }, 0);
+    };
+  </script>
 
-  };
+  <!-- Navbar Start -->
 
-</script>
-  
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg navbar-light py-3 py-lg-0 px-lg-5">
-        <a href="index.html" class="navbar-brand ml-lg-3"></a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-            <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#qualification" class="nav-item nav-link">Quality</a>
-                <a href="#skill" class="nav-item nav-link">Skill</a>
-                <a href="#portfolio" class="nav-item nav-link">Projects</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
-        </div>
-    </nav>
-    
-    
-    
-    <!-- Navbar End -->
+  <nav class="navbar fixed-top shadow-sm navbar-expand-lg navbar-light py-3 py-lg-0 px-lg-5">
+    <a href="index.html" class="navbar-brand ml-lg-3"></a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+      <div class="navbar-nav m-auto py-0">
+        <a href="#home" class="nav-item nav-link active">Home</a>
+        <a href="#qualification" class="nav-item nav-link">Quality</a>
+        <a href="#skill" class="nav-item nav-link">Skill</a>
+        <a href="#portfolio" class="nav-item nav-link">Projects</a>
+        <a href="#contact" class="nav-item nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Header Start -->
-    <div class="container-fluid d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh">
+  <!-- Navbar End -->
 
+  <!-- Header Start -->
 
-
+  <div class="container-fluid d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh">
 
     <!-- VIDEO BACKGROUND -->
     <video class="home-video-bg" autoplay muted loop playsinline>
-      <source src="videos/backvid2.mp4" type="video/mp4">
+      <source src="videos/home-bg-video.mp4" type="video/mp4">
     </video>
 
 
+    <div class="container">
+      <div class="row align-items-center  topStart">
 
-
-        <div class="container">
-            <div class="row align-items-center  topStart">
-                <!-- <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/photo.jpg" alt="" />
-                </div> -->
-
-
-
-
-
-
-
-<div class="profile-wrap">
-
-  <!-- ROTATING TEXT RING -->
-  <svg class="orbit-svg" viewBox="0 0 400 400">
-
-    <defs>
-      <path id="circlePath"
-        d="M200,200 m-150,0
+        <div class="profile-wrap">
+          <!-- ROTATING TEXT RING -->
+          <svg class="orbit-svg" viewBox="0 0 400 400">
+            <defs>
+              <path id="circlePath" d="M200,200 m-150,0
            a150,150 0 1,1 300,0
            a150,150 0 1,1 -300,0" />
-    </defs>
+            </defs>
 
-    <text>
-      <textPath href="#circlePath" startOffset="50%">
-    • BUILD • SCALE • DESIGN • CODE • CREATE • SOLVE • IMPROVE • OPTIMIZE • INNOVATE • DEBUG • DEPLOY • EVOLVE •
-     
-      </textPath>
-    </text>
+            <text>
+              <textPath href="#circlePath" startOffset="50%">
+                • BUILD • SCALE • DESIGN • CODE • CREATE • SOLVE • IMPROVE • OPTIMIZE • INNOVATE • DEBUG • DEPLOY •
+                EVOLVE •
+              </textPath>
+            </text>
+          </svg>
 
-  </svg>
-
-  <!-- PROFILE CARD -->
-  <div class="profile-card">
-    <div class="inner">
-
-      <!-- FRONT -->
-      <div class="front">
-        <img src="img/photo.jpg" alt="Profile">
-      </div>
-
-      <!-- BACK -->
-      <div class="back">
-        <p>"Casting Logic Into Magic"</p>
-        <img  class="hogwardLogo2" src="img/potter.png" >
-      </div>
-
-    </div>
-  </div>
-
-</div>
-
-                
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase  mb-2 title2">
-                        CHETAN DHORAN
-                    </h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">
-                       Front End Developer , Angular Developer , Web Developer , Web Designer ,  
-                    </div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5   btnCV">
-                        <!-- <a href="downloadpdf/CV-Chetan Dhoran.pdf" class="btn btn-outline-light mr-5">Download CV</a>
-                        <div class="d-flex justify-content-center mr-5">
-                            <div class="dropdown mr-2">
-                                <a class="btn btn-light btn-social btnctn dropdown-toggle no-arrow" id="contact-btn"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-paper-plane"></i>
-                                </a>
-                                <div class="dropdown-menu p-0 mt-2" aria-labelledby="contact-btn">
-                                    <div class="card text-white" style="width: fit-content;" id="contact-card">
-                                        <div class="card-header"><b>Contact Me</b></div>
-                                        <div class="card-body contactcard">
-                                            <div><i class="fas fa-phone"></i><span
-                                                    class="contact-text">+918888355740</span></div>
-                                            <div><i class="fas fa-at"></i><span
-                                                    class="contact-text">chetandhoran@gmail.com</span></div>
-                                            <div><i class="fas fa-map-marker-alt"></i><span class="contact-text">PCMC,
-                                                    Pune, Maharashtra</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <a class="btn btn-light btn-social mr-2" href="#contact"><i class="fas fa-paper-plane"></i></a>     
-                             <a class="btn btn-light btn-social mr-2"
-                                href="https://linkedin.com/in/chetan-dhoran-0080622b4"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-light btn-social mr-2" href="https://instagram.com/dhoranchetan"><i
-                                    class="fab fa-instagram"></i></a>
-                            <a class="btn btn-light btn-social mr-2" href="https://github.com/chetandhoran"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
+          <!-- PROFILE CARD -->
+          <div class="profile-card">
+            <div class="inner">
+              <!-- FRONT -->
+              <div class="front">
+                <img src="img/photo.jpg" alt="Profile">
+              </div>
+              <!-- BACK -->
+              <div class="back">
+                <p>"Casting Logic Into Magic"</p>
+                <img class="hogwardLogo2" src="img/potter.png">
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- Header End -->
-
-    <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
-
-
-
-
-
-      
-        <div class="container">
-            <!-- <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1  title1">
-                    Quality
-                </h1>
-                <h1 class="position-absolute text-white">
-                    Experience & Projects
-                </h1>
-            </div> -->
-
-
-
-<div class="position-relative d-flex align-items-center justify-content-center magical-heading">
-
-    <!-- BIG BACK TEXT -->
-    <h1 
-      class="display-1 title1 section-back"
-      data-normal="Quality"
-      data-magic="Wizardry">
-      Quality
-    </h1>
-
-    <!-- FRONT TITLE -->
-    <h1 
-      class="position-absolute text-white section-front"
-      data-normal="Experience & Projects"
-      data-magic="Records">
-      Experience & Projects
-    </h1>
-
-</div>
-
-
-
-
-
-
-
-            <div class="row align-items-start">
-                <div class="col-lg-6">
-                    <h3 class="mb-4">Experience</h3>
-                    <div class="border-left  pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle  position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold text-uppercase mb-1">Front End Developer</h5>
-                            <p class="mb-2">
-                                <strong>Optiex IOT Solutions</strong> <br>
-                                <small> <b>Hinjawadi,Pune</b></small> <br>
-                                <small>Feb/2024 - Present</b> </small>
-                            </p>
-                            <ul>
-                                <li>Developed responsive and dynamic web applications using <b>Angular 17</b>, ensuring
-                                    high performance and optimal user experience.</li>
-                                <li>Collaborated with backend developers and UX/UI designers to integrate APIs and
-                                    deliver seamless, visually appealing interfaces.</li>
-                                <li>Integrated third-party libraries and optimized the applications for performance,
-                                    adhering to cross-browser compatibility standards.</li>
-                                <li>Developed and maintained comprehensive documentation for the application
-                                    architecture, functionality, and deployment processes.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-5">
-                        <h3 class="mb-4">Education</h3>
-                        <div class="border-left  pt-2 pl-4 ml-2">
-                            <div class="position-relative mb-4">
-                                <i class="far fa-dot-circle  position-absolute" style="top: 2px; left: -32px"></i>
-                                <h5 class="font-weight-bold mb-1">SGBAU, AMRAVATI UNIVERSITY (MAHARASHTRA)</h5>
-                                <p class="mb-2">
-                                    <strong>Bachelor
-                                        of Engineering in Electronics and Telecommunication</strong> <br>
-                                    <small>2014 <b>(CGPA: 6.91)</b> </small>
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4">Projects</h3>
-                    <div class="border-left  pt-2 pl-4 ml-2">
-
-
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle  position-absolute" style="top: 2px; left: -32px"></i>
-                            <h5 class="font-weight-bold mb-1"> SAFETY MANAGEMENT SYSTEM</h5>
-                            <p class="mb-2">
-                                <strong>ANGULAR</strong>
-                            </p>
-                            <p> Developed a web application using Angular-17 to notify safety issues within the company campus and track the resolution
-                                process until completion. The app also includes a user data master list, authenticated access,
-                                 real-time notifications, and an auto-scheduler.
-                           
-                            <ul>
-                                <li>Setting up the project with a maintainable folder structure.</li>
-                                <li>Use of components, services,CRUD operations and reactive forms.</li>    
-                                <li>Integration of libraries and authentication guards.</li>
-                                <li>Real-time notifications and an auto-scheduler for task management.</li>                  
-                            </ul>
-                        </p>
-                        </div>
-
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle  position-absolute" style="top: 2px; left: -32px"></i>
-                            <h5 class="font-weight-bold mb-1">EDUCATIONAL INSTITUTE DEMO WEBSITE</h5>
-                            <p class="mb-2">
-                                <strong>PYTHON | DJANGO</strong>
-                            </p>
-                           
-                            <ul>
-                                <li>Developed website using Python-Django, including a secure "Feedback System" accessible
-                                    exclusively to authenticated users, and structured the project with a virtual environment
-                                    and application deployment.</li>
-                                <li>Designed a user-friendly interface, while managing data efficiently with Django views, 
-                                    implementing input validation, streamlined data submission, and secure download links.</li>                      
-                            </ul>
-                         
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle  position-absolute" style="top: 2px; left: -32px"></i>
-                            <h5 class="font-weight-bold mb-1">ARCHITECTURE FIRM DEMO WEBSITE
-                                TEMPLATE</h5>
-                            <p class="mb-2">
-                                <strong>HTML | CSS | JAVASCRIPT</strong>
-                            </p>
-                            <p>
-                                Design a responsive website template with all the required components.
-                            </p>
-                        </div>
-                        <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle  position-absolute" style="top: 2px; left: -32px"></i>
-
-                            <p class="mb-2">
-                                <strong>
-                                    Projects are available on my Github account. <br>
-                                    Watch the videos below to get an overview of my work.</strong>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-<div class="hogwarts-watermark gryffindor">
-  <img src="img/Gryffindor.png" alt="">
-</div>
-
-
-    </div>
-    <!-- Qualification End -->
-
-    <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
-        <div class="container skillcontainer1">
-            <!-- <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1  title1">
-                    Skills
-                </h1>
-                <h1 class="position-absolute text-white">
-                    My Skills
-                </h1>
-            </div> -->
-
-
-
-<!-- =========================
-     ✨ SKILLS SECTION
-========================= -->
-
-<div class="position-relative d-flex align-items-center justify-content-center magical-heading">
-
-    <!-- BACK -->
-    <h1 
-      class="display-1 title1 section-back"
-      data-normal="Skills"
-      data-magic="Spells">
-      Skills
-    </h1>
-
-    <!-- FRONT -->
-    <h1 
-      class="position-absolute text-white section-front"
-      data-normal="My Skills"
-      data-magic="Spell Arsenal">
-      My Skills
-    </h1>
-
-</div>
-
-
-
-
-
-
-
-
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">ANGULAR</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">HTML</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar " role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">BOOTSTRAP</h6>
-                            <h6 class="font-weight-bold">85%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">PYTHON</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">GIT AND GITHUB</h6>
-                            <h6 class="font-weight-bold">70%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">JAVASCRIPT</h6>
-                            <h6 class="font-weight-bold">75%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar " role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">CSS</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">JQUERY</h6>
-                            <h6 class="font-weight-bold">70%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar " role="progressbar" aria-valuenow="70" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">DJANGO</h6>
-                            <h6 class="font-weight-bold">75%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar " role="progressbar" aria-valuenow="75" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">SQL</h6>
-                            <h6 class="font-weight-bold">80%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-  <div class="container skillcontainer2">
-
-    <div class="position-relative d-flex align-items-center justify-content-center magical-heading">
-
-    <!-- BACK -->
-    <h1 
-      class="display-1 title1 section-back"
-      data-normal="Skills"
-      data-magic="Spells">
-      Skills
-    </h1>
-
-    <!-- FRONT -->
-    <h1 
-      class="position-absolute text-white section-front"
-      data-normal="My Skills"
-      data-magic="Spell Arsenal">
-      My Skills
-    </h1>
-
-</div>
-    <!-- ===================================================
-         ⚡ ARTIFACT GRID
-    ==================================================== -->
-
-    <div class="artifact-grid">
-
-      <!-- ANGULAR -->
-      <!-- <div class="artifact-card angular">
-          <div class="magic-edge"></div>
-        <div class="artifact-rune"></div>
-        <div class="artifact-glow"></div>
-
-        <img src="img/diaryhoc.png" class="artifact-img">
-
-        <div class="artifact-content">
-          <h3>ANGULAR</h3>
-          <p>Architect of Magical Interfaces</p>
-
-          <div class="magic-meter">
-            <div class="magic-fill" style="width:80%"></div>
           </div>
 
-          <span>80%</span>
         </div>
-      </div> -->
 
-<div class="artifact-card angular">
-  <!-- NORMAL CARD -->
-  <div class="hidecardimg">
-    <div class="magic-edge"></div>
-    <div class="artifact-rune"></div>
-    <div class="artifact-glow"></div>
-    <img src="img/diaryhoc.png" class="artifact-img">
-    <div class="artifact-content">
-      <h3>ANGULAR</h3>
-      <p>Architect of Magical Interfaces</p>
-      <div class="magic-meter">
-        <div class="magic-fill" style="width:80%"></div>
+
+        <div class="col-lg-7 text-center text-lg-left">
+          <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+          <h1 class="display-3 text-uppercase  mb-2 title2">
+            CHETAN DHORAN
+          </h1>
+          <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+          <div class="typed-text d-none">
+            Front End Developer , Angular Developer , Web Developer , Web Designer ,
+          </div>
+          <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5 btnCV">
+            <a class="btn btn-light btn-social mr-2" href="#contact"><i class="fas fa-paper-plane"></i></a>
+            <a class="btn btn-light btn-social mr-2" href="https://linkedin.com/in/chetan-dhoran-0080622b4"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-light btn-social mr-2" href="https://instagram.com/dhoranchetan"><i
+                class="fab fa-instagram"></i></a>
+            <a class="btn btn-light btn-social mr-2" href="https://github.com/chetandhoran"><i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
       </div>
-      <span>80%</span>
     </div>
   </div>
-
-  <!-- HOVER MAGICAL PORTRAIT -->
-  <div class="showcardimg">
-
-    <div class="portrait-glow"></div>
-
-    <img
-      src="img/hp-1-removebg-preview.png"
-      class="proCARDImg"
-    >
-
   </div>
 
-</div>
-
-
-
-      <!-- HTML -->
-      <div class="artifact-card html">
-         <div class="hidecardimg">
-        <div class="artifact-rune"></div>
-        <div class="artifact-glow"></div>
-
-        <img src="img/ringhoc.png" class="artifact-img">
-
-        <div class="artifact-content">
-          <h3>HTML</h3>
-          <p>Ancient Structure Spellbook</p>
-
-          <div class="magic-meter">
-            <div class="magic-fill" style="width:85%"></div>
-          </div>
-
-          <span>85%</span>
-        </div>
-
-         </div>
-
-  <!-- HOVER MAGICAL PORTRAIT -->
-  <div class="showcardimg">
-
-    <div class="portrait-glow"></div>
-
-    <img
-      src="img/hp-2-removebg-preview.png"
-      class="proCARDImg"
-    >
-
-  </div>
-
-      </div>
-
-      <!-- BOOTSTRAP -->
-      <div class="artifact-card bootstrap">
-         <div class="hidecardimg">
-        <div class="artifact-rune"></div>
-        <div class="artifact-glow"></div>
-
-        <img src="img/lockethoc.png" class="artifact-img">
-
-        <div class="artifact-content">
-          <h3>BOOTSTRAP</h3>
-          <p>Rapid Layout Enchantment</p>
-
-          <div class="magic-meter">
-            <div class="magic-fill" style="width:85%"></div>
-          </div>
-
-          <span>85%</span>
-        </div>
-
-         </div>
-
-  <!-- HOVER MAGICAL PORTRAIT -->
-  <div class="showcardimg">
-
-    <div class="portrait-glow"></div>
-
-    <img
-      src="img/hp-3-removebg-preview.png"
-      class="proCARDImg"
-    >
-
-  </div>
-
-      </div>
-
-      <!-- PYTHON -->
-      <div class="artifact-card python">
-        <div class="hidecardimg">
-        <div class="artifact-rune"></div>
-        <div class="artifact-glow"></div>
-
-        <img src="img/cuohoc.png" class="artifact-img">
-
-        <div class="artifact-content">
-          <h3>PYTHON</h3>
-          <p>Alchemy & Logic</p>
-
-          <div class="magic-meter">
-            <div class="magic-fill" style="width:80%"></div>
-          </div>
-
-          <span>80%</span>
-        </div>
-
-
-</div>
-
-  <!-- HOVER MAGICAL PORTRAIT -->
-  <div class="showcardimg">
-
-    <div class="portrait-glow"></div>
-
-    <img
-      src="img/hp-4-removebg-preview.png"
-      class="proCARDImg"
-    >
-
-  </div>
-
-
-      </div>
-
-      <!-- GIT -->
-      <div class="artifact-card git">
-        <div class="hidecardimg">
-        <div class="artifact-rune"></div>
-        <div class="artifact-glow"></div>
-
-        <img src="img/crownhoc.png" class="artifact-img">
-
-        <div class="artifact-content">
-          <h3>GIT & GITHUB</h3>
-          <p>Version Control Relic</p>
-
-          <div class="magic-meter">
-            <div class="magic-fill" style="width:70%"></div>
-          </div>
-
-          <span>70%</span>
-        </div>
-
-
-</div>
-
-  <!-- HOVER MAGICAL PORTRAIT -->
-  <div class="showcardimg">
-
-    <div class="portrait-glow"></div>
-
-    <img
-      src="img/hp-5-removebg-preview.png"
-      class="proCARDImg"
-    >
-
-  </div>
-
-
-
-
-
-      </div>
-
-      <!-- JAVASCRIPT -->
-      <div class="artifact-card js">
-        <div class="hidecardimg">
-        <div class="artifact-rune"></div>
-        <div class="artifact-glow"></div>
-
-        <img src="img/naginihoc.png" class="artifact-img">
-
-        <div class="artifact-content">
-          <h3>JAVASCRIPT</h3>
-          <p>Chaos Magic</p>
-
-          <div class="magic-meter">
-            <div class="magic-fill" style="width:75%"></div>
-          </div>
-
-          <span>75%</span>
-        </div>
-
-
-
-</div>
-
-  <!-- HOVER MAGICAL PORTRAIT -->
-  <div class="showcardimg">
-
-    <div class="portrait-glow"></div>
-
-    <img
-      src="img/hp-6-removebg-preview.png"
-      class="proCARDImg"
-    >
-
-  </div>
-
-
-
-
-      </div>
-
-      <!-- CSS -->
-      <div class="artifact-card css">
-        <div class="hidecardimg">
-        <div class="artifact-rune"></div>
-        <div class="artifact-glow"></div>
-
-        <img src="img/phoenix.png" class="artifact-img">
-
-        <div class="artifact-content">
-          <h3>CSS</h3>
-          <p>Visual Illusion Mastery</p>
-
-          <div class="magic-meter">
-            <div class="magic-fill" style="width:80%"></div>
-          </div>
-
-          <span>80%</span>
-        </div>
-
-
-
-</div>
-
-  <!-- HOVER MAGICAL PORTRAIT -->
-  <div class="showcardimg">
-
-    <div class="portrait-glow"></div>
-
-    <img
-      src="img/hp-7-removebg-preview.png"
-      class="proCARDImg"
-    >
-
-  </div>
-
-
-      </div>
-
-      <!-- JQUERY -->
-      <div class="artifact-card jquery">
-        <div class="hidecardimg">
-        <div class="artifact-rune"></div>
-        <div class="artifact-glow"></div>
-
-        <img src="img/sorcstone.png" class="artifact-img">
-
-        <div class="artifact-content">
-          <h3>JQUERY</h3>
-          <p>Quick Charm Manipulation</p>
-
-          <div class="magic-meter">
-            <div class="magic-fill" style="width:70%"></div>
-          </div>
-
-          <span>70%</span>
-        </div>
-
-</div>
-
-  <!-- HOVER MAGICAL PORTRAIT -->
-  <div class="showcardimg">
-
-    <div class="portrait-glow"></div>
-
-    <img
-      src="img/hp-8-removebg-preview.png"
-      class="proCARDImg"
-    >
-
-  </div>
-
-
-
-
-      </div>
-
-      <!-- DJANGO -->
-      <div class="artifact-card django">
-        <div class="hidecardimg">
-        <div class="artifact-rune"></div>
-        <div class="artifact-glow"></div>
-
-        <img src="img/deluminatorhoc.png" class="artifact-img">
-
-        <div class="artifact-content">
-          <h3>DJANGO</h3>
-          <p>Dark Backend Sorcery</p>
-
-          <div class="magic-meter">
-            <div class="magic-fill" style="width:75%"></div>
-          </div>
-
-          <span>75%</span>
-        </div>
-
-
-</div>
-
-  <!-- HOVER MAGICAL PORTRAIT -->
-  <div class="showcardimg">
-
-    <div class="portrait-glow"></div>
-
-    <img
-      src="img/hp-11-removebg-preview.png"
-      class="proCARDImg"
-    >
-
-  </div>
-
-
-
-
-      </div>
-
-      <!-- SQL -->
-      <div class="artifact-card sql">
-        <div class="hidecardimg">
-        <div class="artifact-rune"></div>
-        <div class="artifact-glow"></div>
-
-        <img src="img/potion.png" class="artifact-img">
-
-        <div class="artifact-content">
-          <h3>SQL</h3>
-          <p>Ancient Knowledge Vault</p>
-
-          <div class="magic-meter">
-            <div class="magic-fill" style="width:80%"></div>
-          </div>
-
-          <span>80%</span>
-        </div>
-
-
-</div>
-
-  <!-- HOVER MAGICAL PORTRAIT -->
-  <div class="showcardimg">
-
-    <div class="portrait-glow"></div>
-
-    <img
-      src="img/hp-10-removebg-preview.png"
-      class="proCARDImg"
-    >
-
-  </div>
-
-
-      </div>
-
-    </div>
-  </div>
-
-
-<div class="hogwarts-watermark ravenclaw">
-  <img src="img/ravenclaw.png" alt="">
-</div>
-
-
-    </div>
-    <!-- Skill End -->
-
-    <!-- Project Overview Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
-        <div class="container">
-            <!-- <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1  title1">
-                    Overview
-                </h1>
-                <h1 class="position-absolute  text-white">
-                    Projects
-                </h1>
-            </div> -->
-
-
-
-<!-- =========================
-     ✨ PROJECTS SECTION
-========================= -->
-
-<div class="position-relative d-flex align-items-center justify-content-center magical-heading">
-
-    <!-- BACK -->
-    <h1 
-      class="display-1 title1 section-back"
-      data-normal="Overview"
-      data-magic="Prophecy">
-      Overview
-    </h1>
-
-    <!-- FRONT -->
-    <h1 
-      class="position-absolute text-white section-front"
-      data-normal="Projects"
-      data-magic="Horcrux Archive">
-      Projects
-    </h1>
-
-</div>
-
-
-
-
-
-
-            <div class="container text-center py-5">
-                <figure>
-                    <figcaption>
-                        <h4>1.Educational Institute Demo Website</h4>
-                    </figcaption>
-                    <video width="700" height="500" controls>
-                        <source src="videos/eduweb.mp4" type="video/mp4">
-                    </video>
-                </figure>
-                <br><br><br>
-                <figure>
-                    <figcaption>
-                        <h4>2.Architecture Firm Demo Website Template</h4>
-                    </figcaption>
-                    <video width="700" height="500" controls>
-                        <source src="videos/archweb.mp4" type="video/mp4">
-                    </video>
-                    <figure>
-            </div>
-        </div>
-    
-    
-    <div class="hogwarts-watermark slytherin">
-  <img src="img/slytherin.png" alt="">
-</div>
-
-    
-    
-      </div>
-
-
-
-
-
-    </div>
-    <!-- Project Overview  End -->
-
-
-
-
-
-<!-- 
-    <form id="contactForm">
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <input type="text" name="phone" placeholder="Your Phone" required />
-  <textarea name="message" placeholder="Your Message"></textarea>
-  <button type="submit">Send</button>
-</form> -->
-
-
-
-
-
-
-
-
-
-<!-- Contact Start -->
-<div class="container-fluid py-5" id="contact">
-  <div class="container">
-
-
-      <!-- Title -->
-    <!-- <div class="position-relative d-flex align-items-center justify-content-center mb-5">
-      <h1 class="display-1 title1">Contact</h1>
-      <h1 class="position-absolute text-white">Get In Touch</h1>
-    </div> -->
-
-
-
-
-<!-- =========================
-     ✨ CONTACT SECTION
-========================= -->
-
-<div class="position-relative d-flex align-items-center justify-content-center mb-5 magical-heading">
-
-    <!-- BACK -->
-    <h1 
-      class="display-1 title1 section-back"
-      data-normal="Contact"
-      data-magic="Owlery">
-      Contact
-    </h1>
-
-    <!-- FRONT -->
-    <h1 
-      class="position-absolute text-white section-front"
-      data-normal="Get In Touch"
-      data-magic="Owl Post">
-      Get In Touch
-    </h1>
-
-</div>
-
-
-
-
-
-    <div class="row align-items-center">
-
-      <!-- LEFT SIDE (Branding / Message) -->
-      <div class="col-lg-5 mb-5 mb-lg-0">
-
-        <h1 class="contact-heading">
-          Let’s build something
-          <span>meaningful.</span>
+  <!-- Header End -->
+
+  <!-- Qualification Start -->
+  <div class="container-fluid py-5" id="qualification">
+
+    <div class="container">
+      <div class="position-relative d-flex align-items-center justify-content-center magical-heading">
+        <!-- BIG BACK TEXT -->
+        <h1 class="display-1 title1 section-back" data-normal="Quality" data-magic="Wizardry">
+          Quality
         </h1>
-
-        <p class="contact-subtext">
-          Feel free to reach out for projects, collaboration, or just a friendly hello 👋
-        </p>
-
-        <div class="contact-line"></div>
-
+        <!-- FRONT TITLE -->
+        <h1 class="position-absolute text-white section-front" data-normal="Experience & Projects" data-magic="Records">
+          Experience & Projects
+        </h1>
       </div>
 
-      <!-- RIGHT SIDE (Form) -->
-      <div class="col-lg-7">
 
-        <div class="contact-form-wrapper">
+      <div class="row align-items-start">
+        <div class="col-lg-6">
+          <h3 class="mb-4">Experience</h3>
+          <div class="border-left  pt-2 pl-4 ml-2">
+            <div class="position-relative mb-4">
+              <i class="far fa-dot-circle  position-absolute" style="top: 2px; left: -32px;"></i>
+              <h5 class="font-weight-bold text-uppercase mb-1">Front End Developer</h5>
+              <p class="mb-2">
+                <strong>Optiex IOT Solutions</strong> <br>
+                <small> <b>Hinjawadi,Pune</b></small> <br>
+                <small>Feb/2024 - Present</b> </small>
+              </p>
+              <ul>
+                <li>Developed responsive and dynamic web applications using <b>Angular 17</b>, ensuring
+                  high performance and optimal user experience.</li>
+                <li>Collaborated with backend developers and UX/UI designers to integrate APIs and
+                  deliver seamless, visually appealing interfaces.</li>
+                <li>Integrated third-party libraries and optimized the applications for performance,
+                  adhering to cross-browser compatibility standards.</li>
+                <li>Developed and maintained comprehensive documentation for the application
+                  architecture, functionality, and deployment processes.</li>
+              </ul>
+            </div>
+          </div>
 
-          <form id="contactForm" novalidate>
+          <div class="mt-5">
+            <h3 class="mb-4">Education</h3>
+            <div class="border-left  pt-2 pl-4 ml-2">
+              <div class="position-relative mb-4">
+                <i class="far fa-dot-circle  position-absolute" style="top: 2px; left: -32px"></i>
+                <h5 class="font-weight-bold mb-1">SGBAU, AMRAVATI UNIVERSITY (MAHARASHTRA)</h5>
+                <p class="mb-2">
+                  <strong>Bachelor
+                    of Engineering in Electronics and Telecommunication</strong> <br>
+                  <small>2014 <b>(CGPA: 6.91)</b> </small>
+                </p>
 
-            <div class="form-grid">
-
-              <div class="input-group-modern">
-                <input type="text" id="name" name="name" required placeholder=" ">
-                <label for="name">Full Name</label>
               </div>
+            </div>
+          </div>
+        </div>
 
-              <div class="input-group-modern">
-                <input type="email" id="email" name="email" required placeholder=" ">
-                <label for="email">Email Address</label>
+        <div class="col-lg-6">
+          <h3 class="mb-4">Projects</h3>
+          <div class="border-left  pt-2 pl-4 ml-2">
+
+            <div class="position-relative mb-4">
+              <i class="far fa-dot-circle  position-absolute" style="top: 2px; left: -32px"></i>
+              <h5 class="font-weight-bold mb-1"> SAFETY MANAGEMENT SYSTEM</h5>
+              <p class="mb-2">
+                <strong>ANGULAR</strong>
+              </p>
+              <p> Developed a web application using Angular-17 to notify safety issues within the company campus and
+                track the resolution
+                process until completion. The app also includes a user data master list, authenticated access,
+                real-time notifications, and an auto-scheduler.
+              <ul>
+                <li>Setting up the project with a maintainable folder structure.</li>
+                <li>Use of components, services,CRUD operations and reactive forms.</li>
+                <li>Integration of libraries and authentication guards.</li>
+                <li>Real-time notifications and an auto-scheduler for task management.</li>
+              </ul>
+              </p>
+            </div>
+
+            <div class="position-relative mb-4">
+              <i class="far fa-dot-circle  position-absolute" style="top: 2px; left: -32px"></i>
+              <h5 class="font-weight-bold mb-1">EDUCATIONAL INSTITUTE DEMO WEBSITE</h5>
+              <p class="mb-2">
+                <strong>PYTHON | DJANGO</strong>
+              </p>
+              <ul>
+                <li>Developed website using Python-Django, including a secure "Feedback System" accessible
+                  exclusively to authenticated users, and structured the project with a virtual environment
+                  and application deployment.</li>
+                <li>Designed a user-friendly interface, while managing data efficiently with Django views,
+                  implementing input validation, streamlined data submission, and secure download links.</li>
+              </ul>
+
+            </div>
+
+            <div class="position-relative mb-4">
+              <i class="far fa-dot-circle  position-absolute" style="top: 2px; left: -32px"></i>
+              <h5 class="font-weight-bold mb-1">ARCHITECTURE FIRM DEMO WEBSITE
+                TEMPLATE</h5>
+              <p class="mb-2">
+                <strong>HTML | CSS | JAVASCRIPT</strong>
+              </p>
+              <p>
+                Design a responsive website template with all the required components.
+              </p>
+            </div>
+
+            <div class="position-relative mb-4">
+              <i class="far fa-dot-circle  position-absolute" style="top: 2px; left: -32px"></i>
+              <p class="mb-2">
+                <strong>
+                  Projects are available on my Github account. <br>
+                  Watch the videos below to get an overview of my work.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hogwarts-watermark gryffindor">
+      <img src="img/Gryffindor.png" alt="">
+    </div>
+
+  </div>
+
+  <!-- Qualification End -->
+
+  <!-- Skill Start -->
+  <div class="container-fluid py-5" id="skill">
+    <div class="container skillcontainer1">
+
+      <div class="position-relative d-flex align-items-center justify-content-center magical-heading">
+        <!-- BACK -->
+        <h1 class="display-1 title1 section-back" data-normal="Skills" data-magic="Spells">
+          Skills
+        </h1>
+        <!-- FRONT -->
+        <h1 class="position-absolute text-white section-front" data-normal="My Skills" data-magic="Spell Arsenal">
+          My Skills
+        </h1>
+      </div>
+
+
+      <div class="row align-items-center">
+        <div class="col-md-6">
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between">
+              <h6 class="font-weight-bold">ANGULAR</h6>
+              <h6 class="font-weight-bold">80%</h6>
+            </div>
+            <div class="progress">
+              <div class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
               </div>
-
             </div>
+          </div>
 
-            <div class="input-group-modern">
-              <input type="text" id="phone" name="phone" placeholder=" ">
-              <label for="phone">Contact Number (Optional)</label>
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between">
+              <h6 class="font-weight-bold">HTML</h6>
+              <h6 class="font-weight-bold">85%</h6>
             </div>
-
-            <div class="input-group-modern">
-              <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
-              <label for="message">Your Message</label>
+            <div class="progress">
+              <div class="progress-bar " role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              </div>
             </div>
+          </div>
 
-            <div class="d-flex justify-content-center">
-             <button type="submit" class="btn-signature">
-              <span>Send Message</span>
-              <div class="btn-arrow">→</div>
-            </button>
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between">
+              <h6 class="font-weight-bold">BOOTSTRAP</h6>
+              <h6 class="font-weight-bold">85%</h6>
             </div>
-         
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
 
-          </form>
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between">
+              <h6 class="font-weight-bold">PYTHON</h6>
+              <h6 class="font-weight-bold">80%</h6>
+            </div>
+            <div class="progress">
+              <div class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between">
+              <h6 class="font-weight-bold">GIT AND GITHUB</h6>
+              <h6 class="font-weight-bold">70%</h6>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between">
+              <h6 class="font-weight-bold">JAVASCRIPT</h6>
+              <h6 class="font-weight-bold">75%</h6>
+            </div>
+            <div class="progress">
+              <div class="progress-bar " role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between">
+              <h6 class="font-weight-bold">CSS</h6>
+              <h6 class="font-weight-bold">80%</h6>
+            </div>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between">
+              <h6 class="font-weight-bold">JQUERY</h6>
+              <h6 class="font-weight-bold">70%</h6>
+            </div>
+            <div class="progress">
+              <div class="progress-bar " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between">
+              <h6 class="font-weight-bold">DJANGO</h6>
+              <h6 class="font-weight-bold">75%</h6>
+            </div>
+            <div class="progress">
+              <div class="progress-bar " role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="skill mb-4">
+            <div class="d-flex justify-content-between">
+              <h6 class="font-weight-bold">SQL</h6>
+              <h6 class="font-weight-bold">80%</h6>
+            </div>
+            <div class="progress">
+              <div class="progress-bar " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container skillcontainer2">
+      <div class="position-relative d-flex align-items-center justify-content-center magical-heading">
+        <!-- BACK -->
+        <h1 class="display-1 title1 section-back" data-normal="Skills" data-magic="Spells">
+          Skills
+        </h1>
+        <!-- FRONT -->
+        <h1 class="position-absolute text-white section-front" data-normal="My Skills" data-magic="Spell Arsenal">
+          My Skills
+        </h1>
+      </div>
+
+      <!--  ARTIFACT GRID-->
+
+      <div class="artifact-grid">
+
+        <div class="artifact-card angular">
+          <!-- NORMAL CARD -->
+          <div class="hidecardimg">
+            <div class="magic-edge"></div>
+            <div class="artifact-rune"></div>
+            <div class="artifact-glow"></div>
+            <img src="img/diaryhoc.png" class="artifact-img">
+            <div class="artifact-content">
+              <h3>ANGULAR</h3>
+              <p>Architect of Magical Interfaces</p>
+              <div class="magic-meter">
+                <div class="magic-fill" style="width:80%"></div>
+              </div>
+              <span>80%</span>
+            </div>
+          </div>
+          <!-- HOVER MAGICAL PORTRAIT -->
+          <div class="showcardimg">
+            <div class="portrait-glow"></div>
+            <img src="img/hp-1.png" class="proCARDImg">
+          </div>
+        </div>
+
+        <!-- JAVASCRIPT -->
+        <div class="artifact-card js">
+          <div class="hidecardimg">
+            <div class="artifact-rune"></div>
+            <div class="artifact-glow"></div>
+            <img src="img/cuohoc.png " class="artifact-img">
+            <div class="artifact-content">
+              <h3>JAVASCRIPT</h3>
+              <p>Chaos Magic</p>
+              <div class="magic-meter">
+                <div class="magic-fill" style="width:75%"></div>
+              </div>
+              <span>75%</span>
+            </div>
+          </div>
+          <!-- HOVER MAGICAL PORTRAIT -->
+          <div class="showcardimg">
+            <div class="portrait-glow"></div>
+            <img src="img/hp-2.png" class="proCARDImg">
+          </div>
+        </div>
+
+        <!-- HTML -->
+        <div class="artifact-card html">
+          <div class="hidecardimg">
+            <div class="artifact-rune"></div>
+            <div class="artifact-glow"></div>
+            <img src="img/ringhoc.png" class="artifact-img">
+            <div class="artifact-content">
+              <h3>HTML</h3>
+              <p>Ancient Structure Spellbook</p>
+              <div class="magic-meter">
+                <div class="magic-fill" style="width:85%"></div>
+              </div>
+              <span>85%</span>
+            </div>
+          </div>
+          <!-- HOVER MAGICAL PORTRAIT -->
+          <div class="showcardimg">
+            <div class="portrait-glow"></div>
+            <img src="img/hp-3.png" class="proCARDImg">
+          </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="artifact-card css">
+          <div class="hidecardimg">
+            <div class="artifact-rune"></div>
+            <div class="artifact-glow"></div>
+            <img src="img/lockethoc.png" class="artifact-img">
+            <div class="artifact-content">
+              <h3>CSS</h3>
+              <p>Visual Illusion Mastery</p>
+              <div class="magic-meter">
+                <div class="magic-fill" style="width:80%"></div>
+              </div>
+              <span>80%</span>
+            </div>
+          </div>
+          <!-- HOVER MAGICAL PORTRAIT -->
+          <div class="showcardimg">
+            <div class="portrait-glow"></div>
+            <img src="img/hp-4.png" class="proCARDImg">
+          </div>
+        </div>
+
+        <!-- PYTHON -->
+        <div class="artifact-card python">
+          <div class="hidecardimg">
+            <div class="artifact-rune"></div>
+            <div class="artifact-glow"></div>
+            <img src="img/naginihoc.png" class="artifact-img">
+            <div class="artifact-content">
+              <h3>PYTHON</h3>
+              <p>Alchemy & Logic</p>
+              <div class="magic-meter">
+                <div class="magic-fill" style="width:80%"></div>
+              </div>
+              <span>80%</span>
+            </div>
+          </div>
+          <!-- HOVER MAGICAL PORTRAIT -->
+          <div class="showcardimg">
+            <div class="portrait-glow"></div>
+            <img src="img/hp-5.png" class="proCARDImg">
+          </div>
+        </div>
+
+
+        <!-- BOOTSTRAP -->
+        <div class="artifact-card bootstrap">
+          <div class="hidecardimg">
+            <div class="artifact-rune"></div>
+            <div class="artifact-glow"></div>
+            <img src="img/crownhoc.png" class="artifact-img">
+            <div class="artifact-content">
+              <h3>BOOTSTRAP</h3>
+              <p>Rapid Layout Enchantment</p>
+              <div class="magic-meter">
+                <div class="magic-fill" style="width:85%"></div>
+              </div>
+              <span>85%</span>
+            </div>
+          </div>
+          <!-- HOVER MAGICAL PORTRAIT -->
+          <div class="showcardimg">
+            <div class="portrait-glow"></div>
+            <img src="img/hp-6.png" class="proCARDImg">
+          </div>
+        </div>
+
+        <!-- JQUERY -->
+        <div class="artifact-card jquery">
+          <div class="hidecardimg">
+            <div class="artifact-rune"></div>
+            <div class="artifact-glow"></div>
+            <img src="img/hp-15.png" class="artifact-img">
+            <div class="artifact-content">
+              <h3>JQUERY</h3>
+              <p>Quick Charm Manipulation</p>
+              <div class="magic-meter">
+                <div class="magic-fill" style="width:70%"></div>
+              </div>
+              <span>70%</span>
+            </div>
+          </div>
+          <!-- HOVER MAGICAL PORTRAIT -->
+          <div class="showcardimg">
+            <div class="portrait-glow"></div>
+            <img src="img/hp-7.png" class="proCARDImg">
+          </div>
+        </div>
+
+        <!-- GIT -->
+        <div class="artifact-card git">
+          <div class="hidecardimg">
+            <div class="artifact-rune"></div>
+            <div class="artifact-glow"></div>
+            <img src="img/hp-11.png " class="artifact-img">
+            <div class="artifact-content">
+              <h3>GIT & GITHUB</h3>
+              <p>Version Control Relic</p>
+              <div class="magic-meter">
+                <div class="magic-fill" style="width:70%"></div>
+              </div>
+              <span>70%</span>
+            </div>
+          </div>
+          <!-- HOVER MAGICAL PORTRAIT -->
+          <div class="showcardimg">
+            <div class="portrait-glow"></div>
+            <img src="img/hp-8.png" class="proCARDImg">
+          </div>
+        </div>
+
+        <!-- SQL -->
+        <div class="artifact-card sql">
+          <div class="hidecardimg">
+            <div class="artifact-rune"></div>
+            <div class="artifact-glow"></div>
+            <img src="img/hp-12.png" class="artifact-img">
+            <div class="artifact-content">
+              <h3>SQL</h3>
+              <p>Ancient Knowledge Vault</p>
+              <div class="magic-meter">
+                <div class="magic-fill" style="width:80%"></div>
+              </div>
+              <span>80%</span>
+            </div>
+          </div>
+          <!-- HOVER MAGICAL PORTRAIT -->
+          <div class="showcardimg">
+            <div class="portrait-glow"></div>
+            <img src="img/hp-9.png" class="proCARDImg">
+          </div>
 
         </div>
 
+        <!-- DJANGO -->
+        <div class="artifact-card django">
+          <div class="hidecardimg">
+            <div class="artifact-rune"></div>
+            <div class="artifact-glow"></div>
+            <img src="img/deluminatorhoc.png" class="artifact-img">
+            <div class="artifact-content">
+              <h3>DJANGO</h3>
+              <p>Dark Backend Sorcery</p>
+              <div class="magic-meter">
+                <div class="magic-fill" style="width:75%"></div>
+              </div>
+              <span>75%</span>
+            </div>
+          </div>
+          <!-- HOVER MAGICAL PORTRAIT -->
+          <div class="showcardimg">
+            <div class="portrait-glow"></div>
+            <img src="img/hp-10.png" class="proCARDImg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hogwarts-watermark ravenclaw">
+      <img src="img/ravenclaw.png" alt="">
+    </div>
+
+  </div>
+
+  <!-- Skill End -->
+
+  <!-- Project Overview Start -->
+
+  <div class="container-fluid pt-5 pb-3" id="portfolio">
+    <div class="container">
+
+
+      <!--PROJECTS SECTION-->
+      <div class="position-relative d-flex align-items-center justify-content-center magical-heading">
+        <!-- BACK -->
+        <h1 class="display-1 title1 section-back" data-normal="Overview" data-magic="Prophecy">
+          Overview
+        </h1>
+        <!-- FRONT -->
+        <h1 class="position-absolute text-white section-front" data-normal="Projects" data-magic="Horcrux Archive">
+          Projects
+        </h1>
+      </div>
+
+      <div class="container text-center py-5">
+
+        <figure>
+          <figcaption>
+            <h4>1.Educational Institute Demo Website</h4>
+          </figcaption>
+          <video width="700" height="500" controls>
+            <source src="videos/eduweb.mp4" type="video/mp4">
+          </video>
+        </figure>
+
+        <br><br><br>
+
+        <figure>
+          <figcaption>
+            <h4>2.Architecture Firm Demo Website Template</h4>
+          </figcaption>
+          <video width="700" height="500" controls>
+            <source src="videos/archweb.mp4" type="video/mp4">
+          </video>
+          <figure>
+
+      </div>
+    </div>
+
+    <div class="hogwarts-watermark slytherin">
+      <img src="img/slytherin.png" alt="">
+    </div>
+
+  </div>
+
+  </div>
+
+  <!-- Project Overview  End -->
+
+  <!-- Contact Start -->
+  <div class="container-fluid py-5" id="contact">
+    <div class="container">
+
+      <!--  CONTACT SECTION -->
+      <div class="position-relative d-flex align-items-center justify-content-center mb-5 magical-heading">
+        <!-- BACK -->
+        <h1 class="display-1 title1 section-back" data-normal="Contact" data-magic="Owlery">
+          Contact
+        </h1>
+        <!-- FRONT -->
+        <h1 class="position-absolute text-white section-front" data-normal="Get In Touch" data-magic="Owl Post">
+          Get In Touch
+        </h1>
+      </div>
+
+      <div class="row align-items-center">
+        <!-- LEFT SIDE (Branding / Message) -->
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <h1 class="contact-heading">
+            Let’s build something
+            <span>meaningful.</span>
+          </h1>
+          <p class="contact-subtext">
+            Feel free to reach out for projects, collaboration, or just a friendly hello 👋
+          </p>
+          <div class="contact-line"></div>
+        </div>
+
+        <!-- RIGHT SIDE (Form) -->
+        <div class="col-lg-7">
+          <div class="contact-form-wrapper">
+            <form id="contactForm" novalidate>
+              <div class="form-grid">
+                <div class="input-group-modern">
+                  <input type="text" id="name" name="name" required placeholder=" ">
+                  <label for="name">Full Name</label>
+                </div>
+                <div class="input-group-modern">
+                  <input type="email" id="email" name="email" required placeholder=" ">
+                  <label for="email">Email Address</label>
+                </div>
+              </div>
+
+              <div class="input-group-modern">
+                <input type="text" id="phone" name="phone" placeholder=" ">
+                <label for="phone">Contact Number (Optional)</label>
+              </div>
+
+              <div class="input-group-modern">
+                <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                <label for="message">Your Message</label>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn-signature">
+                  <span>Send Message</span>
+                  <div class="btn-arrow">→</div>
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
       </div>
 
     </div>
 
-  </div>
-
-
-
-  <div class="hogwarts-watermark hufflepuff">
-  <img src="img/hufflepuff.png" alt="">
-</div>
-</div>
-<!-- Contact End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid text-white mt-5 py-1 px-sm-3 px-md-5 footer">
-        <div class="container text-center py-5">
-            <p class="m-0">
-                &copy;
-                <a class="text-white font-weight-bold" href="#"></a>All
-                Rights Reserved. Designed by <i>Chetan Dhoran</i>
-
-            </p>
-        </div>
+    <div class="hogwarts-watermark hufflepuff">
+      <img src="img/hufflepuff.png" alt="">
     </div>
 
-<div class="hp-footer" id="hpFooter">
-  <canvas id="hpCanvas"></canvas>
-
-  <div class="arena">
-<img src="img/watermark-left.png" class="wm left-wm">
-<img src="img/watermark-right.png" class="wm right-wm">
-
-    <img src="img/wand-left.png" class="wand left-wand" id="leftWand">
-    <img src="img/wand-right.png" class="wand right-wand" id="rightWand">
-
-    <div class="dot left-dot" id="leftDot"></div>
-    <div class="dot right-dot" id="rightDot"></div>
-
-    <div class="spell left" id="leftSpell"></div>
-    <div class="spell right" id="rightSpell"></div>
   </div>
-</div>
-    <!-- Footer End -->
 
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+  <!-- Contact End -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-dark px-0 back-to-top "><i class="fa fa-angle-double-up"></i></a>
+  <!-- Footer Start -->
+  <div class="container-fluid text-white mt-5 py-1 px-sm-3 px-md-5 footer">
+    <div class="container text-center py-5">
+      <p class="m-0">
+        &copy;
+        <a class="text-white font-weight-bold" href="#"></a>All
+        Rights Reserved. Designed by <i>Chetan Dhoran</i>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-
-
-<script>
-    $(document).ready(function () {
-    $('#navbarCollapse').on('show.bs.collapse', function () {
-        $('.navbar').addClass('navbar-open');
-    });
-
-    $('#navbarCollapse').on('hide.bs.collapse', function () {
-        $('.navbar').removeClass('navbar-open');
-    });
-});
-
-
-</script>
-
- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<!-- <script>
-  console.log("PAGE LOADED");
-
-  document.addEventListener("DOMContentLoaded", function () {
-
-    // ✅ INIT EMAILJS
-    emailjs.init("xWB2gD5Y_eVpbcNRf");
-
-    const form = document.getElementById("contactForm");
-
-    if (!form) {
-      console.error("Form not found");
-      return;
-    }
-
-    console.log("Form ready");
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      console.log("Submitting form...");
-
-      emailjs.send("service_ps0asix", "template_6hxoht6", {
-        name: form.name.value,
-        email: form.email.value,
-        phone: form.phone.value,
-        message: form.message.value
-      })
-      .then(function (response) {
-        console.log("SUCCESS", response);
-        alert("✅ Message sent successfully!");
-        form.reset();
-      })
-      .catch(function (error) {
-        console.error("❌ ERROR:", error);
-        alert("Error: " + error.text);
-      });
-
-    });
-
-  });
-</script> -->
-
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  emailjs.init("xWB2gD5Y_eVpbcNRf");
-
-  const form = document.getElementById("contactForm");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const data = {
-      name: form.name.value,
-      email: form.email.value,
-      phone: form.phone.value,
-      message: form.message.value,
-      key: "my_portfolio_secret_key_5756"
-    };
-
-    console.log("Sending main email...");
-
-    // ✅ 1. Send to YOU
-    emailjs.send("service_ps0asix", "template_6hxoht6", data)
-      .then(function () {
-
-        console.log("Main email sent");
-
-        // ✅ 2. Send auto reply
-        return emailjs.send("service_ps0asix", "template_hkwpfqr", data);
-      })
-      .then(function () {
-        console.log("Auto reply sent");
-
-
-
-
-    // ⭐ STEP 4 — SAVE TO GOOGLE SHEETS (PUT HERE)
-        fetch("https://script.google.com/macros/s/AKfycbwMvediKEVKDdlb2tdYuvwCTdPzwsJ-gKnO2ZDg7N58oJIFsRRbk37oFU4fvdxwsfor/exec", {
-          method: "POST",
-          body: JSON.stringify(data)
-        })
-        .then(res => console.log("Saved to Sheet"))
-        .catch(err => console.log("Sheet Error:", err));
-
-
-    showAlert(
-  "success",
-  "Thank you for reaching out. Your message has been received successfully. I will get back to you shortly."
-);
-        form.reset();
-      })
-      .catch(function (error) {
-        console.error("❌ ERROR:", error);
-       showAlert(
-  "error",
-  "Something went wrong while processing your request. Please ensure your email is valid and try again in a moment."
-);
-      });
-
-  });
-
-});
-</script>
-
-
-
-
-<div id="customAlert" class="custom-alert">
-  <div class="alert-box">
-
-    <div class="alert-icon success" id="alertIcon">
-      <i class="fas fa-check"></i>
-    </div>
-
-    <h4 id="alertTitle">Success</h4>
-    <p id="alertMessage">Message sent successfully!</p>
-
-    <button onclick="closeAlert()" class="alert-btn">OK</button>
-  </div>
-</div>
-
-<script>
-(function () {
-
-  const payload = {
-    page: window.location.href,
-    device: navigator.userAgent,
-    browser: navigator.appVersion,
-    language: navigator.language,
-    screen: `${window.screen.width}x${window.screen.height}`,
-    ip: ""
-  };
-
-  // Get IP address
-  fetch("https://api.ipify.org?format=json")
-    .then(res => res.json())
-    .then(data => {
-      payload.ip = data.ip;
-
-      // Send to Google Sheet
-      return fetch("https://script.google.com/macros/s/AKfycbztuXlJDSzv4ywHIOz7S8ZF6JdJbr1c4OHr_8ejHJWe7lnY-Ltyio-7u7c5ReB2VfGp/exec ", {
-        method: "POST",
-        body: JSON.stringify(payload)
-      });
-    })
-    .catch(() => {
-      // fallback if IP fails
-      fetch("https://script.google.com/macros/s/AKfycbztuXlJDSzv4ywHIOz7S8ZF6JdJbr1c4OHr_8ejHJWe7lnY-Ltyio-7u7c5ReB2VfGp/exec ", {
-        method: "POST",
-        body: JSON.stringify(payload)
-      });
-    });
-
-})();
-</script>
-
-
-
-<div id="contactToast" class="contact-toast">
-  
-  <span class="toast-close" onclick="closeToast()">✕</span>
-
-  <div class="toast-content">
-
-    <div class="toast-text">
-      <strong>Let’s connect 👋</strong>
-      <p>
-        If you're interested in working together, feel free to share your details using the contact form below.
       </p>
     </div>
-
-    <div class="toast-actions">
-      <button onclick="goToContact()">Contact</button>
-       
-    </div>
-
   </div>
-   <img  class="hogwardLogo" src="img/potter.png" >
-</div>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
+  <div class="hp-footer" id="hpFooter">
+    <canvas id="hpCanvas"></canvas>
+    <div class="arena">
+      <img src="img/watermark-left.png" class="wm left-wm">
+      <img src="img/watermark-right.png" class="wm right-wm">
+      <img src="img/wand-left.png" class="wand left-wand" id="leftWand">
+      <img src="img/wand-right.png" class="wand right-wand" id="rightWand">
+      <div class="dot left-dot" id="leftDot"></div>
+      <div class="dot right-dot" id="rightDot"></div>
+      <div class="spell left" id="leftSpell"></div>
+      <div class="spell right" id="rightSpell"></div>
+    </div>
+  </div>
+  <!-- Footer End -->
 
-  const toast = document.getElementById("contactToast");
+  <!-- Scroll to Bottom -->
+  <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
-  // show after 15 sec (only once)
-  setTimeout(() => {
-    toast.classList.add("show");
-  }, 8000);
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-outline-dark px-0 back-to-top "><i class="fa fa-angle-double-up"></i></a>
 
-  window.closeToast = function () {
-    toast.classList.remove("show");
-  }
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Javascript File -->
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 
-  window.goToContact = function () {
-    toast.classList.remove("show");
+  <script>
+    $(document).ready(function () {
+      $('#navbarCollapse').on('show.bs.collapse', function () {
+        $('.navbar').addClass('navbar-open');
+      });
+      $('#navbarCollapse').on('hide.bs.collapse', function () {
+        $('.navbar').removeClass('navbar-open');
+      });
+    });
+  </script>
 
-    document.getElementById("contact")
-      .scrollIntoView({ behavior: "smooth" });
-  }
-
-});
-</script>
-
-
-
-
-<!-- SMOKE FILTER -->
-<svg width="0" height="0">
-  <filter id="smokeFilter">
-    <feTurbulence 
-      type="fractalNoise" 
-      baseFrequency="0.008" 
-      numOctaves="4" 
-      seed="3">
-      <animate attributeName="baseFrequency" 
-        dur="25s" 
-        values="0.008;0.02;0.008" 
-        repeatCount="indefinite" />
-    </feTurbulence>
-
-    <feDisplacementMap in="SourceGraphic" scale="70"/>
-  </filter>
-</svg>
-
-<!-- EFFECTS -->
-<div class="global-smoke"></div>
-<div class="patronus-3d"></div>
-<audio id="magicSound" preload="auto">
-  <source src="audio/harry_potter_theme.mp3" type="audio/mpeg">
-</audio>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 
+  <!-- SCRIPT FOR SENDING ACKNOWLEDGMENT AND SELF NOTIFICATION FOR CONTACT FORM -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      emailjs.init("xWB2gD5Y_eVpbcNRf");
+      const form = document.getElementById("contactForm");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const data = {
+          name: form.name.value,
+          email: form.email.value,
+          phone: form.phone.value,
+          message: form.message.value,
+          key: "my_portfolio_secret_key_5756"
+        };
+        // 1. Send to YOU
+        emailjs.send("service_ps0asix", "template_6hxoht6", data)
+          .then(function () {
+            console.log("Main email sent");
+            // 2. Send auto reply
+            return emailjs.send("service_ps0asix", "template_hkwpfqr", data);
+          })
+          .then(function () {
+            console.log("Auto reply sent");
+            // STEP 4 — SAVE TO GOOGLE SHEETS (PUT HERE)
+            fetch("https://script.google.com/macros/s/AKfycbwMvediKEVKDdlb2tdYuvwCTdPzwsJ-gKnO2ZDg7N58oJIFsRRbk37oFU4fvdxwsfor/exec", {
+              method: "POST",
+              body: JSON.stringify(data)
+            })
+              .then(res => console.log("Saved to Sheet"))
+              .catch(err => console.log("Sheet Error:", err));
+            showAlert(
+              "success",
+              "Thank you for reaching out. Your message has been received successfully. I will get back to you shortly."
+            );
+            form.reset();
+          })
+          .catch(function (error) {
+            console.error("❌ ERROR:", error);
+            showAlert(
+              "error",
+              "Something went wrong while processing your request. Please ensure your email is valid and try again in a moment."
+            );
+          })
+      });
+    });
+  </script>
 
-<!-- 🟡 GOLDEN SNITCH -->
-<div class="snitch" id="snitch">
-  <div class="snitch-body"></div>
-
-  <div class="snitch-wings left"></div>
-  <div class="snitch-wings right"></div>
-
-  <!-- <div class="snitch-tail">Catch me</div> -->
-</div>
-
-
-
+  <div id="customAlert" class="custom-alert">
+    <div class="alert-box">
+      <div class="alert-icon success" id="alertIcon">
+        <i class="fas fa-check"></i>
+      </div>
+      <h4 id="alertTitle">Success</h4>
+      <p id="alertMessage">Message sent successfully!</p>
+      <button onclick="closeAlert()" class="alert-btn">OK</button>
+    </div>
+  </div>
 
 
+  <!-- SCRIPT FOR AUTO RECORD VISITOR AND SENT MAILON VISING  -->
+  <script>
+    (function () {
+      const payload = {
+        page: window.location.href,
+        device: navigator.userAgent,
+        browser: navigator.appVersion,
+        language: navigator.language,
+        screen: `${window.screen.width}x${window.screen.height}`,
+        ip: ""
+      };
+      fetch("https://api.ipify.org?format=json")
+        .then(res => res.json())
+        .then(data => {
+          payload.ip = data.ip;
+          return fetch("https://script.google.com/macros/s/AKfycbztuXlJDSzv4ywHIOz7S8ZF6JdJbr1c4OHr_8ejHJWe7lnY-Ltyio-7u7c5ReB2VfGp/exec ", {
+            method: "POST",
+            body: JSON.stringify(payload)
+          });
+        })
+        .catch(() => {
+          fetch("https://script.google.com/macros/s/AKfycbztuXlJDSzv4ywHIOz7S8ZF6JdJbr1c4OHr_8ejHJWe7lnY-Ltyio-7u7c5ReB2VfGp/exec ", {
+            method: "POST",
+            body: JSON.stringify(payload)
+          });
+        });
+    })();
+  </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
+  <div id="contactToast" class="contact-toast">
+    <span class="toast-close" onclick="closeToast()">✕</span>
+    <div class="toast-content">
+      <div class="toast-text">
+        <strong>Let’s connect 👋</strong>
+        <p>
+          If you're interested in working together, feel free to share your details using the contact form below.
+        </p>
+      </div>
+      <div class="toast-actions">
+        <button onclick="goToContact()">Contact</button>
+      </div>
+    </div>
+    <img class="hogwardLogo" src="img/potter.png">
+  </div>
 
-  const sound = document.getElementById("magicSound");
-  const smoke = document.querySelector(".global-smoke");
-  const patronus = document.querySelector(".patronus-3d");
-  const home = document.querySelector("#home");
-  const snitch = document.getElementById("snitch");
+  <!-- SCRIPT FOR CONTACT TOAST IN MAGIC MODE -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toast = document.getElementById("contactToast");
+      setTimeout(() => {
+        toast.classList.add("show");
+      }, 8000);
+      window.closeToast = function () {
+        toast.classList.remove("show");
+      }
+      window.goToContact = function () {
+        toast.classList.remove("show");
+        document.getElementById("contact")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  </script>
 
-  let audioUnlocked = false;
-  let magicOn = false;
-  let fadeInterval;
+  <!-- SMOKE FILTER -->
+  <svg width="0" height="0">
+    <filter id="smokeFilter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.008" numOctaves="4" seed="3">
+        <animate attributeName="baseFrequency" dur="25s" values="0.008;0.02;0.008" repeatCount="indefinite" />
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" scale="70" />
+    </filter>
+  </svg>
 
-  function showOwlToast() {
+  <!-- EFFECTS -->
+  <div class="global-smoke"></div>
+  <div class="patronus-3d"></div>
+  <audio id="magicSound" preload="auto">
+    <source src="audio/harry_potter_theme.mp3" type="audio/mpeg">
+  </audio>
 
-  const toast = document.getElementById("contactToast");
 
-  // reset
-  toast.classList.remove("show");
-  toast.classList.remove("owl-in");
+  <!-- GOLDEN SNITCH -->
+  <div class="snitch" id="snitch">
+    <div class="snitch-body"></div>
+    <div class="snitch-wings left"></div>
+    <div class="snitch-wings right"></div>
+  </div>
 
-  // trigger owl flight
-  setTimeout(() => {
-    toast.classList.add("show");
-    toast.classList.add("owl-in");
-  }, 5000);
-}
+  <!-- SCRIPT FOR MAGIC ON AND OFF -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sound = document.getElementById("magicSound");
+      const smoke = document.querySelector(".global-smoke");
+      const patronus = document.querySelector(".patronus-3d");
+      const home = document.querySelector("#home");
+      const snitch = document.getElementById("snitch");
+      let audioUnlocked = false;
+      let magicOn = false;
+      let fadeInterval;
 
-  // 🔓 unlock audio once
-  function unlockAudio() {
-    if (audioUnlocked) return;
+      function showOwlToast() {
+        const toast = document.getElementById("contactToast");
+        toast.classList.remove("show");
+        toast.classList.remove("owl-in");
+        setTimeout(() => {
+          toast.classList.add("show");
+          toast.classList.add("owl-in");
+        }, 5000);
+      }
 
-    sound.volume = 0;
-
-    const playPromise = sound.play();
-
-    if (playPromise !== undefined) {
-      playPromise.then(() => {
+      function unlockAudio() {
+        if (audioUnlocked) return;
+        sound.volume = 0;
+        const playPromise = sound.play();
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            sound.pause();
+            sound.currentTime = 0;
+            sound.volume = 0.7;
+            audioUnlocked = true;
+          }).catch(() => { });
+        }
+      }
+      document.addEventListener("click", unlockAudio, { once: true });
+      // TOGGLE MAGIC ON/OFF
+      snitch.addEventListener("click", () => {
+        unlockAudio();
+        document.getElementById("home").scrollIntoView({
+          behavior: "smooth"
+        });
+        if (magicOn) {
+          magicOn = false;
+          smoke.classList.remove("active");
+          patronus.classList.remove("active");
+          home.classList.remove("magic-active");
+          document.body.classList.remove("magic-active");
+          // stop audio
+          clearInterval(fadeInterval);
+          sound.loop = false;
+          let stopFade = setInterval(() => {
+            if (sound.volume > 0.05) {
+              sound.volume -= 0.05;
+            } else {
+              clearInterval(stopFade);
+              sound.pause();
+              sound.currentTime = 0;
+            }
+          }, 60);
+          snitch.style.animationPlayState = "running";
+          return;
+        }
+        //  TURN ON MAGIC
+        magicOn = true;
+        smoke.classList.add("active");
+        patronus.classList.add("active");
+        home.classList.add("magic-active");
+        document.body.classList.add("magic-active");
+        showOwlToast();
         sound.pause();
         sound.currentTime = 0;
         sound.volume = 0.7;
-        audioUnlocked = true;
-      }).catch(() => {});
-    }
-  }
+        sound.loop = true;
+        sound.play().catch(() => { });
+        clearInterval(fadeInterval);
+        snitch.style.animationPlayState = "paused";
+        snitch.style.transform = "translateX(50vw) scale(1.2)";
+      });
+    });
+  </script>
 
-  document.addEventListener("click", unlockAudio, { once: true });
+  <!-- SCRIPT FOR SNITCH APPEARANCE AND FLY -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const snitch = document.getElementById("snitch");
+      setTimeout(() => {
+        snitch.classList.add("visible");
+      }, 3000);
+      const size = 60;
+      const minX = window.innerWidth * 0.78;
+      const maxX = window.innerWidth - size;
+      const minY = 80;
+      const maxY = window.innerHeight - 120;
+      let x = window.innerWidth * 0.85;
+      let y = window.innerHeight * 0.5;
+      let vx = (Math.random() - 0.5) * 8;
+      let vy = (Math.random() - 0.5) * 8;
+      let targetVX = vx;
+      let targetVY = vy;
 
-  // 🟡 TOGGLE MAGIC ON/OFF
-  snitch.addEventListener("click", () => {
-
-    unlockAudio();
- // 🏠 GO TO HOME SECTION
-  document.getElementById("home").scrollIntoView({
-    behavior: "smooth"
-  });
-    // =========================
-    // ❌ TURN OFF MAGIC
-    // =========================
-    if (magicOn) {
-
-      magicOn = false;
-
-      smoke.classList.remove("active");
-      patronus.classList.remove("active");
-      home.classList.remove("magic-active");
-      document.body.classList.remove("magic-active");
-
-      // stop audio
-      clearInterval(fadeInterval);
-      sound.loop = false;
-
-      let stopFade = setInterval(() => {
-        if (sound.volume > 0.05) {
-          sound.volume -= 0.05;
-        } else {
-          clearInterval(stopFade);
-          sound.pause();
-          sound.currentTime = 0;
+      function fly() {
+        targetVX += (Math.random() - 0.5) * 1.2;
+        targetVY += (Math.random() - 0.5) * 1.2;
+        targetVX = Math.max(-7, Math.min(7, targetVX));
+        targetVY = Math.max(-7, Math.min(7, targetVY));
+        vx += (targetVX - vx) * 0.08;
+        vy += (targetVY - vy) * 0.08;
+        x += vx;
+        y += vy;
+        if (x < minX) {
+          x = minX;
+          targetVX *= -1;
         }
-      }, 60);
-
-      // resume snitch flight
-      snitch.style.animationPlayState = "running";
-
-      console.log("⚪ MAGIC OFF");
-
-      return;
-    }
-
-    // =========================
-    // ✨ TURN ON MAGIC
-    // =========================
-    magicOn = true;
-
-    smoke.classList.add("active");
-    patronus.classList.add("active");
-    home.classList.add("magic-active");
-    document.body.classList.add("magic-active");
-    showOwlToast();
-    // sound start loop
-    sound.pause();
-    sound.currentTime = 0;
-    sound.volume = 0.7;
-    sound.loop = true;
-    sound.play().catch(() => {});
-
-    // stop fade conflicts
-    clearInterval(fadeInterval);
-
-    // freeze snitch mid-catch
-    snitch.style.animationPlayState = "paused";
-    snitch.style.transform = "translateX(50vw) scale(1.2)";
-
-    console.log("🟡 MAGIC ON");
-  });
-
-});
-</script>
-<!-- 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-  const snitch = document.getElementById("snitch");
-
-  const size = 60; // safety buffer (snitch size)
-  
-  let x = window.innerWidth / 2;
-  let y = window.innerHeight / 2;
-
-  let vx = (Math.random() - 0.5) * 4;
-  let vy = (Math.random() - 0.5) * 4;
-
-  function fly() {
-
-    // 🧠 natural wandering behavior (like living creature)
-    vx += (Math.random() - 0.5) * 0.6;
-    vy += (Math.random() - 0.5) * 0.6;
-
-    // 🔥 speed limit (prevents chaos)
-    vx = Math.max(-5, Math.min(5, vx));
-    vy = Math.max(-5, Math.min(5, vy));
-
-    x += vx;
-    y += vy;
-
-    // 🧱 STRICT BOUNDS (NEVER HIDE / NEVER EXIT SCREEN)
-    const minX = size;
-    const maxX = window.innerWidth - size;
-    const minY = size;
-    const maxY = window.innerHeight - size;
-
-    if (x < minX) {
-      x = minX;
-      vx *= -1;
-    }
-
-    if (x > maxX) {
-      x = maxX;
-      vx *= -1;
-    }
-
-    if (y < minY) {
-      y = minY;
-      vy *= -1;
-    }
-
-    if (y > maxY) {
-      y = maxY;
-      vy *= -1;
-    }
-
-    // 🪽 natural tilt based on velocity
-    const angle = vx * 8;
-
-    snitch.style.transform = `
-      translate(${x}px, ${y}px)
-      rotate(${angle}deg)
-    `;
-
-    requestAnimationFrame(fly);
-  }
-
-  fly();
-
-});
-
-
-</script>
-
- -->
-
-
-
-
-
-
-
-<!-- 
-
-
- <script>
-document.addEventListener("DOMContentLoaded", () => {
-
-  const snitch = document.getElementById("snitch");
-
-  // =========================================
-  // 🟡 SHOW AFTER 5 SECONDS
-  // =========================================
-  setTimeout(() => {
-
-    snitch.classList.add("visible");
-
-  }, 5000);
-
-
-  // =========================================
-  // 🟡 LIMITED FLY AREA (RIGHT 20%)
-  // =========================================
-
-  const size = 60;
-
-  // only right side movement
-  const minX = window.innerWidth * 0.78;
-  const maxX = window.innerWidth - size;
-
-  // vertical range
-  const minY = 80;
-  const maxY = window.innerHeight - 120;
-
-  let x = window.innerWidth * 0.85;
-  let y = window.innerHeight * 0.5;
-
-  let vx = (Math.random() - 0.5) * 2.5;
-  let vy = (Math.random() - 0.5) * 2.5;
-
-
-  function fly() {
-
-    vx += (Math.random() - 0.5) * 0.25;
-    vy += (Math.random() - 0.5) * 0.25;
-
-    // smoother movement
-    vx = Math.max(-2.2, Math.min(2.2, vx));
-    vy = Math.max(-2.2, Math.min(2.2, vy));
-
-    x += vx;
-    y += vy;
-
-    // horizontal bounds
-    if (x < minX) {
-      x = minX;
-      vx *= -1;
-    }
-
-    if (x > maxX) {
-      x = maxX;
-      vx *= -1;
-    }
-
-    // vertical bounds
-    if (y < minY) {
-      y = minY;
-      vy *= -1;
-    }
-
-    if (y > maxY) {
-      y = maxY;
-      vy *= -1;
-    }
-
-    // natural tilt
-    const angle = vx * 10;
-
-    snitch.style.transform = `
-      translate(${x}px, ${y}px)
-      rotate(${angle}deg)
-    `;
-
-    requestAnimationFrame(fly);
-  }
-
-  fly();
-
-});
-</script>
- -->
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-  const snitch = document.getElementById("snitch");
-
-  // =========================================
-  // 🟡 SHOW AFTER 5 SECONDS
-  // =========================================
-  setTimeout(() => {
-    snitch.classList.add("visible");
-  }, 3000);
-
-  // =========================================
-  // 🟡 FAST + SMOOTH FLIGHT AREA
-  // =========================================
-
-  const size = 60;
-
-  const minX = window.innerWidth * 0.78;
-  const maxX = window.innerWidth - size;
-
-  const minY = 80;
-  const maxY = window.innerHeight - 120;
-
-  let x = window.innerWidth * 0.85;
-  let y = window.innerHeight * 0.5;
-
-  /* MUCH FASTER START SPEED */
-  let vx = (Math.random() - 0.5) * 8;
-  let vy = (Math.random() - 0.5) * 8;
-
-  /* smooth motion values */
-  let targetVX = vx;
-  let targetVY = vy;
-
-  function fly() {
-
-    // =========================================
-    // ✨ CINEMATIC RANDOM DIRECTION CHANGES
-    // =========================================
-
-    targetVX += (Math.random() - 0.5) * 1.2;
-    targetVY += (Math.random() - 0.5) * 1.2;
-
-    /* clamp speed */
-    targetVX = Math.max(-7, Math.min(7, targetVX));
-    targetVY = Math.max(-7, Math.min(7, targetVY));
-
-    // =========================================
-    // ✨ SMOOTH INTERPOLATION
-    // =========================================
-
-    vx += (targetVX - vx) * 0.08;
-    vy += (targetVY - vy) * 0.08;
-
-    x += vx;
-    y += vy;
-
-    // =========================================
-    // ✨ BOUND COLLISION
-    // =========================================
-
-    if (x < minX) {
-      x = minX;
-      targetVX *= -1;
-    }
-
-    if (x > maxX) {
-      x = maxX;
-      targetVX *= -1;
-    }
-
-    if (y < minY) {
-      y = minY;
-      targetVY *= -1;
-    }
-
-    if (y > maxY) {
-      y = maxY;
-      targetVY *= -1;
-    }
-
-    // =========================================
-    // ✨ NATURAL BANKING ROTATION
-    // =========================================
-
-    const angle = vx * 7;
-
-    // =========================================
-    // ✨ FLOATING MICRO MOTION
-    // =========================================
-
-    const flutter = Math.sin(Date.now() * 0.02) * 4;
-
-    snitch.style.transform = `
+        if (x > maxX) {
+          x = maxX;
+          targetVX *= -1;
+        }
+        if (y < minY) {
+          y = minY;
+          targetVY *= -1;
+        }
+        if (y > maxY) {
+          y = maxY;
+          targetVY *= -1;
+        }
+        const angle = vx * 7;
+        const flutter = Math.sin(Date.now() * 0.02) * 4;
+        snitch.style.transform = `
       translate(${x}px, ${y + flutter}px)
       rotate(${angle}deg)
       scale(1)
     `;
+        requestAnimationFrame(fly);
+      }
+      fly();
+    });
+  </script>
 
-    requestAnimationFrame(fly);
-  }
+  <!-- SCRIPT FOR AUTO FLIPPING PROFILE INTO HOGWORLS LOGO  -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const innerCard = document.querySelector(".profile-card .inner");
+      let autoFlipInterval;
+      let flipped = false;
 
-  fly();
-
-});
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-  const innerCard = document.querySelector(".profile-card .inner");
-
-  let autoFlipInterval;
-  let flipped = false;
-
-  // =========================
-  // ✨ START AUTO FLIP
-  // =========================
-  function startMagicFlip() {
-
-    // avoid duplicate intervals
-    if (autoFlipInterval) return;
-
-    autoFlipInterval = setInterval(() => {
-
-      // only run in magic mode
-      if (!document.body.classList.contains("magic-active")) {
-        return;
+      function startMagicFlip() {
+        if (autoFlipInterval) return;
+        autoFlipInterval = setInterval(() => {
+          if (!document.body.classList.contains("magic-active")) {
+            return;
+          }
+          flipped = !flipped;
+          if (flipped) {
+            innerCard.style.transform = "rotateY(180deg)";
+          } else {
+            innerCard.style.transform = "rotateY(0deg)";
+          }
+        }, 5000);
       }
 
-      flipped = !flipped;
-
-      if (flipped) {
-        innerCard.style.transform = "rotateY(180deg)";
-      } else {
+      function stopMagicFlip() {
+        clearInterval(autoFlipInterval);
+        autoFlipInterval = null;
+        flipped = false;
         innerCard.style.transform = "rotateY(0deg)";
       }
-
-    }, 8000); // flip every 4 sec
-  }
-
-  // =========================
-  // ❌ STOP AUTO FLIP
-  // =========================
-  function stopMagicFlip() {
-
-    clearInterval(autoFlipInterval);
-    autoFlipInterval = null;
-
-    flipped = false;
-
-    innerCard.style.transform = "rotateY(0deg)";
-  }
-
-  // =========================
-  // 👀 WATCH MAGIC MODE
-  // =========================
-  const observer = new MutationObserver(() => {
-
-    if (document.body.classList.contains("magic-active")) {
-      startMagicFlip();
-    } else {
-      stopMagicFlip();
-    }
-
-  });
-
-  observer.observe(document.body, {
-    attributes: true,
-    attributeFilter: ["class"]
-  });
-
-});
-</script>
-
-
-
-
-<script>
-
-document.addEventListener("DOMContentLoaded", () => {
-
-  function updateMagicTitles(isMagic){
-
-    // FRONT TITLES
-    document.querySelectorAll(".section-front")
-      .forEach(el => {
-
-        el.style.opacity = "0";
-
-        setTimeout(() => {
-
-          el.innerText = isMagic
-            ? el.dataset.magic
-            : el.dataset.normal;
-
-          el.style.opacity = "1";
-
-        }, 250);
-
+      const observer = new MutationObserver(() => {
+        if (document.body.classList.contains("magic-active")) {
+          startMagicFlip();
+        } else {
+          stopMagicFlip();
+        }
       });
-
-    // BACK TITLES
-    document.querySelectorAll(".section-back")
-      .forEach(el => {
-
-        el.style.opacity = "0";
-
-        setTimeout(() => {
-
-          el.innerText = isMagic
-            ? el.dataset.magic
-            : el.dataset.normal;
-
-          el.style.opacity = "1";
-
-        }, 250);
-
+      observer.observe(document.body, {
+        attributes: true,
+        attributeFilter: ["class"]
       });
-  }
-
-  // watch body class changes
-  const observer = new MutationObserver(() => {
-
-    const magicOn =
-      document.body.classList.contains("magic-active");
-
-    updateMagicTitles(magicOn);
-
-  });
-
-  observer.observe(document.body, {
-    attributes: true,
-    attributeFilter: ["class"]
-  });
-
-});
-
-</script>
-
-
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-  const scrollBtn = document.querySelector(".scroll-to-bottom");
-
-  if (scrollBtn) {
-
-    scrollBtn.addEventListener("click", () => {
-
-      document.querySelector("#qualification")
-        .scrollIntoView({
-          behavior: "smooth"
-        });
-
     });
-
-  }
-
-});
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-const canvas = document.getElementById("hpCanvas");
-const ctx = canvas.getContext("2d");
-
-const footer = document.getElementById("hpFooter");
-
-const leftWand = document.getElementById("leftWand");
-const rightWand = document.getElementById("rightWand");
-
-const leftDot = document.getElementById("leftDot");
-const rightDot = document.getElementById("rightDot");
-
-const leftSpell = document.getElementById("leftSpell");
-const rightSpell = document.getElementById("rightSpell");
-
-canvas.width = innerWidth;
-canvas.height = 140;
-
-/* =========================================================
-   ⚡ SPELL SYSTEM
-========================================================= */
-
-const spells = [
-  { name: "Expelliarmus", type: "attack", color: "#ff4b4b" },
-  { name: "Avada Kedavra", type: "attack", color: "#39ff5a" },
-  { name: "Stupefy", type: "stun", color: "#ff2d55" },
-  { name: "Protego", type: "shield", color: "#4fc3ff" },
-  { name: "Lumos", type: "light", color: "#ffe66d" },
-  { name: "Nox", type: "utility", color: "#1b1b1b" },
-
-  { name: "Accio", type: "utility", color: "#ffb347" },
-  { name: "Alohomora", type: "utility", color: "#ffd580" },
-  { name: "Wingardium Leviosa", type: "utility", color: "#9ad0ff" },
-  { name: "Reparo", type: "utility", color: "#66d9ff" },
-
-  { name: "Incendio", type: "attack", color: "#ff6a00" },
-  { name: "Confringo", type: "attack", color: "#ff1744" },
-  { name: "Reducto", type: "attack", color: "#ff3d00" },
-  { name: "Bombarda", type: "attack", color: "#ff0000" },
-
-  { name: "Obliviate", type: "mind", color: "#7b2ff7" },
-  { name: "Confundo", type: "mind", color: "#d46bff" },
-  { name: "Legilimens", type: "mind", color: "#2c3e50" },
-  { name: "Occlumency", type: "shield", color: "#1c2a39" },
-
-  { name: "Imperio", type: "curse", color: "#00e5ff" },
-  { name: "Crucio", type: "curse", color: "#b000ff" },
-
-  { name: "Expecto Patronum", type: "defense", color: "#00d4ff" },
-  { name: "Riddikulus", type: "utility", color: "#ffcc00" },
-
-  { name: "Sectumsempra", type: "attack", color: "#b71c1c" },
-  { name: "Levicorpus", type: "utility", color: "#aa00ff" },
-  { name: "Liberacorpus", type: "utility", color: "#00bcd4" },
-
-  { name: "Episkey", type: "heal", color: "#ffb6b9" },
-  { name: "Silencio", type: "utility", color: "#2f2f2f" },
-
-  { name: "Protego Maxima", type: "shield", color: "#00f5ff" },
-  { name: "Salvio Hexia", type: "shield", color: "#4dd0e1" },
-  { name: "Repello Muggletum", type: "utility", color: "#5c6bc0" },
-
-  { name: "Morsmordre", type: "dark", color: "#000000" },
-  { name: "Priori Incantatem", type: "utility", color: "#f8bbd0" },
-
-  { name: "Densaugeo", type: "curse", color: "#e91e63" },
-  { name: "Expulso", type: "attack", color: "#ff5722" },
-
-  { name: "Finite Incantatem", type: "utility", color: "#26c6da" },
-  { name: "Expelliarmus Maxima", type: "attack", color: "#ff7043" },
-
-  { name: "Avifors", type: "transfiguration", color: "#2196f3" },
-  { name: "Aguamenti", type: "utility", color: "#03a9f4" },
-
-  { name: "Diffindo", type: "attack", color: "#f44336" },
-  { name: "Furnunculus", type: "curse", color: "#ff704d" },
-
-  { name: "Obscuro", type: "dark", color: "#0d1b2a" },
-  { name: "Imperius Break", type: "counter", color: "#00e676" }
-];
-
-let active = true;
-let cooldown = false;
-
-/* =========================================================
-   ⚡ RESPONSIVE
-========================================================= */
-
-function resize() {
-  canvas.width = innerWidth;
-  canvas.height = 140;
-}
-
-window.addEventListener("resize", resize);
-resize();
-
-/* =========================================================
-   ⚡ GET WAND TIPS
-========================================================= */
-
-function getTips() {
-
-  const f = footer.getBoundingClientRect();
-
-  const L = leftWand.getBoundingClientRect();
-  const R = rightWand.getBoundingClientRect();
-
-  return {
-    left: {
-      x: L.right - f.left,
-      y: L.top - f.top + L.height / 2
-    },
-
-    right: {
-      x: R.left - f.left,
-      y: R.top - f.top + R.height / 2
+  </script>
+
+
+  <!-- SCRIPT FOR MAGIC MODE PAGE TITLES  -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      function updateMagicTitles(isMagic) {
+        document.querySelectorAll(".section-front")
+          .forEach(el => {
+            el.style.opacity = "0";
+            setTimeout(() => {
+              el.innerText = isMagic
+                ? el.dataset.magic
+                : el.dataset.normal;
+              el.style.opacity = "1";
+            }, 250);
+          });
+        document.querySelectorAll(".section-back")
+          .forEach(el => {
+            el.style.opacity = "0";
+            setTimeout(() => {
+              el.innerText = isMagic
+                ? el.dataset.magic
+                : el.dataset.normal;
+              el.style.opacity = "1";
+            }, 250);
+          });
+      }
+      const observer = new MutationObserver(() => {
+        const magicOn =
+          document.body.classList.contains("magic-active");
+        updateMagicTitles(magicOn);
+      });
+      observer.observe(document.body, {
+        attributes: true,
+        attributeFilter: ["class"]
+      });
+    });
+  </script>
+
+  <!-- SCRIPT FOR HOME DOWNARROW NAVIGATE TO QUALIFICATION PAGE  -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const scrollBtn = document.querySelector(".scroll-to-bottom");
+      if (scrollBtn) {
+        scrollBtn.addEventListener("click", () => {
+          document.querySelector("#qualification")
+            .scrollIntoView({
+              behavior: "smooth"
+            });
+        });
+      }
+    });
+  </script>
+
+
+  <!-- SCRIPT FOR THE SPELL CAST FOOTER  -->
+  <script>
+    const canvas = document.getElementById("hpCanvas");
+    const ctx = canvas.getContext("2d");
+    const footer = document.getElementById("hpFooter");
+    const leftWand = document.getElementById("leftWand");
+    const rightWand = document.getElementById("rightWand");
+    const leftDot = document.getElementById("leftDot");
+    const rightDot = document.getElementById("rightDot");
+    const leftSpell = document.getElementById("leftSpell");
+    const rightSpell = document.getElementById("rightSpell");
+    canvas.width = innerWidth;
+    canvas.height = 140;
+
+    const spells = [
+      { name: "Expelliarmus", type: "attack", color: "#ff4b4b" },
+      { name: "Avada Kedavra", type: "attack", color: "#39ff5a" },
+      { name: "Stupefy", type: "stun", color: "#ff2d55" },
+      { name: "Protego", type: "shield", color: "#4fc3ff" },
+      { name: "Lumos", type: "light", color: "#ffe66d" },
+      { name: "Nox", type: "utility", color: "#1b1b1b" },
+      { name: "Accio", type: "utility", color: "#ffb347" },
+      { name: "Alohomora", type: "utility", color: "#ffd580" },
+      { name: "Wingardium Leviosa", type: "utility", color: "#9ad0ff" },
+      { name: "Reparo", type: "utility", color: "#66d9ff" },
+      { name: "Incendio", type: "attack", color: "#ff6a00" },
+      { name: "Confringo", type: "attack", color: "#ff1744" },
+      { name: "Reducto", type: "attack", color: "#ff3d00" },
+      { name: "Bombarda", type: "attack", color: "#ff0000" },
+      { name: "Obliviate", type: "mind", color: "#7b2ff7" },
+      { name: "Confundo", type: "mind", color: "#d46bff" },
+      { name: "Legilimens", type: "mind", color: "#2c3e50" },
+      { name: "Occlumency", type: "shield", color: "#1c2a39" },
+      { name: "Imperio", type: "curse", color: "#00e5ff" },
+      { name: "Crucio", type: "curse", color: "#b000ff" },
+      { name: "Expecto Patronum", type: "defense", color: "#00d4ff" },
+      { name: "Riddikulus", type: "utility", color: "#ffcc00" },
+      { name: "Sectumsempra", type: "attack", color: "#b71c1c" },
+      { name: "Levicorpus", type: "utility", color: "#aa00ff" },
+      { name: "Liberacorpus", type: "utility", color: "#00bcd4" },
+      { name: "Episkey", type: "heal", color: "#ffb6b9" },
+      { name: "Silencio", type: "utility", color: "#2f2f2f" },
+      { name: "Protego Maxima", type: "shield", color: "#00f5ff" },
+      { name: "Salvio Hexia", type: "shield", color: "#4dd0e1" },
+      { name: "Repello Muggletum", type: "utility", color: "#5c6bc0" },
+      { name: "Morsmordre", type: "dark", color: "#000000" },
+      { name: "Priori Incantatem", type: "utility", color: "#f8bbd0" },
+      { name: "Densaugeo", type: "curse", color: "#e91e63" },
+      { name: "Expulso", type: "attack", color: "#ff5722" },
+      { name: "Finite Incantatem", type: "utility", color: "#26c6da" },
+      { name: "Expelliarmus Maxima", type: "attack", color: "#ff7043" },
+      { name: "Avifors", type: "transfiguration", color: "#2196f3" },
+      { name: "Aguamenti", type: "utility", color: "#03a9f4" },
+      { name: "Diffindo", type: "attack", color: "#f44336" },
+      { name: "Furnunculus", type: "curse", color: "#ff704d" },
+      { name: "Obscuro", type: "dark", color: "#0d1b2a" },
+      { name: "Imperius Break", type: "counter", color: "#00e676" }
+    ];
+    let active = true;
+    let cooldown = false;
+
+    function resize() {
+      canvas.width = innerWidth;
+      canvas.height = 140;
     }
-  };
-}
+    window.addEventListener("resize", resize);
 
-/* =========================================================
-   ⚡ PARTICLES
-========================================================= */
+    resize();
 
-function particleExplosion(x, y, color, type) {
+    function getTips() {
+      const f = footer.getBoundingClientRect();
+      const L = leftWand.getBoundingClientRect();
+      const R = rightWand.getBoundingClientRect();
+      return {
+        left: {
+          x: L.right - f.left,
+          y: L.top - f.top + L.height / 2
+        },
+        right: {
+          x: R.left - f.left,
+          y: R.top - f.top + R.height / 2
+        }
+      };
+    }
 
-  const count =
-    type === "shield" ? 18 :
-    type === "curse" ? 14 :
-    type === "attack" ? 24 :
-    12;
-
-  for (let i = 0; i < count; i++) {
-
-    const p = document.createElement("div");
-
-    p.style.position = "absolute";
-    p.style.left = x + "px";
-    p.style.top = y + "px";
-
-    p.style.width = Math.random() * 4 + 2 + "px";
-    p.style.height = p.style.width;
-
-    p.style.borderRadius = "50%";
-    p.style.pointerEvents = "none";
-
-    p.style.background = color;
-
-    p.style.boxShadow = `
+    function particleExplosion(x, y, color, type) {
+      const count =
+        type === "shield" ? 18 :
+          type === "curse" ? 14 :
+            type === "attack" ? 24 :
+              12;
+      for (let i = 0; i < count; i++) {
+        const p = document.createElement("div");
+        p.style.position = "absolute";
+        p.style.left = x + "px";
+        p.style.top = y + "px";
+        p.style.width = Math.random() * 4 + 2 + "px";
+        p.style.height = p.style.width;
+        p.style.borderRadius = "50%";
+        p.style.pointerEvents = "none";
+        p.style.background = color;
+        p.style.boxShadow = `
       0 0 10px ${color},
       0 0 20px ${color},
       0 0 40px ${color}
     `;
-
-    footer.appendChild(p);
-
-    const angle = Math.random() * Math.PI * 2;
-    const distance = Math.random() * 120 + 40;
-
-    const tx = Math.cos(angle) * distance;
-    const ty = Math.sin(angle) * distance;
-
-    p.animate([
-      {
-        transform: "translate(0,0) scale(1)",
-        opacity: 1
-      },
-      {
-        transform: `translate(${tx}px,${ty}px) scale(0)`,
-        opacity: 0
+        footer.appendChild(p);
+        const angle = Math.random() * Math.PI * 2;
+        const distance = Math.random() * 120 + 40;
+        const tx = Math.cos(angle) * distance;
+        const ty = Math.sin(angle) * distance;
+        p.animate([
+          {
+            transform: "translate(0,0) scale(1)",
+            opacity: 1
+          },
+          {
+            transform: `translate(${tx}px,${ty}px) scale(0)`,
+            opacity: 0
+          }
+        ], {
+          duration: 900 + Math.random() * 400,
+          easing: "cubic-bezier(.2,.8,.2,1)"
+        });
+        setTimeout(() => p.remove(), 1400);
       }
-    ], {
-      duration: 900 + Math.random() * 400,
-      easing: "cubic-bezier(.2,.8,.2,1)"
-    });
+    }
 
-    setTimeout(() => p.remove(), 1400);
-  }
-}
+    const beamStyles = {
 
-/* =========================================================
-   ⚡ BEAM
-========================================================= */
-function beam(x1, y1, x2, y2, spell) {
+      attack: {
+        shadowBlur: 40,
+        lineWidth: 3,
+        dash: [],
+        distortion: 10,
+        segments: 24,
+        alpha: 1
+      },
 
-  ctx.save();
-  ctx.globalCompositeOperation = "lighter";
+      stun: {
+        shadowBlur: 25,
+        lineWidth: 3,
+        dash: [12, 8],
+        distortion: 6,
+        segments: 18,
+        alpha: 0.9
+      },
 
-  ctx.beginPath();
-  ctx.moveTo(x1, y1);
+      shield: {
+        shadowBlur: 20,
+        lineWidth: 5,
+        dash: [2, 6],
+        distortion: 4,
+        segments: 20,
+        alpha: 1
+      },
 
-  const distortion =
-    spell.type === "curse" ? 14 :
-    spell.type === "attack" ? 10 :
-    spell.type === "shield" ? 4 :
-    spell.type === "light" ? 3 :
-    6;
+      light: {
+        shadowBlur: 70,
+        lineWidth: 4,
+        dash: [],
+        distortion: 2,
+        segments: 18,
+        alpha: 1
+      },
 
-  const segments =
-    spell.type === "curse" ? 30 :
-    spell.type === "light" ? 18 :
-    24;
+      utility: {
+        shadowBlur: 18,
+        lineWidth: 2,
+        dash: [6, 12],
+        distortion: 5,
+        segments: 16,
+        alpha: 0.8
+      },
 
-  for (let i = 0; i < segments; i++) {
+      mind: {
+        shadowBlur: 35,
+        lineWidth: 2,
+        dash: [1, 10],
+        distortion: 8,
+        segments: 30,
+        alpha: 0.7
+      },
 
-    const t = i / segments;
+      curse: {
+        shadowBlur: 50,
+        lineWidth: 2,
+        dash: [10, 8],
+        distortion: 14,
+        segments: 32,
+        alpha: 0.95
+      },
 
-    let wave =
-      spell.type === "curse"
-        ? Math.sin(t * 10) * 6
-        : spell.type === "light"
-        ? Math.sin(t * 6) * 2
-        : (Math.random() - 0.5) * distortion;
+      defense: {
+        shadowBlur: 45,
+        lineWidth: 6,
+        dash: [],
+        distortion: 3,
+        segments: 18,
+        alpha: 1
+      },
 
-    ctx.lineTo(
-      x1 + (x2 - x1) * t + wave,
-      y1 + (y2 - y1) * t + wave
-    );
-  }
+      heal: {
+        shadowBlur: 60,
+        lineWidth: 4,
+        dash: [1, 14],
+        distortion: 2,
+        segments: 14,
+        alpha: 0.9
+      },
 
-  /* 🎨 TYPE-BASED BEAM STYLES */
+      dark: {
+        shadowBlur: 80,
+        lineWidth: 5,
+        dash: [20, 10],
+        distortion: 18,
+        segments: 36,
+        alpha: 0.8
+      },
 
-  if (spell.type === "curse") {
-    ctx.strokeStyle = "rgba(0,0,0,0.9)";
-    ctx.shadowBlur = 40;
-  }
+      counter: {
+        shadowBlur: 90,
+        lineWidth: 3,
+        dash: [],
+        distortion: 1,
+        segments: 10,
+        alpha: 1
+      },
 
-  else if (spell.type === "light") {
-    ctx.strokeStyle = spell.color;
-    ctx.shadowBlur = 60;
-  }
+      transfiguration: {
+        shadowBlur: 40,
+        lineWidth: 4,
+        dash: [16, 6],
+        distortion: 12,
+        segments: 26,
+        alpha: 1
+      }
 
-  else if (spell.type === "shield") {
-    ctx.strokeStyle = spell.color;
-    ctx.setLineDash([2, 6]);
-    ctx.shadowBlur = 20;
-  }
+    };
 
-  else {
-    ctx.strokeStyle = spell.color;
-    ctx.shadowBlur = 30;
-  }
+    function beam(x1, y1, x2, y2, spell) {
+      ctx.save();
+      ctx.globalCompositeOperation = "lighter";
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      const style =
+        beamStyles[spell.type] || beamStyles.attack;
+      const distortion = style.distortion;
+      const segments = style.segments;
+      for (let i = 0; i < segments; i++) {
+        const t = i / segments;
+        let wave =
+          spell.type === "curse"
+            ? Math.sin(t * 10) * 6
+            : spell.type === "light"
+              ? Math.sin(t * 6) * 2
+              : (Math.random() - 0.5) * distortion;
+        ctx.lineTo(
+          x1 + (x2 - x1) * t + wave,
+          y1 + (y2 - y1) * t + wave
+        );
+      }
+      ctx.strokeStyle =
+        spell.type === "curse"
+          ? "rgba(0,0,0,0.95)"
+          : spell.color;
+      ctx.shadowColor = spell.color;
+      ctx.shadowBlur = style.shadowBlur;
+      ctx.lineWidth = style.lineWidth;
+      ctx.globalAlpha = style.alpha;
+      ctx.setLineDash(style.dash);
+      ctx.stroke();
+      ctx.restore();
+    }
 
-  ctx.shadowColor = spell.color;
+    function smokeBurst(x, y, colors) {
+      for (let i = 0; i < 18; i++) {
+        const s = document.createElement("div");
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        s.style.position = "absolute";
+        s.style.left = x + "px";
+        s.style.top = y + "px";
+        s.style.width = Math.random() * 10 + 6 + "px";
+        s.style.height = s.style.width;
+        s.style.borderRadius = "50%";
+        s.style.background = color;
+        s.style.opacity = 0.8;
+        s.style.filter = "blur(6px)";
+        s.style.boxShadow = `0 0 20px ${color}`;
+        footer.appendChild(s);
+        const angle = Math.random() * Math.PI * 2;
+        const distance = Math.random() * 140 + 60;
+        const tx = Math.cos(angle) * distance;
+        const ty = Math.sin(angle) * distance;
+        s.animate([
+          { transform: "translate(0,0) scale(1)", opacity: 0.9 },
+          { transform: `translate(${tx}px,${ty}px) scale(2.5)`, opacity: 0 }
+        ], {
+          duration: 1200,
+          easing: "ease-out"
+        });
+        setTimeout(() => s.remove(), 1200);
+      }
+    }
 
-  ctx.lineWidth =
-    spell.type === "shield" ? 5 :
-    spell.type === "curse" ? 2 :
-    3;
-
-  ctx.stroke();
-  ctx.restore();
-}
-
-
-function smokeBurst(x, y, colors) {
-
-  for (let i = 0; i < 18; i++) {
-
-    const s = document.createElement("div");
-
-    const color = colors[Math.floor(Math.random() * colors.length)];
-
-    s.style.position = "absolute";
-    s.style.left = x + "px";
-    s.style.top = y + "px";
-
-    s.style.width = Math.random() * 10 + 6 + "px";
-    s.style.height = s.style.width;
-
-    s.style.borderRadius = "50%";
-    s.style.background = color;
-    s.style.opacity = 0.8;
-
-    s.style.filter = "blur(6px)";
-    s.style.boxShadow = `0 0 20px ${color}`;
-
-    footer.appendChild(s);
-
-    const angle = Math.random() * Math.PI * 2;
-    const distance = Math.random() * 140 + 60;
-
-    const tx = Math.cos(angle) * distance;
-    const ty = Math.sin(angle) * distance;
-
-    s.animate([
-      { transform: "translate(0,0) scale(1)", opacity: 0.9 },
-      { transform: `translate(${tx}px,${ty}px) scale(2.5)`, opacity: 0 }
-    ], {
-      duration: 1200,
-      easing: "ease-out"
-    });
-
-    setTimeout(() => s.remove(), 1200);
-  }
-}
-/* =========================================================
-   ⚡ WAND RECOIL
-========================================================= */
-
-function recoil() {
-
-  leftWand.animate([
-    { transform: "rotate(-1deg)" },
-    { transform: "rotate(-1.1deg)" },
-    { transform: "rotate(-1.3deg)" },
-    { transform: "rotate(-1.2deg)" },
-    { transform: "rotate(-1deg)" }
-  ], {
-    duration: 90,
-    iterations: 2,
-    easing: "ease-in-out"
-  });
-
-  rightWand.animate([
-    { transform: "rotate(1deg)" },
-    { transform: "rotate(1.1deg)" },
-    { transform: "rotate(1.3deg)" },
-    { transform: "rotate(1.2deg)" },
-    { transform: "rotate(1deg)" }
-  ], {
-    duration: 90,
-    iterations: 2,
-    easing: "ease-in-out"
-  });
-}
-
-/* =========================================================
-   ⚡ IMPACT
-========================================================= */
-
-function impact(t, leftSpellData, rightSpellData) {
-
-  const x = (t.left.x + t.right.x) / 2;
-  const y = t.left.y;
-
-  /* CORE FLASH */
-
-  const flash = document.createElement("div");
-
-  flash.className = "shockwave";
-
-  flash.style.left = x + "px";
-  flash.style.top = y + "px";
-
-  flash.style.background = `
+    function impact(t, leftSpellData, rightSpellData) {
+      const x = (t.left.x + t.right.x) / 2;
+      const y = t.left.y;
+      const flash = document.createElement("div");
+      flash.className = "shockwave";
+      flash.style.left = x + "px";
+      flash.style.top = y + "px";
+      flash.style.background = `
     radial-gradient(circle,
     white 0%,
     ${leftSpellData.color} 30%,
     ${rightSpellData.color} 60%,
     transparent 100%)
   `;
-
-  footer.appendChild(flash);
-
-  flash.animate([
-    {
-      transform: "translate(-50%,-50%) scale(0.5)",
-      opacity: 1
-    },
-    {
-      transform: "translate(-50%,-50%) scale(5)",
-      opacity: 0
+      footer.appendChild(flash);
+      flash.animate([
+        {
+          transform: "translate(-50%,-50%) scale(0.5)",
+          opacity: 1
+        },
+        {
+          transform: "translate(-50%,-50%) scale(5)",
+          opacity: 0
+        }
+      ], {
+        duration: 900,
+        easing: "ease-out"
+      });
+      setTimeout(() => flash.remove(), 700);
+      particleExplosion(x, y, leftSpellData.color, leftSpellData.type);
+      particleExplosion(x, y, rightSpellData.color, rightSpellData.type);
+      if (
+        leftSpellData.type === "attack" &&
+        rightSpellData.type === "attack"
+      ) {
+        particleExplosion(x, y, "#ffffff", "attack");
+      }
+      if (
+        leftSpellData.type === "light" &&
+        rightSpellData.type === "dark"
+      ) {
+        particleExplosion(x, y, "#ffffff", "light");
+      }
+      smokeBurst(x, y, [
+        leftSpellData.color,
+        rightSpellData.color,
+        "#ffffff",
+        "#88ccff"
+      ]);
     }
-  ], {
-    duration: 900,
-    easing: "ease-out"
-  });
 
-  setTimeout(() => flash.remove(), 700);
-
-  /* PARTICLES */
-
-  particleExplosion(x, y, leftSpellData.color, leftSpellData.type);
-  particleExplosion(x, y, rightSpellData.color, rightSpellData.type);
-
-  /* TYPE-BASED COLLISION EFFECTS */
-
-  if (
-    leftSpellData.type === "attack" &&
-    rightSpellData.type === "attack"
-  ) {
-    particleExplosion(x, y, "#ffffff", "attack");
-  }
-
-  if (
-    leftSpellData.type === "light" &&
-    rightSpellData.type === "dark"
-  ) {
-    particleExplosion(x, y, "#ffffff", "light");
-  }
-
-  /* 🌫 COLORFUL SMOKE BURST */
-smokeBurst(x, y, [
-  leftSpellData.color,
-  rightSpellData.color,
-  "#ffffff",
-  "#88ccff"
-]);
-}
-
-/* =========================================================
-   ⚡ MAIN CAST
-========================================================= */
-
-function cast() {
-
-  if (!active || cooldown) return;
-
-  cooldown = true;
-
-  /* UNIQUE RANDOM SPELLS */
-
-  const leftIndex =
-    Math.floor(Math.random() * spells.length);
-
-  let rightIndex;
-
-  do {
-    rightIndex =
-      Math.floor(Math.random() * spells.length);
-  }
-  while (rightIndex === leftIndex);
-
-  const L = spells[leftIndex];
-  const R = spells[rightIndex];
-
-  const tips = getTips();
-
-  // recoil();
-
-  /* DOTS */
-
-  leftDot.style.left = tips.left.x + "px";
-  leftDot.style.top = tips.left.y + "px";
-
-  rightDot.style.left = tips.right.x + "px";
-  rightDot.style.top = tips.right.y + "px";
-
-  leftDot.style.background = L.color;
-  rightDot.style.background = R.color;
-
-  leftDot.style.boxShadow = `
+    function cast() {
+      if (!active || cooldown) return;
+      cooldown = true;
+      const leftIndex =
+        Math.floor(Math.random() * spells.length);
+      let rightIndex;
+      do {
+        rightIndex =
+          Math.floor(Math.random() * spells.length);
+      }
+      while (rightIndex === leftIndex);
+      const L = spells[leftIndex];
+      const R = spells[rightIndex];
+      const tips = getTips();
+      /* DOTS */
+      leftDot.style.left = tips.left.x + "px";
+      leftDot.style.top = tips.left.y + "px";
+      rightDot.style.left = tips.right.x + "px";
+      rightDot.style.top = tips.right.y + "px";
+      leftDot.style.background = L.color;
+      rightDot.style.background = R.color;
+      leftDot.style.boxShadow = `
     0 0 20px ${L.color},
     0 0 40px ${L.color}
   `;
-
-  rightDot.style.boxShadow = `
+      rightDot.style.boxShadow = `
     0 0 20px ${R.color},
     0 0 40px ${R.color}
   `;
-
-  leftDot.style.opacity = 1;
-  rightDot.style.opacity = 1;
-
-  /* SPELL NAMES */
-
-  setTimeout(() => {
-
-    leftSpell.textContent = L.name;
-    rightSpell.textContent = R.name;
-
-    leftSpell.style.color = L.color;
-    rightSpell.style.color = R.color;
-
-    leftSpell.style.textShadow = `
+      leftDot.style.opacity = 1;
+      rightDot.style.opacity = 1;
+      setTimeout(() => {
+        leftSpell.textContent = L.name;
+        rightSpell.textContent = R.name;
+        leftSpell.style.color = L.color;
+        rightSpell.style.color = R.color;
+        leftSpell.style.textShadow = `
       0 0 10px ${L.color},
       0 0 20px ${L.color}
     `;
-
-    rightSpell.style.textShadow = `
+        rightSpell.style.textShadow = `
       0 0 10px ${R.color},
       0 0 20px ${R.color}
     `;
+        leftSpell.style.opacity = 1;
+        rightSpell.style.opacity = 1;
 
-    leftSpell.style.opacity = 1;
-    rightSpell.style.opacity = 1;
+      }, 120);
+      let speed =
+        L.type === "curse" || R.type === "curse"
+          ? 0.02
+          : 0.04;
+      let p = 0;
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        p += 0.035;
+        const midX = canvas.width / 2;
+        const y = tips.left.y;
+        const leftStart = tips.left.x;
+        const rightStart = tips.right.x;
+        const leftDistance = midX - leftStart;
+        const rightDistance = rightStart - midX;
+        const lx = leftStart + leftDistance * p;
+        const rx = rightStart - rightDistance * p;
+        beam(leftStart, y, lx, y, L);
+        beam(rightStart, y, rx, y, R);
+        if (p >= 1) {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          impact(tips, L, R);
+          return;
+        }
+        requestAnimationFrame(animate);
+      }
+      setTimeout(() => {
+        animate();
+      }, 120);
+      setTimeout(() => {
+        leftDot.style.opacity = 0;
+        rightDot.style.opacity = 0;
+        leftSpell.style.opacity = 0;
+        rightSpell.style.opacity = 0;
+        cooldown = false;
+      }, 1600);
+    }
 
-  }, 120);
-
-  /* BEAM SPEED BASED ON TYPE */
-
-  let speed =
-    L.type === "curse" || R.type === "curse"
-      ? 0.02
-      : 0.04;
-
-  let p = 0;
-
-function animate() {
-
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  p += 0.035;
-
-  const midX = canvas.width / 2;
-  const y = tips.left.y;
-
-  /* BOTH TRAVEL IDENTICAL DISTANCE */
-
-  const leftStart = tips.left.x;
-  const rightStart = tips.right.x;
-
-  const leftDistance = midX - leftStart;
-  const rightDistance = rightStart - midX;
-
-  const lx = leftStart + leftDistance * p;
-  const rx = rightStart - rightDistance * p;
-
-  /* DRAW BOTH BEAMS SAME FRAME */
-
-  beam(leftStart, y, lx, y, L);
-  beam(rightStart, y, rx, y, R);
-
-  /* IMPACT EXACTLY AT CENTER */
-
-  if (p >= 1) {
-
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    impact(tips, L, R);
-
-    return;
-  }
-
-  requestAnimationFrame(animate);
-}
-
-/* SUBTLE PRE-CAST SHAKE */
-
-// recoil();
-
-/* SMALL CINEMATIC DELAY */
-
-setTimeout(() => {
-  animate();
-}, 120);
-
-  setTimeout(() => {
-
-    leftDot.style.opacity = 0;
-    rightDot.style.opacity = 0;
-
-    leftSpell.style.opacity = 0;
-    rightSpell.style.opacity = 0;
-
-    cooldown = false;
-
-  }, 1600);
-}
-
-/* =========================================================
-   ⚡ EVENTS
-========================================================= */
-
-footer.addEventListener("click", cast);
-
-setInterval(() => {
-  if (active) cast();
-}, 2400);
-
-</script>
+    footer.addEventListener("click", cast);
+    setInterval(() => {
+      if (active) cast();
+    }, 2400);
+  </script>
 
 
+  <!-- SCRIPT FOR MOUSE MAGIC TRAIL  -->
 
-<div id="magic-trail-container"></div>
+  <div id="magic-trail-container"></div>
 
-<script>
-/* =========================================
-   ✨ ULTRA SMOOTH LIGHTWEIGHT MAGIC TRAIL
-========================================= */
+  <script>
+    const container = document.getElementById("magic-trail-container");
+    const colors = [
+      "#7affff",
+      "#ffe066",
+      "#9d7bff",
+      "#ffffff"
+    ];
+    let mouseX = innerWidth / 2;
+    let mouseY = innerHeight / 2;
+    let lastX = mouseX;
+    let lastY = mouseY;
 
-const container = document.getElementById("magic-trail-container");
+    window.addEventListener("mousemove", (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    }, { passive: true });
 
-const colors = [
-  "#7affff",
-  "#ffe066",
-  "#9d7bff",
-  "#ffffff"
-];
+    function createSpark(x, y, speed) {
+      const spark = document.createElement("div");
+      spark.className = "magic-spark";
+      const size = Math.random() * 2 + 1.5;
+      spark.style.width = size + "px";
+      spark.style.height = size + "px";
 
-let mouseX = innerWidth / 2;
-let mouseY = innerHeight / 2;
-
-let lastX = mouseX;
-let lastY = mouseY;
-
-window.addEventListener("mousemove", (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-}, { passive: true });
-
-/* =========================================
-   CREATE SMALL SPARK
-========================================= */
-
-function createSpark(x, y, speed) {
-
-  const spark = document.createElement("div");
-
-  spark.className = "magic-spark";
-
-  /* SMALLER PARTICLES */
-  const size = Math.random() * 2 + 1.5;
-
-  spark.style.width = size + "px";
-  spark.style.height = size + "px";
-
-  const color =
-    colors[Math.floor(Math.random() * colors.length)];
-
-  spark.style.background = color;
-
-  spark.style.boxShadow = `
+      const color =
+        colors[Math.floor(Math.random() * colors.length)];
+      spark.style.background = color;
+      spark.style.boxShadow = `
     0 0 4px ${color},
     0 0 8px ${color}
   `;
+      spark.style.left = x + "px";
+      spark.style.top = y + "px";
+      container.appendChild(spark);
+      const angle = Math.random() * Math.PI * 2;
+      const distance = Math.random() * 20 + speed * 0.15;
+      const dx = Math.cos(angle) * distance;
+      const dy = Math.sin(angle) * distance;
 
-  spark.style.left = x + "px";
-  spark.style.top = y + "px";
-
-  container.appendChild(spark);
-
-  const angle = Math.random() * Math.PI * 2;
-
-  const distance = Math.random() * 20 + speed * 0.15;
-
-  const dx = Math.cos(angle) * distance;
-  const dy = Math.sin(angle) * distance;
-
-  spark.animate([
-    {
-      transform: "translate3d(0,0,0) scale(1)",
-      opacity: 1
-    },
-    {
-      transform: `
+      spark.animate([
+        {
+          transform: "translate3d(0,0,0) scale(1)",
+          opacity: 1
+        },
+        {
+          transform: `
         translate3d(${dx}px, ${dy}px,0)
         scale(0)
       `,
-      opacity: 0
+          opacity: 0
+        }
+      ], {
+        duration: 500 + Math.random() * 200,
+        easing: "cubic-bezier(.22,1,.36,1)",
+        fill: "forwards"
+      });
+      setTimeout(() => spark.remove(), 700);
     }
-  ], {
-    duration: 500 + Math.random() * 200,
-    easing: "cubic-bezier(.22,1,.36,1)",
-    fill: "forwards"
+
+    function animate() {
+
+      const dx = mouseX - lastX;
+      const dy = mouseY - lastY;
+
+      const speed = Math.sqrt(dx * dx + dy * dy);
+
+      if (speed > 1) {
+        const count = Math.min(3, Math.floor(speed * 0.08));
+
+        for (let i = 0; i < count; i++) {
+
+          createSpark(
+            mouseX + (Math.random() - 0.5) * 6,
+            mouseY + (Math.random() - 0.5) * 6,
+            speed
+          );
+        }
+        lastX += dx * 0.35;
+        lastY += dy * 0.35;
+      }
+      requestAnimationFrame(animate);
+    }
+    animate();
+  </script>
+
+
+
+
+
+
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      /* =====================================
+         ALL IMAGES
+      ===================================== */
+
+      const images = [
+        "img/hp-1.png",
+        "img/hp-2.png",
+        "img/hp-3.png",
+        "img/hp-4.png",
+        "img/hp-5.png",
+        "img/hp-6.png",
+        "img/hp-7.png",
+        "img/hp-8.png",
+        "img/hp-9.png",
+        "img/hp-10.png",
+
+      ];
+
+      /* =====================================
+         PRELOAD
+      ===================================== */
+
+      images.forEach(src => {
+        const img = new Image();
+        img.src = src;
+      });
+
+      /* =====================================
+         UNIQUE RANDOM SYSTEM
+      ===================================== */
+
+      let availableImages = [...images];
+
+      function getUniqueImage() {
+
+        if (availableImages.length === 0) {
+          availableImages = [...images];
+        }
+
+        const index =
+          Math.floor(Math.random() * availableImages.length);
+
+        const selected = availableImages[index];
+
+        availableImages.splice(index, 1);
+
+        return selected;
+      }
+
+      /* =====================================
+         PARTICLE EFFECT
+      ===================================== */
+
+      function createParticles(card) {
+
+        const colors = [
+          "#00e5ff",
+          "#8a2eff",
+          "#ffffff",
+          "#ffe066"
+        ];
+
+        for (let i = 0; i < 20; i++) {
+
+          const p = document.createElement("div");
+
+          p.className = "magic-hover-particle";
+
+          const color =
+            colors[Math.floor(Math.random() * colors.length)];
+
+          p.style.background = color;
+
+          p.style.boxShadow = `
+        0 0 10px ${color},
+        0 0 20px ${color},
+        0 0 40px ${color}
+      `;
+
+          p.style.left = "50%";
+          p.style.top = "50%";
+
+          card.appendChild(p);
+
+          const angle = Math.random() * Math.PI * 2;
+          const distance = Math.random() * 160 + 60;
+
+          const tx = Math.cos(angle) * distance;
+          const ty = Math.sin(angle) * distance;
+
+          p.animate(
+            [
+              {
+                transform:
+                  "translate(-50%,-50%) scale(1)",
+                opacity: 1
+              },
+              {
+                transform:
+                  `translate(calc(-50% + ${tx}px),
+                         calc(-50% + ${ty}px))
+               scale(0)`,
+
+                opacity: 0
+              }
+            ],
+            {
+              duration: 1200,
+              easing: "cubic-bezier(.22,1,.36,1)"
+            }
+          );
+
+          setTimeout(() => {
+            p.remove();
+          }, 1200);
+        }
+      }
+
+      /* =====================================
+         MAIN MAGIC
+      ===================================== */
+
+      const cards =
+        document.querySelectorAll(".artifact-card");
+
+      cards.forEach(card => {
+
+        const portrait =
+          card.querySelector(".proCARDImg");
+
+        if (!portrait) return;
+
+        card.addEventListener("mouseenter", () => {
+
+          /* RANDOM UNIQUE IMAGE */
+
+          const randomImage = getUniqueImage();
+
+          /* CHANGE IMAGE */
+
+          portrait.src = randomImage;
+
+          /* FORCE LOAD */
+
+          portrait.style.opacity = "0";
+
+          setTimeout(() => {
+
+            portrait.style.opacity = "1";
+
+            portrait.style.transform =
+              "scale(1) rotate(0deg)";
+
+          }, 80);
+
+          /* CARD FLASH */
+
+          card.animate(
+            [
+              {
+                boxShadow:
+                  "0 0 0px rgba(255,255,255,0)"
+              },
+              {
+                boxShadow:
+                  `
+              0 0 40px rgba(255,255,255,.9),
+              0 0 80px rgba(0,255,255,.8),
+              0 0 120px rgba(138,46,255,.7)
+              `
+              },
+              {
+                boxShadow:
+                  "0 0 0px rgba(255,255,255,0)"
+              }
+            ],
+            {
+              duration: 1000
+            }
+          );
+
+          /* PARTICLES */
+
+          createParticles(card);
+
+        });
+
+        /* LEAVE */
+
+        card.addEventListener("mouseleave", () => {
+
+          portrait.style.opacity = "0";
+
+          portrait.style.transform =
+            "scale(.6) rotate(-10deg)";
+        });
+
+      });
+
+    });
+  </script>
+
+
+
+  <!-- ################################################################################################################ -->
+
+  <!-- 
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  /* =========================================================
+     CHARACTER DATABASE
+  ========================================================= */
+
+  const characters = [
+
+    {
+      src: "img/hp-1.png",
+      name: "The Chief Warlock",
+      theme: "theme-dumbledore",
+      color: "#8be9ff"
+    },
+
+    {
+      src: "img/hp-2.png",
+      name: "The Chosen One",
+      theme: "theme-harry",
+      color: "#7CFC00"
+    },
+
+    {
+      src: "img/hp-3.png",
+      name: "Wheezy",
+      theme: "theme-ron",
+      color: "#ff7b00"
+    },
+
+    {
+      src: "img/hp-4.png",
+      name: "The Brightest Witch",
+      theme: "theme-hermione",
+      color: "#c084ff"
+    },
+
+    {
+      src: "img/hp-5.png",
+      name: "The Dark Lord",
+      theme: "theme-voldemort",
+      color: "#39ff5a"
+    },
+
+    {
+      src: "img/hp-6.png",
+      name: "The Half-Blood Prince",
+      theme: "theme-snape",
+      color: "#8a2eff"
+    },
+
+    {
+      src: "img/hp-7.png",
+      name: "Keeper of Keys",
+      theme: "theme-hagrid",
+      color: "#ff9a3c"
+    },
+
+    {
+      src: "img/hp-8.png",
+      name: "Professor McGonagall",
+      theme: "theme-mcgonagall",
+      color: "#6ee7ff"
+    },
+
+    {
+      src: "img/hp-9.png",
+      name: "Padfoot",
+      theme: "theme-sirius",
+      color: "#8bbcff"
+    },
+
+    {
+      src: "img/hp-10.png",
+      name: "Ginny Weasley",
+      theme: "theme-ginny",
+      color: "#ff5a5a"
+    }
+
+  ];
+
+  /* =========================================================
+     PRELOAD IMAGES
+  ========================================================= */
+
+  characters.forEach(character => {
+
+    const img = new Image();
+
+    img.src = character.src;
+
   });
 
-  setTimeout(() => spark.remove(), 700);
-}
+  /* =========================================================
+     UNIQUE RANDOM CHARACTER SYSTEM
+  ========================================================= */
 
-/* =========================================
-   PERFECTLY OPTIMIZED LOOP
-========================================= */
+  let availableCharacters = [...characters];
 
-function animate() {
+  function getUniqueCharacter(){
 
-  const dx = mouseX - lastX;
-  const dy = mouseY - lastY;
+    if(availableCharacters.length === 0){
 
-  const speed = Math.sqrt(dx * dx + dy * dy);
+      availableCharacters = [...characters];
 
-  if (speed > 1) {
-
-    /* LOWER COUNT = NO FPS DROP */
-    const count = Math.min(3, Math.floor(speed * 0.08));
-
-    for (let i = 0; i < count; i++) {
-
-      createSpark(
-        mouseX + (Math.random() - 0.5) * 6,
-        mouseY + (Math.random() - 0.5) * 6,
-        speed
-      );
     }
 
-    lastX += dx * 0.35;
-    lastY += dy * 0.35;
+    const index =
+      Math.floor(Math.random() * availableCharacters.length);
+
+    const selected =
+      availableCharacters[index];
+
+    availableCharacters.splice(index,1);
+
+    return selected;
   }
 
-  requestAnimationFrame(animate);
-}
+  /* =========================================================
+     MAGIC PARTICLES
+  ========================================================= */
 
-animate();
-</script>
+  function createParticles(card,color){
 
+    for(let i = 0; i < 24; i++){
 
+      const particle =
+        document.createElement("div");
 
+      particle.className =
+        "magic-hover-particle";
 
+      particle.style.background =
+        color;
 
+      particle.style.boxShadow =
+      `
+      0 0 10px ${color},
+      0 0 20px ${color},
+      0 0 40px ${color}
+      `;
 
+      particle.style.left = "50%";
+      particle.style.top = "50%";
 
+      card.appendChild(particle);
 
+      const angle =
+        Math.random() * Math.PI * 2;
 
+      const distance =
+        Math.random() * 220 + 60;
 
+      const tx =
+        Math.cos(angle) * distance;
 
+      const ty =
+        Math.sin(angle) * distance;
 
+      particle.animate(
+      [
+        {
+          transform:
+            "translate(-50%,-50%) scale(1)",
 
+          opacity:1
+        },
 
+        {
+          transform:
+            `translate(calc(-50% + ${tx}px),
+            calc(-50% + ${ty}px))
+            scale(0)`,
 
+          opacity:0
+        }
+      ],
+      {
+        duration:1400,
+        easing:"cubic-bezier(.22,1,.36,1)"
+      });
 
+      setTimeout(()=>{
 
+        particle.remove();
 
+      },1400);
+    }
+  }
 
+  /* =========================================================
+     ASH DISINTEGRATION
+  ========================================================= */
 
+  function ashExplosion(element,color){
 
+    const rect =
+      element.getBoundingClientRect();
 
+    for(let i = 0; i < 120; i++){
 
+      const ash =
+        document.createElement("div");
 
+      ash.className =
+        "ash-particle";
 
+      ash.style.background =
+        color;
 
+      ash.style.left =
+        rect.left + rect.width / 2 + "px";
 
+      ash.style.top =
+        rect.top + rect.height / 2 + "px";
 
+      ash.style.boxShadow =
+        `0 0 12px ${color}`;
 
+      document.body.appendChild(ash);
 
+      const angle =
+        Math.random() * Math.PI * 2;
 
+      const distance =
+        Math.random() * 500;
 
+      const tx =
+        Math.cos(angle) * distance;
 
+      const ty =
+        Math.sin(angle) * distance;
 
+      ash.animate(
+      [
+        {
+          transform:
+            "translate(0px,0px) scale(1)",
+
+          opacity:1
+        },
+
+        {
+          transform:
+            `translate(${tx}px,${ty}px)
+            scale(0)`,
+
+          opacity:0
+        }
+      ],
+      {
+        duration:2000,
+        easing:"cubic-bezier(.22,1,.36,1)"
+      });
+
+      setTimeout(()=>{
+
+        ash.remove();
+
+      },2000);
+    }
+  }
+
+  /* =========================================================
+     CINEMA SYSTEM
+  ========================================================= */
+
+  let cinemaRunning = false;
+
+  function showCinema(character){
+
+    if(cinemaRunning) return;
+
+    cinemaRunning = true;
+
+    const overlay =
+      document.createElement("div");
+
+    overlay.className =
+      `character-cinema ${character.theme}`;
+
+    overlay.innerHTML =
+    `
+      <div class="cinema-smoke left"></div>
+
+      <div class="cinema-smoke right"></div>
+
+      <div class="cinema-flash"></div>
+
+      <div class="cinema-card">
+
+        <img src="${character.src}">
+
+        <div class="cinema-name"
+        style="color:${character.color}">
+          ${character.name}
+        </div>
+
+      </div>
+    `;
+
+    document.body.appendChild(overlay);
+
+    /* =====================================================
+       SMOKE ENTRY
+    ===================================================== */
+
+    const leftSmoke =
+      overlay.querySelector(".left");
+
+    const rightSmoke =
+      overlay.querySelector(".right");
+
+    leftSmoke.animate(
+    [
+      {
+        transform:"translateX(-100%)",
+        opacity:0
+      },
+
+      {
+        transform:"translateX(0%)",
+        opacity:1
+      }
+    ],
+    {
+      duration:1200,
+      easing:"ease-out",
+      fill:"forwards"
+    });
+
+    rightSmoke.animate(
+    [
+      {
+        transform:"translateX(100%)",
+        opacity:0
+      },
+
+      {
+        transform:"translateX(0%)",
+        opacity:1
+      }
+    ],
+    {
+      duration:1200,
+      easing:"ease-out",
+      fill:"forwards"
+    });
+
+    /* =====================================================
+       CARD VANISH
+    ===================================================== */
+
+    const cinemaCard =
+      overlay.querySelector(".cinema-card");
+
+    setTimeout(()=>{
+
+      ashExplosion(
+        cinemaCard,
+        character.color
+      );
+
+      cinemaCard.animate(
+      [
+        {
+          opacity:1,
+
+          transform:
+            "translate(-50%,-50%) scale(1)"
+        },
+
+        {
+          opacity:0,
+
+          transform:
+            "translate(-50%,-50%) scale(.12)"
+        }
+      ],
+      {
+        duration:1800,
+        easing:"ease-in",
+        fill:"forwards"
+      });
+
+    },3000);
+
+    /* =====================================================
+       REMOVE OVERLAY
+    ===================================================== */
+
+    setTimeout(()=>{
+
+      overlay.remove();
+
+      cinemaRunning = false;
+
+    },5200);
+  }
+
+  /* =========================================================
+     MAIN HOVER SYSTEM
+  ========================================================= */
+
+  const cards =
+    document.querySelectorAll(".artifact-card");
+
+  cards.forEach(card => {
+
+    const portrait =
+      card.querySelector(".proCARDImg");
+
+    if(!portrait) return;
+
+    let currentCharacter = null;
+
+    card.addEventListener("mouseenter", () => {
+
+      /* =====================================================
+         GET ONLY ONE CHARACTER
+      ===================================================== */
+
+      currentCharacter =
+        getUniqueCharacter();
+
+      /* =====================================================
+         SAME CHARACTER ON CARD
+      ===================================================== */
+
+      portrait.src =
+        currentCharacter.src;
+
+      portrait.style.opacity = "0";
+
+      portrait.style.filter =
+      `
+      drop-shadow(0 0 20px ${currentCharacter.color})
+      drop-shadow(0 0 60px ${currentCharacter.color})
+      brightness(1.15)
+      `;
+
+      setTimeout(()=>{
+
+        portrait.style.opacity = "1";
+
+        portrait.style.transform =
+          "scale(1) rotate(0deg)";
+
+      },50);
+
+      /* =====================================================
+         PARTICLES
+      ===================================================== */
+
+      createParticles(
+        card,
+        currentCharacter.color
+      );
+
+      /* =====================================================
+         CARD FLASH
+      ===================================================== */
+
+      card.animate(
+      [
+        {
+          transform:
+            "perspective(1000px) rotateX(0deg)",
+
+          boxShadow:
+            "0 0 0px transparent"
+        },
+
+        {
+          transform:
+            "perspective(1000px) rotateX(6deg) scale(1.03)",
+
+          boxShadow:
+          `
+          0 0 30px ${currentCharacter.color},
+          0 0 60px ${currentCharacter.color},
+          0 0 120px ${currentCharacter.color}
+          `
+        },
+
+        {
+          transform:
+            "perspective(1000px) rotateX(0deg)",
+
+          boxShadow:
+            "0 0 0px transparent"
+        }
+      ],
+      {
+        duration:1200,
+        easing:"cubic-bezier(.22,1,.36,1)"
+      });
+
+      /* =====================================================
+         PERFECT SYNCHRONIZED CINEMA
+      ===================================================== */
+
+      setTimeout(()=>{
+
+        showCinema(currentCharacter);
+
+      },350);
+
+    });
+
+    /* =====================================================
+       LEAVE
+    ===================================================== */
+
+    card.addEventListener("mouseleave", () => {
+
+      portrait.style.opacity = "0";
+
+      portrait.style.transform =
+        "scale(.55) rotate(-10deg)";
+    });
+
+  });
+
+});
+</script> -->
 
 
 
