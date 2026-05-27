@@ -914,13 +914,13 @@
         .then(res => res.json())
         .then(data => {
           payload.ip = data.ip;
-          return fetch("https://script.google.com/macros/s/AKfycbztuXlJDSzv4ywHIOz7S8ZF6JdJbr1c4OHr_8ejHJWe7lnY-Ltyio-7u7c5ReB2VfGp/exec ", {
+          return fetch("https://script.google.com/macros/s/AKfycbzQSI_x4xIH407T7VWu8YVDTxsev3GCuFHr250iU0wsrLSgMfMBUIs49GbrXyx5DwyN/exec", {
             method: "POST",
             body: JSON.stringify(payload)
           });
         })
         .catch(() => {
-          fetch("https://script.google.com/macros/s/AKfycbztuXlJDSzv4ywHIOz7S8ZF6JdJbr1c4OHr_8ejHJWe7lnY-Ltyio-7u7c5ReB2VfGp/exec ", {
+          fetch("https://script.google.com/macros/s/AKfycbzQSI_x4xIH407T7VWu8YVDTxsev3GCuFHr250iU0wsrLSgMfMBUIs49GbrXyx5DwyN/exec", {
             method: "POST",
             body: JSON.stringify(payload)
           });
